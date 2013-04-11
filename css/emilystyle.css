@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+ol, ul {
+    list-style: none outside none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none;
+}
+:focus {
+    outline: 0 none;
+}
+del {
+    text-decoration: line-through;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html {
+    /*background-color: rgb(255, 153, 153);*/
+	background-color:#F99;
+    color: #C1E4FE;
+    font-family: "museo-sans-1","museo-sans-2";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+#links {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#main {
+    margin: 0 auto;
+    max-width: 840px;
+    padding: 80px 20px;
+}
+#main img {
+    padding-bottom: 80px;
+	margin-top:80px;
+
+}
+h1 {
+    color: #FFFFFF;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#about {
+    margin-bottom: 60px;
+}
+#myprojects {
+  
+    margin-bottom: 60px;
+	margin-top:20px;
+}
+
+.stuff {
+    font-size: 65%;
+    margin-top: 40px;
+}
+a {
+    color: #99EAF0;
+    transition: all 0.2s ease-in-out 0s;
+}
+a:hover {
+    color: #343375;
+}
+
+
+#myprojects a{
+	color: #0FC;
+	font-weight:600;
+}
+
