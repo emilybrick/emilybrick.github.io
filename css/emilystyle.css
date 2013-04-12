@@ -33,7 +33,7 @@ table {
 html {
     /*background-color: rgb(255, 153, 153);*/
 	background-color:#F99;
-    font-size: 24px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 400;
     text-align: center;
@@ -48,7 +48,7 @@ html {
     padding: 80px 20px;
     color: #333;
     font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
-    font-weight:100;
+    font-weight:300;
 }
 #main img {
     padding-bottom: 40px;
@@ -62,6 +62,7 @@ html {
     font-weight:900;
     font-style:normal;
     margin-bottom:20px;
+
 
 
 }
@@ -79,8 +80,8 @@ html {
 }
 
 .stuff {
-    font-size: 65%;
-    margin-top: 40px;
+    font-size: 60%;
+
 }
 a {
     color: #99EAF0;
