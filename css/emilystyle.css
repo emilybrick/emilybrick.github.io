@@ -92,11 +92,11 @@ a:hover {
 
 }
 #myprojects {
-    color: #009999;
+    color: #006666;
 }
 
 #myprojects a{
-	color: #009999;
+	color: #006666;
 	text-decoration:none;
     margin-right: 10px;
     margin-left:10px;
@@ -141,7 +141,7 @@ a:hover {
         }
         .talk-container:hover .email{
             display:block;
-             color: #009999;
+             color: #006666;
 
         }
         .talk-container:hover .talk{
