@@ -170,11 +170,11 @@ a:hover {
 
 
 
-    -webkit-animation: myfirst .7s infinite linear;
-    -moz-animation: myfirst .7s infinite linear;
-    -ms-animation: myfirst .7s infinite linear;
-    -o-animation: myfirst .7s infinite linear;
-    animation: myfirst .7s infinite linear; /* Safari and Chrome */
+    -webkit-animation: myfirst .4s infinite linear;
+    -moz-animation: myfirst .4s infinite linear;
+    -ms-animation: myfirst .4s infinite linear;
+    -o-animation: myfirst .4s infinite linear;
+    animation: myfirst .4s infinite linear; /* Safari and Chrome */
 }
 
 @keyframes "myfirst" {
