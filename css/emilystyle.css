@@ -286,7 +286,7 @@ a:hover {
 .lefteyelid {
     width: 4em;
     height: 3em;
-    background-color:#66CCCC;
+    background-color:#ff99999;
     background-repeat: no-repeat;
     top: 3.9em;
     left: 6.3em;
@@ -349,7 +349,7 @@ a:hover {
 .righteyelid {
     width: 2em;
     height: 3em;
-    background-color:#009999;
+    background-color:#ff99999;
     background-repeat: no-repeat;
     top: 3.9em;
     left: 12.3em;
