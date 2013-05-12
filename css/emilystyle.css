@@ -160,13 +160,16 @@ a:hover {
 
         /*//////////////////////////////The Tail//////////////////////////////*/
 .tail {
-    width: 3.5em;
-    height: 3.5em;
+
     background-image: url('../img/tail.svg');
     background-repeat: no-repeat;
-    top: 9.8em;
-    left: 1.8em;
     position: absolute;
+    height: 4.5em;
+    left: 1.3em;
+    position: absolute;
+    top: 9.8em;
+    width: 3.5em;
+}
 
 
 
@@ -286,7 +289,7 @@ a:hover {
 .lefteyelid {
     width: 4em;
     height: 3em;
-    background-color:#ff99999;
+    background-color:#ff9999;
     background-repeat: no-repeat;
     top: 3.9em;
     left: 6.3em;
@@ -349,7 +352,7 @@ a:hover {
 .righteyelid {
     width: 2em;
     height: 3em;
-    background-color:#ff99999;
+    background-color:#ff9999;
     background-repeat: no-repeat;
     top: 3.9em;
     left: 12.3em;
