@@ -160,15 +160,15 @@ a:hover {
 
         /*//////////////////////////////The Tail//////////////////////////////*/
 .tail {
-
+    width: 3.5em;
+    height: 4.5em;
     background-image: url('../img/tail.svg');
     background-repeat: no-repeat;
-    position: absolute;
-    height: 4.5em;
+    top: 9.8em;
     left: 1.3em;
     position: absolute;
-    top: 9.8em;
-    width: 3.5em;
+
+
 }
 
 
