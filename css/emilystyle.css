@@ -285,10 +285,10 @@ a:hover {
 
 .lefteyelid {
     width: 4em;
-    height: 3em;
+    height: 3.1em;
     background-color:#ff9999;
     background-repeat: no-repeat;
-    top: 3.9em;
+    top: 4em;
     left: 6.3em;
     position: absolute;
      background-size:contain;
@@ -348,10 +348,10 @@ a:hover {
 
 .righteyelid {
     width: 2em;
-    height: 3em;
+    height: 3.1em;
     background-color:#ff9999;
     background-repeat: no-repeat;
-    top: 3.9em;
+    top: 4em;
     left: 12.3em;
     position: absolute;
      background-size:contain;
