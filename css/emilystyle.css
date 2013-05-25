@@ -162,6 +162,7 @@ a:hover {
 .tail {
     width: 3.5em;
     height: 4.5em;
+    background-size:contain;
     background-image: url('../img/tail.svg');
     background-repeat: no-repeat;
     top: 9.8em;
