@@ -67,6 +67,7 @@ and (max-device-width : 480px) {
 #main {
     margin: 0 auto;
     max-width: 840px;
+    min-width:320px;
     padding: 80px 20px;
     color: #333;
     font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
