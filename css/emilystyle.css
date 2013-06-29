@@ -417,16 +417,22 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
 
-#main h1{
-}
 
 
 #main {
     max-width: 480px;
     min-width: 320px;
     font-size:45px;
+    padding:10px 0px;
 
 
+
+}
+
+
+#main h1{
+    margin:0px auto;
+    font-size: 65px;
 }
 
 
