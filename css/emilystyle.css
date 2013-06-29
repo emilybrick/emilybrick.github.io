@@ -417,11 +417,16 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
 
+#main h1{i
+    margin-right:20px;
+}
+
 
 #main {
     max-width: 480px;
     min-width: 320px;
-    font-size:40px;
+    font-size:45px;
+    padding: 50px 30px;
 
 }
 
@@ -434,7 +439,13 @@ and (max-device-width : 480px) {
     font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
     font-style:normal;
     font-weight:700;
-    font-size:30px;
+    font-size:25px;
+
+}
+
+#letstalk a {
+
+   font-size:25px;
 
 }
 
@@ -442,6 +453,6 @@ and (max-device-width : 480px) {
     font-size:200%;
 }
 
-span {display:none;}
+.break {display:none;}
 
 }
