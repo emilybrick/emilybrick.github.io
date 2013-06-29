@@ -38,6 +38,30 @@ html {
     font-weight: 400;
     text-align: center;
 }
+
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+#myprojects a{
+    color: #ffffff;
+    text-decoration:none;
+    margin-right: 10px;
+    margin-left:10px;
+    transition: all 0.2s ease-in-out 0s;
+
+}
+
+}
+
+
+
+
+
+
+
 #links {
     font-size: 30px;
     text-transform: uppercase;
