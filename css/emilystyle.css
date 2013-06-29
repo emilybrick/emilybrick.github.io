@@ -45,6 +45,14 @@ html {
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
+
+
+
+
+#main {
+max-width: 480px;
+}
+
 #myprojects a{
     color: #ffffff;
     text-decoration:none;
