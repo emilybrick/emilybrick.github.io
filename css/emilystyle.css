@@ -47,8 +47,8 @@ and (max-device-width : 480px) {
 
 
 
-#main {
-    max-width:320px;
+#about {
+    width: 300px;
 }
 
 }
