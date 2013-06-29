@@ -47,19 +47,8 @@ and (max-device-width : 480px) {
 
 
 
-
-
 #main {
-max-width: 480px;
-}
-
-#myprojects a{
-    color: #ffffff;
-    text-decoration:none;
-    margin-right: 10px;
-    margin-left:10px;
-    transition: all 0.2s ease-in-out 0s;
-
+    max-width:320px;
 }
 
 }
