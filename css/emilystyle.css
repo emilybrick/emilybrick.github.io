@@ -417,8 +417,9 @@ and (max-width : 480px) {
     #main {
 
         font-size:45px;
-        padding:0px 0px;
+        padding:0px 12px;
         text-align:center;
+        margin-bottom:20px;
 
 
 
@@ -429,6 +430,15 @@ and (max-width : 480px) {
         margin:0px auto;
         font-size: 65px;
     }
+
+
+    #dogcontainer {
+    height: 19em;
+    width: 19em;
+    position:relative;
+    font-size:7px;
+    margin: 0 auto 0em auto;
+}
 
     .emily-brick {
         -moz-background-size: 100%;
