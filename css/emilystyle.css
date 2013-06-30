@@ -152,6 +152,10 @@ a:hover {
             display:none;
         }
 
+#wrapper {
+    text-align: center;
+}
+
 #dogcontainer {
     height: 14em;
     width:14em;
@@ -160,7 +164,7 @@ a:hover {
     margin: 0 auto;
     padding-bottom:8em;
     padding-right:3em;
-
+    display: inline;
 }
 
         /*//////////////////////////////The Tail//////////////////////////////*/
