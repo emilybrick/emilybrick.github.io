@@ -416,7 +416,7 @@ and (max-width : 480px) {
 
     #main {
 
-        font-size:45px;
+        font-size:36px;
         padding:0px 12px;
         text-align:center;
         margin-bottom:20px;
@@ -432,6 +432,8 @@ and (max-width : 480px) {
         margin:0px auto;
         font-size: 65px;
     }
+
+
 
 
     #dogcontainer {
@@ -456,6 +458,7 @@ and (max-width : 480px) {
 #about {
     margin-bottom: 20px;
     margin-top:10px;
+    font-size:22px;
 }
 
 
@@ -467,7 +470,7 @@ and (max-width : 480px) {
         font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
         font-style:normal;
         font-weight:700;
-        font-size:25px;
+        font-size:22px;
 
     }
 
