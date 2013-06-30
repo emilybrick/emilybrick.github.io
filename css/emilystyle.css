@@ -421,8 +421,10 @@ and (max-width : 480px) {
         text-align:center;
         margin-bottom:20px;
 
+    }
 
-
+    header {
+    margin-top: 1em;
     }
 
 
@@ -447,6 +449,7 @@ and (max-width : 480px) {
         background-size: 100%;
         width:90%;
         margin:0px auto;
+        padding-bottom:10px;
     }
 
 
