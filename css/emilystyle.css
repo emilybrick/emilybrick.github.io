@@ -435,7 +435,16 @@ and (max-width : 480px) {
         -webkit-background-size: 100%;
         -o-background-size: 100%;
         background-size: 100%;
+        width:90%;
+        margin:0px auto;
     }
+
+
+#about {
+    margin-bottom: 20px;
+    margin-top:10px;
+}
+
 
     #myprojects a{
 
