@@ -60,16 +60,26 @@ html {
 	margin-top:80px;
 
 }
-#main h1 {
-    font-family: "museo-sans-rounded-1","museo-sans-rounded-2";
-    color: #333;
-    font-size: 65px;
-    font-weight:900;
-    font-style:normal;
-    margin-bottom:20px;
 
+header {
+    margin-top: 2em;
+}
 
+#dogcontainer {
+    height: 14em;
+    width:14em;
+    position:relative;
+    font-size:7px;
+    margin: 0 auto 7em auto;
+/*    padding-bottom:8em;
+    padding-right:3em;*/
+}
 
+.emily-brick {
+    background: url('../img/emilybrick.svg') no-repeat center;
+    height: 70px;
+    text-indent: -9999em;
+    width: 100%;
 }
 
 #about {
@@ -151,16 +161,6 @@ a:hover {
         .talk-container:hover .talk{
             display:none;
         }
-
-#dogcontainer {
-    height: 14em;
-    width:14em;
-    position:relative;
-    font-size:7px;
-    margin: 0 auto;
-    padding-bottom:8em;
-    padding-right:3em;
-}
 
         /*//////////////////////////////The Tail//////////////////////////////*/
 .tail {
@@ -458,5 +458,3 @@ and (max-device-width : 480px) {
 }
 
 .break {display:none;}
-
-}
