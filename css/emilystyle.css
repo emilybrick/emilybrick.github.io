@@ -66,13 +66,11 @@ header {
 }
 
 #dogcontainer {
-    height: 14em;
-    width:14em;
+    height: 19em;
+    width: 19em;
     position:relative;
     font-size:7px;
     margin: 0 auto 7em auto;
-/*    padding-bottom:8em;
-    padding-right:3em;*/
 }
 
 .emily-brick {
@@ -418,43 +416,51 @@ and (max-device-width : 480px) {
 
 
 
-#main {
+    #main {
 
-    font-size:45px;
-    padding:0px 0px;
-    text-align:center;
-
-
-
-}
+        font-size:45px;
+        padding:0px 0px;
+        text-align:center;
 
 
-#main h1{
-    margin:0px auto;
-    font-size: 65px;
-}
+
+    }
 
 
-#myprojects a{
+    #main h1{
+        margin:0px auto;
+        font-size: 65px;
+    }
 
-    margin-bottom: 10px;
-    margin-top:10px;
-    display:block;
-    font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
-    font-style:normal;
-    font-weight:700;
-    font-size:25px;
+    .emily-brick {
+        -moz-background-size: 100%;
+        -webkit-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+    }
 
-}
+    #myprojects a{
 
-#letstalk a {
+        margin-bottom: 10px;
+        margin-top:10px;
+        display:block;
+        font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
+        font-style:normal;
+        font-weight:700;
+        font-size:25px;
 
-   font-size:25px;
+    }
 
-}
+    #letstalk a {
 
-#about  p{
-    font-size:200%;
-}
+       font-size:25px;
 
-.break {display:none;}
+    }
+
+    #about  p{
+        font-size:200%;
+    }
+
+    .break {display:none;}
+
+} /* end of mq's, don't delete me! */
