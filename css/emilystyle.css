@@ -420,8 +420,7 @@ and (max-device-width : 480px) {
 
 
 #main {
-    max-width: 480px;
-    min-width: 320px;
+
     font-size:45px;
     padding:10px 0px;
 
