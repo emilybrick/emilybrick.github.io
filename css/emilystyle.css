@@ -116,6 +116,13 @@ a:hover {
 
 }
 
+#company a{
+    color: #006666;
+    text-decoration:none;
+    transition: all 0.2s ease-in-out 0s;
+
+}
+
 #myprojects a:hover {
     color:#333;
 }
