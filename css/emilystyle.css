@@ -51,7 +51,7 @@ html {
     max-width: 840px;
     padding: 20px 20px;
     color: #333;
-    font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
+    font-family:"proxima-nova-alt-1","proxima-nova-alt-2";
     font-weight:300;
 }
 #main img {
@@ -61,7 +61,16 @@ html {
 }
 
 header {
-    margin-top: 2em;
+    margin-top: 10%;
+}
+
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color:#4E5353;
+
 }
 
 #dogcontainer {
@@ -84,99 +93,75 @@ header {
 }
 
 
-
-#myprojects {
-
-    margin-bottom: 40px;
-	margin-top:10px;
-    font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
-    font-style:normal;
-    font-weight:700;
-}
-
 .stuff {
     font-size: 50%;
+    font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
+    font-style: normal;
+    letter-spacing:.8px;
 
 }
 
 .stuff a {
-     color:#333;
+    color:#333;
     cursor: hand;
-     text-decoration: none;
+    text-decoration: none;
 
 }
 
 .stuff a:hover  {
 
-   color: #006666;
+   color: #227F86;
 
 }
 
 
 a {
-    color: #99EAF0;
+    color: #2F939B;
     transition: all 0.2s ease-in-out 0s;
 }
 a:hover {
     color: #343375;
 
 }
+
+
 #myprojects {
-    color: #006666;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing:1px;
+    color: #227F86;
 }
 
 #myprojects a{
-	color: #006666;
-	text-decoration:none;
     margin-right: 10px;
     margin-left:10px;
-    transition: all 0.2s ease-in-out 0s;
+    color: #227F86;
 
 }
 
 
 #myprojects a:hover {
     color:#333;
+    transition: all 0.2s ease-in-out 0s;
 }
+
 
 
 #letstalk a {
 
-       text-decoration:none;
-       color:#333;
-       transition: all 0.2s ease-in-out 0s;
-       font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
-        font-style:normal;
-        font-weight:700;
-
-
+    font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
+    font-style: normal;
+    letter-spacing:.8px;
 }
 
 #letstalk a:hover {
-
-
+    color:#227F86;
 }
 
-.talk-container {
-            display: block;
-            position: relative;
-            transition: all 0.2s ease-in-out 0s;
 
-        }
-        .email {
-            bottom: 0;
-            content:'brick.emily@gmail.com';
-            display:none;
-
-        }
-        .talk-container:hover .email{
-            display:block;
-             color: #006666;
-
-        }
-        .talk-container:hover .talk{
-            display:none;
-        }
 
         /*//////////////////////////////The Tail//////////////////////////////*/
 .tail {
@@ -483,7 +468,7 @@ and (max-width : 480px) {
 
     #myprojects a{
 
-        margin-bottom: 10px;
+        margin-bottom: 40px;
         margin-top:10px;
         display:block;
         font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
