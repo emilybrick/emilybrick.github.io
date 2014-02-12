@@ -420,11 +420,12 @@ and (max-width : 480px) {
 
 
     #main {
-
         font-size:36px;
         padding:0px 12px;
         text-align:center;
         margin-bottom:20px;
+        font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
+        font-style:normal;
 
     }
 
