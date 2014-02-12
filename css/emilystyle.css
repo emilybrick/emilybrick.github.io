@@ -39,7 +39,9 @@ html {
     text-align: center;
 }
 
-
+html, body {
+    font-family:"proxima-nova-alt-1","proxima-nova-alt-2";
+}
 
 
 #links {
@@ -51,7 +53,6 @@ html {
     max-width: 840px;
     padding: 20px 20px;
     color: #333;
-    font-family:"proxima-nova-alt-1","proxima-nova-alt-2";
     font-weight:300;
 }
 #main img {
