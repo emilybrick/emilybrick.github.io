@@ -39,7 +39,9 @@ html {
     text-align: center;
 }
 
-
+html, body {
+    font-family:"proxima-nova-alt-1","proxima-nova-alt-2";
+}
 
 
 #links {
@@ -51,7 +53,6 @@ html {
     max-width: 840px;
     padding: 20px 20px;
     color: #333;
-    font-family:"proxima-nova-alt-1","proxima-nova-alt-2";
     font-weight:300;
 }
 #main img {
@@ -67,7 +68,7 @@ header {
 h1 {
     font-size: 54px;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 900;
     letter-spacing: 1px;
     color:#4E5353;
 
@@ -419,11 +420,12 @@ and (max-width : 480px) {
 
 
     #main {
-
         font-size:36px;
         padding:0px 12px;
         text-align:center;
         margin-bottom:20px;
+        font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
+        font-style:normal;
 
     }
 
@@ -440,11 +442,12 @@ and (max-width : 480px) {
     h1 {
         font-size: 38px;
         text-transform: uppercase;
-        font-weight: 800;
+        font-weight: 900;
         letter-spacing: 1px;
         color: #4E5353;
         margin-top: 20px;
         margin-bottom: 20px;
+
     }
 
 
