@@ -437,6 +437,16 @@ and (max-width : 480px) {
         font-size: 65px;
     }
 
+    h1 {
+        font-size: 38px;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: #4E5353;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
 
 
 
@@ -468,19 +478,18 @@ and (max-width : 480px) {
 
     #myprojects a{
 
-        margin-bottom: 40px;
         margin-top:10px;
         display:block;
         font-family: "proxima-nova-alt-1","proxima-nova-alt-2";
         font-style:normal;
         font-weight:700;
-        font-size:22px;
+        font-size:19px;
 
     }
 
     #letstalk a {
 
-       font-size:25px;
+       font-size:19px;
 
     }
 
