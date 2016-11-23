@@ -1,0 +1,32 @@
+
+.fill-peach     { background-color:     $fill-peach; }
+.fill-gold      { background-color:      $fill-gold; }
+.fill-blueberry { background-color: $fill-blueberry; } 
+.fill-pewter    { background-color:    $fill-pewter; }
+
+.svg-fill-peach     { fill:     $fill-peach; }
+.svg-fill-gold      { fill:      $fill-gold; }
+.svg-fill-blueberry { fill: $fill-blueberry; } 
+.svg-fill-pewter    { fill:    $fill-pewter; }
+
+.text-blueberry { color: $text-blueberry; } 
+
+.link-blueberry { 
+  color: $link-blueberry;
+  position: relative;
+
+  &:after { 
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: $fill-gold;
+    left: 0;
+    right: 0;
+    bottom: .15em;
+    z-index: -999;
+  }
+
+  &:hover {
+    color: $link-gold;
+  }
+} 
