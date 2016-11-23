@@ -1,0 +1,17 @@
+
+
+@include generate-breakpoint-prefixes {
+
+  &text-large {
+    font-size: 3rem !important;
+  }
+  
+  &text-medium {
+    font-size: 2rem !important;
+  }
+
+};
+
+.body-leading {
+  line-height: 1.5; 
+}
