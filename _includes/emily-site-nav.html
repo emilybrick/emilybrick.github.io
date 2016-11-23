@@ -1,5 +1,7 @@
-<div class="flex sans-type caps xs-my3 xs-mx5">
-  <a class="xs-mr3 xs-text-5" href="#">About</a>
-  <a class="xs-mr3 xs-text-5" href="#">Resume</a>
-  <a class="xs-mr3 xs-text-5" href="#">Projects</a>
+<!-- header with nav links -->
+
+<div class="flex sans-type caps xs-mt3 xs-mb4 sm-mb3">
+  <a href="/" class="{% if page.url == '/' %} active {% endif %} xs-mr3 xs-text-5 link-blueberry">About</a>
+  <a href="/resume" class="{% if page.url == '/resume.html' %} active {% endif %} xs-mr3 xs-text-5 link-blueberry" >Resumé</a>
+  <a href="/projects" class="{% if page.url == '/projects.html' %} active {% endif %} xs-mr3 xs-text-5 link-blueberry">Projects</a>
 </div>

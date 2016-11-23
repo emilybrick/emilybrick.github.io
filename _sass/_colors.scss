@@ -11,9 +11,10 @@
 
 .text-blueberry { color: $text-blueberry; } 
 
-.link-blueberry { 
+.link-blueberry-underline { 
   color: $link-blueberry;
   position: relative;
+  white-space: nowrap;
 
   &:after { 
     content: "";
@@ -26,7 +27,23 @@
     z-index: -999;
   }
 
+}
+
+.link-blueberry, .link-blueberry-underline {
+
   &:hover {
     color: $link-gold;
   }
-} 
+}
+
+
+a.active {
+
+  &.link-blueberry {
+    color: $link-gold;
+
+    &:hover {
+      color: $link-blueberry;
+    }
+  }
+}
