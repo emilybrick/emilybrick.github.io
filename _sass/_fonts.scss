@@ -12,7 +12,5 @@
   font-stretch: normal;
 }
 
-.slab-type { font-family: "adobe-garamond-pro", "Book Antiqua", Palatino, serif; }
-
-
-.sans-type { font-family: "brandon-grotesque", "Trebuchet MS", Helvetica, sans-serif; }
+.slab-type { font-family: $slab-type; }
+.sans-type { font-family: $sans-type; }

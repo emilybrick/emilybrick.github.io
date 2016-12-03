@@ -17,3 +17,8 @@ $text-blueberry: $fill-blueberry;
 // Link Colors
 $link-blueberry: $fill-blueberry;
 $link-gold: $fill-gold;
+
+
+// Fonts: these are !important to override Solid's font-family: inherit property
+$sans-type: "brandon-grotesque", "Trebuchet MS", Helvetica, sans-serif !important;
+$slab-type: "adobe-garamond-pro", "Book Antiqua", Palatino, serif      !important;
