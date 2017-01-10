@@ -1,19 +1,25 @@
 .post {
 
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $sans-type;
+    margin-bottom: $space-2;
+  }
 
   p {
     font-size: $text-3;
     line-height: 1.5;
-    max-width: 800px;
+    margin: 0 0 $space-2;
   }
 
 
-
-
-
-
-
-
+  img { 
+    border-radius: $border-radius;
+    margin: $space-3 0;
+  }
 
 
 }
