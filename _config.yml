@@ -9,7 +9,7 @@
 title: Emily's Site
 description: Emily Brick is currently a Senior Product Designer at BuzzFeed, where she focuses on the Site experience and CSS styleguide.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://emilybrick.me" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
