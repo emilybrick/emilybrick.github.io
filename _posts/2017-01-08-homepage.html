@@ -1,0 +1,227 @@
+---
+layout: post
+title: BuzzFeed Tasty
+
+---
+
+<div class="xs-mx-auto md-mt4 xs-col-12 md-col-8 xs-block clearfix">
+  
+  <!-- Intro -->
+  <h1> BuzzFeed Homepage Redesign: Phase I </h1>
+  <p>In January of 2016, my team started exploring the future of the BuzzFeed landing pages (or the buzz “feeds”, if you’re feeling cheeky). The homepage had changed very little over the last half-a-decade, and was no longer able to fit the needs of the changing media landscape. Even so, the page was still a staple of the BuzzFeed brand, with it's quirky clutter and abrupt approach to content. We knew reimagining it would be a huge effort across the entire organization. The homepage touched every team, from video, to editorial, to advertising, and tech.</p>
+  <div class="clearfix">
+    <div class="col xs-col-12 md-col-8"><img class="xs-border-lighter" src="/css/images/hp/hp-desktop-intro-img.png"></div>
+    <div class="col xs-col-12 sm-col-9 md-col-4 md-pl3"><img class="xs-border-lighter" src="/css/images/hp/hp-mobile-intro-img.png"></div>
+  </div>
+  <p>While working to define the goals of the project, a recurring theme kept coming up: flexibility. We wanted the new homepage to be flexible in the sense that it should work in many different contexts (as a homepage feed, as a feed that lives underneath articles, and as a feed that could work for specific categories (e.g. BuzzFeed quizzes). We also wanted to be able to change the technology powering the feed without relying on a design change.</p>
+  <p>Additionally, the experience should be flexible in the sense that it should scale, literally, to any breakpoint without compromising the experience. Flexibility meant a lot of things to us at the time, and felt appropriate to pin down as one of the core components of this redesign.</p>
+
+  <p class="bold xs-mb1 xs-block">Legacy BuzzFeed Homepage on Desktop & Mobile</p>
+
+  <div class="clearfix">
+    <div class="col xs-col-12 md-col-9"><img class="xs-border-lighter" src="/css/images/hp/hp-desktop-legacy.png"></div>
+    <div class="col xs-col-12 sm-col-9 md-col-3 md-pl3"><img class="xs-border-lighter" src="/css/images/hp/hp-mobile-legacy.png"></div>
+  </div>
+
+  <p class="bold xs-mb1">Phases of the project</p>
+  <p>We set out to figure out what the future of the homepage could look like, and how we would get there.</p>
+
+  <img class="xs-col-12 md-col-5 element-inset" src="/css/images/hp/hp-design-process.png">
+
+ <ul class="xs-mb4 md-mb5 xs-text-3 body-leading">
+  <li class="xs-mb1">Define the problem</li>
+  <li class="xs-mb1">Explore possible solutions</li>
+  <li class="xs-mb1">Refine the strongest solution</li>
+  <li class="xs-mb1">Build</li>
+  <li class="xs-mb1">Learn what worked and what didn't</li>
+</ul>
+
+  <!-- Define -->
+  <div class="xs-border-top-lighter xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt4 md-mt5">Defining the Problem</h2>
+
+    <p class="xs-mb1 bold">Problems with the Current Homepage Feed</p>
+    <ul class="xs-mb3 xs-text-3 body-leading">
+      <li class="xs-mb1">Content in the feed was surfaced via human curation and reverse-chronology, which limited our ability to experiment with more algorithmic and dynamic ways of serving content to the page. This was due to the fact that the homepage and core landing page feeds (such as Buzzfeed.com/quizzes) had a 1:1 relationship with our CMS where content was getting published.</li>
+      <li class="xs-mb1">The page wasn’t responsive, which meant we were building and designing for two entirely different experiences. This slowed down our teams’ workflow and put tablet-size experiences on the backburner.</li>
+      <li class="xs-mb1">We were limited to serving only static image previews & text to the page, rather than integrating mixed media (such as videos and gifs).</li>
+    </ul>
+
+    <p class="xs-mb1 bold">Strengths with the Current Homepage Feed</p>
+    <ul class="xs-mb3 xs-text-3 body-leading">
+      <li class="xs-mb1">While not dynamic, the rev-chron flow of “buzz” content feels up-to-date and fresh.</li>
+      <li class="xs-mb1">Content density</li>
+      <li class="xs-mb1">Trending content performed well, and became a strong part of the BuzzFeed brand.</li>
+    </ul>
+
+    <p class="xs-mb1 bold">Main Goals of the New Webapp Feed:</p>
+    <ul class="xs-mb3 xs-text-3 body-leading">
+      <li class="xs-mb1">A feed of content powered by smart & dynamic content algorithms</li>
+      <li class="xs-mb1">A modular & responsive layout that can easily reflect data learnings</li>
+      <li class="xs-mb1">Ability to integrate mixed media into the feed (such as gifs)</li>
+      <li class="xs-mb1">Balancing content density with a clearly communicated hierarchy</li>
+      <li class="xs-mb1">Goals that followed shortly after we began exploring:</li>
+        <ul>
+          <li class="xs-mb1">The ability to bundle groups of content, both topical (David Bowie’s Death) and categorical (BuzzFeed Animals)</li>
+          <li class="xs-mb1">Ability to surface hand-curated content at the top of the feed, primarily news.</li>
+          <li>Portray breaking news when necessary</li>
+        </ul>
+    </ul>
+
+    <p class="italic xs-mb1">A side note about the desktop & mobile platforms:</p>
+
+    <p>Ideally, we knew we were setting out to create a seamlessly responsive experience (something the old homepage did not support). The said, we weren’t primarily focused on the mobile homepage at the start of this project. Traffic to the homepage skewed towards desktop users, and the majority of BuzzFeed’s mobile web traffic (at the time) revolved around article views (users tapping through to articles from Facebook)</p>
+
+    <p>But I say this with a huge grain of salt! We didn’t want to dismiss a great mobile web experience. It was really about adapting the homepage feed in context. For example: how could we surface an algorithmic feed underneath a mobile article, so that when a user is done reading they’ll continue to engage with our content? At the same time, creating a responsive page tailored itself to making sure the experience felt good across all breakpoints.</p>
+  </div>
+
+  <!-- Exploring -->
+  <div class="xs-border-top-lighter clearfix xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt4 md-mt5">Exploring the Problem</h2>
+    <p>I began exploring some potential solutions, playing with layout and hierarchy. I collaborated with my PM and the product designer focusing on the native app experience to whiteboard out some quick and dirty flows from the start.</p>
+    <p class="bold xs-mb1">Questions & Thoughts To Keep In Mind</p>
+    <p class="italic xs-mb05">How can we make the page useful & memorable for folks, so that they want to return?</p>
+    <p class="italic xs-mb05">How can we ensure that our users will find what they’re looking for? How does unexpected discovery play into this?</p>
+    <p class="italic xs-mb05">How can we take the most advantage of the innovative formats our editors create?  What about unknown formats that haven’t been discovered yet?</p>
+    <p class="italic xs-mb05">Are we able to incorporate ever-changing media needs to fit this landscape?</p>
+    <p class="italic">What’s the right news/entertainment balance? What kind of content will perform well? How can we easily test this?</p>
+
+    <p class="bold xs-mb1">Early Sketches</p>
+    <h3 class="text-red sans-type">IMAGE GOES HERE</h3>
+
+    <p class="bold xs-mb1">Low Touch Experiments and Current Engagement</p>
+    <p>While we were in the explore mode for the future of the homepage, we shipped some quick, lo-touch experiments on the legacy homepage. One of these tests incorporated inline youtube video embeds in the main left-column feed. We also pulled numbers to see what was working and where there were opportunities for improvement. Based on what we were seeing, the large top story unit and trending stories seemed to win out over the other types of content on the page.</p>
+    <img class="xs-hide md-block" src="/css/images/hp/hp-low-touch-experiment.jpg">
+    <img class="xs-block md-hide" src="/css/images/hp/hp-low-touch-experiment-mobile.jpg">
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">Testing inline video in the feed</p>
+    
+
+    <p>We also tested inline (or "in feed") video on video specific pages devoted to BuzzFeed Motion Picture shows, such as the Try Guys and Broke. We were able to see an uptick in session length and video engagement, which was helpful to validate our in-feed video claims earlier rather than later.</p>
+
+    <p class="bold xs-mb1">Low Fidelity Sketch Mocks</p>
+    <h3 class="text-red sans-type">IMAGE GOES HERE</h3>
+
+
+    <p class="bold xs-mb1">Bundling Content</p>
+    <p>A strong need arose at this stage revolving around how to showcase bundled content (a grouping of related content) vs a feed of “standalone” (or unbundled) content being served by our algorithms. We wanted the technology that served bundles to be flexible. A bundle of content could be topical, such as “Thanksgiving Hacks”, or more permanent, like BuzzFeed Quizzes. We also wanted to keep in mind the context which these content bundles were appearing. It should fit easily within a feed, without relying on a surrounding static page layout to work.</p>
+    <h3 class="text-red sans-type">IMAGE GOES HERE</h3>
+
+    <h3 class="text-red sans-type">GITHUB PROTOS</h3>
+
+    <p class="bold xs-mb1">Introducing Cards and a 2-Column Desktop Approach</p>
+    <p>We also started playing around with the idea of using a card pattern to bundle content. For the mobile exploration, I tried using a card for each module in the feed. Cards fit pretty well ideologically within the “flexibility” theme. A card approach to the content would allow for an easily manipulated, modular feed that could easily mold to different breakpoints.</p>
+    <p>After playing around with different modular desktop layouts, it also became clear that a 2-column approach to a desktop layout could work to our advantage. It would allow us to focus on a primary or “main” feed that would easily mirror the mobile design. It would also allow us to use the right or “side” column for bundled content.</p>
+    <img class="xs-border-lighter" src="/css/images/hp/hp-card-pattern.jpg"/>
+
+    <p class="bold xs-mb1">Scaling the page</p>
+    <p>After pushing the 2-column approach further, I started to expore how the page would scale down. We wanted a great experience regardless of your viewport or device. Although the left column was considered the primary content, we didn't want to lose the secondary content on mobile and compromise the experience. We decided to fold those units into the main rail on mobile. For certain experiences, like the trending module – the mobile experience would become a horizontal scrolling carousel on mobile.</p>
+
+    <video class="xs-mb3 rounded" width="100%" autoplay="autoplay" loop >
+      <source src="/css/images/hp/homepage-feed-mvp.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    
+
+    <p class="bold xs-mb1">Transitioning to other pages from the homepage</p>
+    <p>We spent a bit of time exploring the ecosystem of feed pages and how our users would transition from the homepage to other feeds, etc.</p>
+    <img class="xs-mb05" src="/css/images/hp/hp-feed-transition.jpg">
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">An overview of some flows between the homepage and other category pages. We ran with the idea that a content package on the homepage could drive directly to its' respective category page.</p>
+    <img class="col xs-col-12" src="/css/images/hp/hp-feed-transition_sketch_2.png">
+    <img class="col xs-col-12" src="/css/images/hp/hp-feed-transition_sketch_1.png">
+
+    <p>I played with a few animations to test out ideas, going along with a “single page app” idea. We were going for seamless experience, where browsing to a new category wouldn't cause a page reload. I wanted to push the animation boundaries, but it was important to keep in mind that any transition should be helpful and/or non-intrusive – but never distracting.</p>
+
+    <video class="xs-mb3 xs-border-lighter rounded" width="100%" autoplay="autoplay" loop >
+      <source src="/css/images/hp/hp-feed-transition_1.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <video class="xs-mb05 xs-border-lighter rounded" width="100%" autoplay="autoplay" loop >
+      <source src="/css/images/hp/hp-feed-transition_2.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">Quick and dirty prototypes to demonstrate desktop transitions</p>
+  
+  </div>
+    
+  
+  <!-- Refining -->
+  <div class="xs-border-top-lighter clearfix xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt4 md-mt5">Refining The Design</h2>
+    <p>When refining the page, we pushed the 2-column layout that allowed for a primary column and secondary column. This approach felt versatile to desktop and mobile and would allow for much more flexibility than we currently had. This primary column would utilize the new feed algorithm, and the secondary column would support more permanent or manually curated units (such as news content).
+
+    <p class="xs-mb1 bold">Scoping Down</p>
+    <p>After a few rounds of exploration, we decided to table content packages until after the MVP launch. We didn't have the technology to support grouping specific pieces of content together and manually injecting those groups into our algorithmic feed. In lieu of that, we decided that the top 3-4 cards in the feed would be manually curated by editors, and would likely be news content.</p>
+    <p>We also pushed back on the idea of transitioning to other feeds (such as buzzfeed.com/videos) at the time. We weren't comfortable migrating our other feed pages to this design at the same time we launched the homepage, and decided to tackle those interactions when we got there.</p>
+
+    <div class="clearfix xs-block xs-mb4">
+      <img class="col xs-col-12 md-col-8 xs-border-lighter" src="/css/images/hp/hp_desktop_refine_v1.jpg">
+      <div class="col xs-col-12 md-col-4 md-pl3"><img class="xs-border-lighter" src="/css/images/hp/hp_mobile_refine_v1.jpg"></div>
+    </div>
+
+    <p class="xs-mb1 bold xs-block">User Research</p>
+
+    <p>We did a couple rounds of user testing with a prototype that reflected the current state of the desktop page. The majority of the people who came in were web and mobile web BuzzFeed users. We were mainly hoping to get an understanding of how people felt when engaging with current homepage versus the new homepage. We asked them to verbally evaluate which pieces of the site stood out throughout the process. We kept it fairly open-ended, and weren't planning on overhauling the entire page at this stage. However, we were interested in smoke-testing and making sure we weren't missing something vital or hurting expectations.</p>
+    <p>Video came up throughout the sessions, people really enjoyed seeing inline videos directly in the feed. Many mentioned seeking videos out when visiting the existing homepage. The users really seemed to enjoy being able to easily find trending content, on both the old and new page.</p>
+
+    <img class="xs-border-lighter xs-mb05" src="/css/images/hp/hp-feed-user-testing.jpg"/>
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">An HTML prototype built for user testing</p>
+
+    <p>Many people were vocal about the yellow circular "badges" in the navigation, and also preferred having them directly in the feed (which we removed in the new experience). The "thumbstrip" at the top of the old homepage was percieved as trending content, even though it technically wasn't. Regardless, many people also preferred that in the old experience. The old homepage experience was generally regarded as cluttered or hard to easily scan.</p>
+    <p>It was noted that having a cleaner navigation felt easier to parse. Many mentioned that it was inviting to scroll and easily scannable, due to a cleaner page. A few people mentioned the trending content being too far down on the page. We took note of the major pieces mentioned, and have moved a few projects up the pipeline to answer those needs.</p>
+
+    <img class="xs-col-12 xs-mb05" src="/css/images/hp/hp-old-thumbstrip.png">
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">The thumbstrip on the legacy BuzzFeed homepage</p>
+    <img class="xs-col-12 xs-mb05" src="/css/images/hp/hp-new-thumbstrip.png">
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">The new thumbstrip, built using Solid by the homepage team in Fall of 2016</p>
+  </div>
+
+  <!-- Building -->
+  <div class="xs-border-top-lighter clearfix xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt4 md-mt5">Building</h2>
+    <p>We began building towards the first a/b test of the page to our US audience.</p>
+    <p>To start, we made a few mid & high fidelity prototypes using a gh-pages prototype repository. This allowed us to share a URL out to stakeholders with a repo that we could consistently update (without cluttering the BuzzFeed webapp).</p>
+    <p>It also helped us to understand which pieces of the page could be componentized, and which things we could style using Solid.</p>
+    <p>Having a few easily-spun-up prototypes in this stage was really helpful. Not only were the prototypes interactive and easy to share, but because of the prototypical environment they lived in, we didn’t feel bad throwing away or changing components. It was a low barrier to try out different versions of the same modules, and quick to throw up on a domain.</p>
+    <p>Once the editorial and product stakeholders were happy with the state of the prototype, we built the first iteration of the homepage. I collaborated with the engineers on the team to architect the page. We were able to use Solid for the majority of the page, and custom styles where necessary.</p>
+    <img class="xs-border-lighter xs-mb05" src="/css/images/hp/hp-v1-build.png">
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">Breaking news from the election on one of the first homepage tests</p>
+
+    <img class="xs-col-12 md-col-9 xs-border-lighter xs-mb05" src="/css/images/hp/hp-build_v2.png">
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">The homepage feed as it would appear without breaking content</p>
+
+  </div>
+
+  <!-- Learning -->
+  <div class="xs-border-top-lighter clearfix xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt4 md-mt5">Learnings</h2>
+    <p>We shipped the first build of the new homepage as an a/b test to a small portion of our US audience in the spring of 2016. As I went on to work on a new web experience for BuzzFeed Tasty, my colleage Allison picked the project up as the designer on it moving forward.</p>
+    <p class="bold xs-mb1">Rethinking The BuzzFeed Hompepage: Phase II</p>
+    <p>As soon as there was statistical data back from the first test, it was time to loop through the design process again: <span class="xs-block"><span class="text-red bold">Learn</span> → Define → Explore → Refine → Build → Learn</span></p>
+    <p>The team continued testing and adjusting the design accordingly until clear performance gains were signifigant. They took the learnings of each test and refined the UX as well as responding to new emerging needs for a stronger news presence on the page. The team also worked diligently to prioritize the page around BuzzFeed News in time for the 2016 Presidential Election.  I’m so incredibly proud of everyone that touched this project. It was a highly collaborative effort amongst the tech and editorial teams at BuzzFeed.</p>
+    <img class="xs-block xs-mb0" src="/css/images/hp/hp-learn-v1.png">
+  </div>
+
+  <a class="element-inset xs-col-12 md-col-3 flex xs-flex-align-center xs-flex-justify-center button button--blueberry sans-type xs-mb5" href="https://www.buzzfeed.com/" download>See It Live
+    <svg class="xs-ml1 svg-6 svg-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
+      <title>Caret right</title>
+      <path d="M11.5 36c-.5 0-1-.2-1.4-.6-.8-.8-.8-2 0-2.8L23.7 19 10.1 5.4c-.8-.8-.8-2 0-2.8.8-.8 2-.8 2.8 0L29.3 19 12.9 35.4c-.4.4-.9.6-1.4.6z"/>
+    </svg>
+  </a>
+
+
+
+   
+  
+
+ 
+  
+  
+  
+  
+  
+  
+  
+
+
+</div>
+

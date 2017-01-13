@@ -1,4 +1,5 @@
 .button--blueberry {
   @include button-style($fill-blueberry, $text-white, $fill-blueberry, $text-white);
   font-family: $sans-type;
+  letter-spacing: .0125rem;
 }

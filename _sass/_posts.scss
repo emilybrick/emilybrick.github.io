@@ -6,19 +6,27 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: $sans-type;
-    margin-bottom: $space-2;
+    margin: 0 6rem $space-3 6rem;
   }
 
   p {
     font-size: $text-3;
     line-height: 1.5;
-    margin: 0 0 $space-2;
+    margin: 0 6rem $space-3 6rem;
+  }
+
+  li {
+    margin: 0 6rem;
   }
 
 
   img { 
     border-radius: $border-radius;
-    margin: $space-3 0;
+    margin: 0 0 $space-3;
+  }
+
+  .element-inset {
+    margin: 0 6rem;
   }
 
 
