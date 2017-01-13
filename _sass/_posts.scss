@@ -6,17 +6,28 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: $sans-type;
-    margin: 0 6rem $space-3 6rem;
+    margin-bottom: $space-3;
+    
+    @include solid-breakpoint("lg") {
+     margin: 0 6rem $space-3 6rem;
+    }
   }
 
   p {
     font-size: $text-3;
     line-height: 1.5;
-    margin: 0 6rem $space-3 6rem;
+    margin-bottom: $space-3;
+
+    @include solid-breakpoint("lg") {
+      margin: 0 6rem $space-3 6rem;
+    }
   }
 
   li {
-    margin: 0 6rem;
+
+    @include solid-breakpoint("lg") {
+      margin: 0 6rem;
+    }
   }
 
 
@@ -26,7 +37,10 @@
   }
 
   .element-inset {
-    margin: 0 6rem;
+
+    @include solid-breakpoint("lg") {
+      margin: 0 6rem;
+    }
   }
 
 
