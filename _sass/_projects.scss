@@ -1,4 +1,34 @@
 .project-card {
   height: 250px;
   min-height: 250px;
+  background-color: $fill-white;
+  color: $text-blueberry;
+}
+
+.project-card--wip {
+
+  .soon {
+    display: none;
+  }
+
+  &:hover {
+    background-color: $fill-gold;
+    color: $text-white;
+
+    .soon {
+      display: block;
+    }
+
+    h2, a, p {
+      display: none;
+    }
+
+  }
+}
+
+.eyes-emoji {
+  font-size: 1.4em;
+  padding: 4px;
+  top: 4px;
+  position: relative;
 }

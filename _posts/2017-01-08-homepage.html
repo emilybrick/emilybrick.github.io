@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BuzzFeed Tasty
+title: BuzzFeed Homepage
 
 ---
 
@@ -25,17 +25,9 @@ title: BuzzFeed Tasty
 
   <p class="bold xs-mb1">Phases of the project</p>
   <p>We set out to figure out what the future of the homepage could look like, and how we would get there.</p>
-
-  <img class="xs-col-12 md-col-5 element-inset" src="/css/images/hp/hp-design-process.png">
-
- <ul class="xs-mb4 md-mb5 xs-text-3 body-leading">
-  <li class="xs-mb1">Define the problem</li>
-  <li class="xs-mb1">Explore possible solutions</li>
-  <li class="xs-mb1">Refine the strongest solution</li>
-  <li class="xs-mb1">Build</li>
-  <li class="xs-mb1">Learn what worked and what didn't</li>
-</ul>
-
+  <p>Because of the size and potential scope of this project, it was important that we were deliberate and intentional when phasing the different parts of the process. We set out to follow a process cycle that would allow for the right amount of definition, exploration, and reflection:
+  <span class="xs-block xs-mt1">Define → Explore → Refine → Build → Learn</span></p>
+  <img class="xs-col-12 md-col-5 element-inset xs-my4" src="/css/images/hp/hp-design-process.png">
   <!-- Define -->
   <div class="xs-border-top-lighter xs-mb4 md-mb5">
     <h2 class="xs-text-1 xs-mt4 md-mt5">Defining the Problem</h2>
@@ -72,7 +64,7 @@ title: BuzzFeed Tasty
 
     <p>Ideally, we knew we were setting out to create a seamlessly responsive experience (something the old homepage did not support). The said, we weren’t primarily focused on the mobile homepage at the start of this project. Traffic to the homepage skewed towards desktop users, and the majority of BuzzFeed’s mobile web traffic (at the time) revolved around article views (users tapping through to articles from Facebook)</p>
 
-    <p>But I say this with a huge grain of salt! We didn’t want to dismiss a great mobile web experience. It was really about adapting the homepage feed in context. For example: how could we surface an algorithmic feed underneath a mobile article, so that when a user is done reading they’ll continue to engage with our content? At the same time, creating a responsive page tailored itself to making sure the experience felt good across all breakpoints.</p>
+    <p class="xs-mb0">But I say this with a huge grain of salt! We didn’t want to dismiss a great mobile web experience. It was really about adapting the homepage feed in context. For example: how could we surface an algorithmic feed underneath a mobile article, so that when a user is done reading they’ll continue to engage with our content? At the same time, creating a responsive page tailored itself to making sure the experience felt good across all breakpoints.</p>
   </div>
 
   <!-- Exploring -->
@@ -87,7 +79,13 @@ title: BuzzFeed Tasty
     <p class="italic">What’s the right news/entertainment balance? What kind of content will perform well? How can we easily test this?</p>
 
     <p class="bold xs-mb1">Early Sketches</p>
-    <h3 class="text-red sans-type">IMAGE GOES HERE</h3>
+    <div class="clearfix">
+      <img class="xs-col-12" src="/css/images/hp/hp-sketch_3.png">
+      <img class="col xs-col-12 md-pr1 md-col-4" src="/css/images/hp/hp-sketch_1.png">
+      <img class="col xs-col-12 md-px05 md-col-4" src="/css/images/hp/hp-sketch_2.png">
+      <img class="col xs-col-12 md-pl1 md-col-4" src="/css/images/hp/hp-sketch_4.png">
+    </div>
+
 
     <p class="bold xs-mb1">Low Touch Experiments and Current Engagement</p>
     <p>While we were in the explore mode for the future of the homepage, we shipped some quick, lo-touch experiments on the legacy homepage. One of these tests incorporated inline youtube video embeds in the main left-column feed. We also pulled numbers to see what was working and where there were opportunities for improvement. Based on what we were seeing, the large top story unit and trending stories seemed to win out over the other types of content on the page.</p>
@@ -111,7 +109,7 @@ title: BuzzFeed Tasty
     <p>After playing around with different modular desktop layouts, it also became clear that a 2-column approach to a desktop layout could work to our advantage. It would allow us to focus on a primary or “main” feed that would easily mirror the mobile design. It would also allow us to use the right or “side” column for bundled content.</p>
     <img class="xs-border-lighter" src="/css/images/hp/hp-card-pattern.jpg"/>
 
-    <p class="bold xs-mb1">Scaling the page</p>
+    <p class="bold xs-mb1">Making It Responsive</p>
     <p>After pushing the 2-column approach further, I started to expore how the page would scale down. We wanted a great experience regardless of your viewport or device. Although the left column was considered the primary content, we didn't want to lose the secondary content on mobile and compromise the experience. We decided to fold those units into the main rail on mobile. For certain experiences, like the trending module – the mobile experience would become a horizontal scrolling carousel on mobile.</p>
 
     <video class="xs-mb3 rounded" width="100%" autoplay="autoplay" loop >
@@ -137,8 +135,7 @@ title: BuzzFeed Tasty
       <source src="/css/images/hp/hp-feed-transition_2.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
-    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">Quick and dirty prototypes to demonstrate desktop transitions</p>
-  
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb0 lg-pr6">Quick and dirty prototypes to demonstrate desktop transitions</p>
   </div>
     
   
@@ -170,7 +167,7 @@ title: BuzzFeed Tasty
     <img class="xs-col-12 xs-mb05" src="/css/images/hp/hp-old-thumbstrip.png">
     <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">The thumbstrip on the legacy BuzzFeed homepage</p>
     <img class="xs-col-12 xs-mb05" src="/css/images/hp/hp-new-thumbstrip.png">
-    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">The new thumbstrip, built using Solid by the homepage team in Fall of 2016</p>
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb0 lg-pr6">The new thumbstrip, built using Solid by the homepage team in Fall of 2016</p>
   </div>
 
   <!-- Building -->
@@ -178,15 +175,13 @@ title: BuzzFeed Tasty
     <h2 class="xs-text-1 xs-mt4 md-mt5">Building</h2>
     <p>We began building towards the first a/b test of the page to our US audience.</p>
     <p>To start, we made a few mid & high fidelity prototypes using a gh-pages prototype repository. This allowed us to share a URL out to stakeholders with a repo that we could consistently update (without cluttering the BuzzFeed webapp).</p>
-    <p>It also helped us to understand which pieces of the page could be componentized, and which things we could style using Solid.</p>
-    <p>Having a few easily-spun-up prototypes in this stage was really helpful. Not only were the prototypes interactive and easy to share, but because of the prototypical environment they lived in, we didn’t feel bad throwing away or changing components. It was a low barrier to try out different versions of the same modules, and quick to throw up on a domain.</p>
-    <p>Once the editorial and product stakeholders were happy with the state of the prototype, we built the first iteration of the homepage. I collaborated with the engineers on the team to architect the page. We were able to use Solid for the majority of the page, and custom styles where necessary.</p>
     <img class="xs-border-lighter xs-mb05" src="/css/images/hp/hp-v1-build.png">
     <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">Breaking news from the election on one of the first homepage tests</p>
-
-    <img class="xs-col-12 md-col-9 xs-border-lighter xs-mb05" src="/css/images/hp/hp-build_v2.png">
-    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">The homepage feed as it would appear without breaking content</p>
-
+    <p>It also helped us to understand which pieces of the page could be componentized, and which things we could style using Solid.</p>
+    <p>Having a few easily-spun-up prototypes in this stage was really helpful. Not only were the prototypes interactive and easy to share, but because of the prototypical environment they lived in, we didn’t feel bad throwing away or changing components. It was a low barrier to try out different versions of the same modules, and quick to throw up on a domain.</p>
+    <img class="element-inset xs-col-12 md-col-9 xs-border-lighter xs-mb05" src="/css/images/hp/hp-build_v2.png">
+    <p class="xs-col-12 xs-text-5 italic text-gray lg-pr6">The homepage feed as it would appear without breaking content</p>
+    <p class="xs-mb0">Once the editorial and product stakeholders were happy with the state of the prototype, we built the first iteration of the homepage. I collaborated with the engineers on the team to architect the page. We were able to use Solid for the majority of the page, and custom styles where necessary.</p>
   </div>
 
   <!-- Learning -->
@@ -197,7 +192,14 @@ title: BuzzFeed Tasty
     <p>As soon as there was statistical data back from the first test, it was time to loop through the design process again: <span class="xs-block"><span class="text-red bold">Learn</span> → Define → Explore → Refine → Build → Learn</span></p>
     <img class="xs-block xs-mb05 xs-border-lighter" src="/css/images/hp/hp-learn-v1.png">
     <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">The current homepage after a few rounds of iteration</p>
-    <p>The team continued testing and adjusting the design accordingly until clear performance gains were signifigant. They took the learnings of each test and refined the UX as well as responding to new emerging needs for a stronger news presence on the page. The team also worked diligently to prioritize the page around BuzzFeed News in time for the 2016 Presidential Election.  I’m so incredibly proud of everyone that touched this project. It was a highly collaborative effort amongst the tech and editorial teams at BuzzFeed.</p>
+    <p class="bold xs-mb1">Implementing The New Stack On Other Pages</p>
+    <p>After rolling out the homepage, we ported over other category pages to the new stack as well. Each page has rolled out as an a/b test against it's respective legacy page before going to 100% exposure.</p>
+    <div class="clearfix">
+      <div class="col xs-col-12 md-col-8"><img class="xs-border-lighter" src="/css/images/hp/hp-quizzes-desktop.png"></div>
+      <div class="col xs-col-12 sm-col-9 md-col-4 md-pl3"><img class="xs-border-lighter" src="/css/images/hp/hp-video-mobile.png"></div>
+    </div>
+    <p class="xs-mb0">The team continued testing and adjusting the design accordingly until clear performance gains were signifigant. They took the learnings of each test and refined the UX as well as responding to new emerging needs for a stronger news presence on the page. The team also worked diligently to prioritize the page around BuzzFeed News in time for the 2016 Presidential Election.  I’m so incredibly proud of everyone that touched this project. It was a highly collaborative effort amongst the tech and editorial teams at BuzzFeed.</p>
+
   </div>
 
   <a class="element-inset xs-col-12 md-col-3 flex xs-flex-align-center xs-flex-justify-center button button--blueberry sans-type xs-mb5" href="https://www.buzzfeed.com/" download>See It Live
