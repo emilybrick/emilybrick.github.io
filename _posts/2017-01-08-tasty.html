@@ -22,7 +22,7 @@ title: BuzzFeed Tasty
     <p>What <span class="italic">did</span> exist before we embarked on this journey was a turn-key BuzzFeed "user page" retrofitted to display Tasty content. This original Tasty page spewed out a reverse chronological list of video links as a desktop-only experience.</p>
     <img class="xs-border-lighter xs-block xs-mb1" src="/css/images/tasty/tasty-legacy.png" />
     <p class="xs-text-5 italic text-gray">Screenshot of the original Tasty page, using BuzzFeed's user page template.</p>
-    <p>We knew that BuzzFeed-created content that performed well on Facebook performed (relatively) well on BuzzFeed. Due to this knowledge and to Tasty's success on our distributed platforms, we made the hypothesis that there was worth in creating a great discovery experience for Tasty on the site.</p>
+    <p>We knew BuzzFeed content that performed well on Facebook performed relatively well on BuzzFeed. Due to this knowledge and to Tasty's success on our distributed platforms, we made the hypothesis that there was value in creating a great discovery experience for Tasty on the site.</p>
     <p class="xs-mt4 bold xs-mb05">Goals</p>
     <ul class="xs-text-3 body-leading">
       <li class="xs-mb1">Improve the content discovery experience on buzzfeed.com/tasty</li>
@@ -130,10 +130,7 @@ title: BuzzFeed Tasty
       Your browser does not support HTML5 video.
     </video>
     <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 xs-text-left md-text-right xs-ml0">Tasty filters, or category feeds</p>
-
-    <img class="xs-col-12 xs-border-lighter" src="/css/images/tasty/tasty-hero-filters.png">
-    <img class="xs-col-12 xs-border-lighter xs-mb05" src="/css/images/tasty/tasty-hero-filters_2.png">
-    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4">Tasty filters in conjunction with the full-bleed hero branding</p>
+    <img class="xs-col-12 xs-border-lighter" src="/css/images/tasty/tasty-hero-filters_2.png">
 
     <p>I pushed the page's branding further and worked to tweak the modules surrounding the core feed, as well as the native video player. However, we ultimately decided to <span class="bold">remove</span> the full-bleed hero image. It wasn’t doing much for the experience other than reinforcing where you were, and we were confident that we could achieve that in a more streamlined way. Through user surveys we uncovered that the Tasty brand was recognizable via the content style alone, and coupled with smaller branding moments it felt sufficient. It was more important that the user be able to dive directly into the content.</p>
 
@@ -157,7 +154,8 @@ title: BuzzFeed Tasty
 
     <p>Keying off modules from the new homepage, we implemented a “Trending on Tasty” module that showed our top performing videos from Facebook. We also incorporated a newsletter to improve retention and Facebook “like” card to target users who may not have come via the Facebook page.</p>
 
-    <div class="xs-col-12 clearfix"><img class="xs-border-lighter xs-mb05" src="/css/images/tasty/tasty_ship_v1_desktop_modules.png"></div>
+    <div class="xs-col-12 clearfix"><img class="xs-border-lighter" src="/css/images/tasty/tasty_ship_v1_desktop_modules.png"></div>
+    <div class="xs-col-12 clearfix"><img class="xs-border-lighter xs-mb05" src="/css/images/tasty/tasty_ship_v2_desktop_modules.png"></div>
     <p class="xs-col-12 xs-text-5 italic text-gray xs-mb0">The native video player, article cards, and social widgets</p>
   </div>
 
@@ -167,8 +165,8 @@ title: BuzzFeed Tasty
     <h2 class="xs-text-1 xs-mt4 md-mt5">Shipping It <span class="xs-pl05">🚢</span></h2>
     <p>I began building the front-end as the squad's engineer worked diligently to incorporate new data endpoints and hook the new feed algorithms into Tasty’s core feed.</p>
     <p>Working with <a href="solid.buzzfeed.com">Solid</a> in an entirely new stack (using a Mono repo in Rig!) made UI engineering pretty seamless. We launched responsive page in June of 2016.</p>
-    <div class="col xs-col-12 md-col-9 md-pr2"><img class="xs-border-lighter" src="/css/images/tasty/tasty_ship_v1_desktop.png"></div>
-    <div class="col xs-col-12 md-col-3 md-pl1"><img class="xs-border-lighter xs-mb0" src="/css/images/tasty/tasty_ship_v1_mobile.png"></div>
+    <div class="col xs-col-12 md-col-9 md-pr1"><img class="xs-border-lighter" src="/css/images/tasty/tasty_ship_v1_desktop.png"></div>
+    <div class="col xs-col-12 md-col-3 md-pl2"><img class="xs-border-lighter xs-mb0" src="/css/images/tasty/tasty_ship_v1_mobile.png"></div>
   </div>
 
   <!-- Learning -->
@@ -181,7 +179,7 @@ title: BuzzFeed Tasty
       <li class="xs-mb1">We cut down our CSS by almost 2/3!</li>
       <li class="xs-mb1">Decreased load time of the page</li>
       <li class="xs-mb1">Looking at a 1:1 relationship with our old articles, new article cards got higher CTR. However, CTR overall was lowered due to inline videos (users watching videos in the feed instead of tapping to an article.</li>
-      <li>Users were looking for a way to search content. Though expected, hearing directly from users via qualitative research helped prioritize search faster than we anticipated</li>
+      <li>Users were looking for a way to search content. Though we anticipated the feature request, hearing directly from users helped prioritize search faster than we anticipated</li>
     </ul>
   </div>
 
@@ -189,16 +187,29 @@ title: BuzzFeed Tasty
   <div class="xs-border-top-lighter xs-mb4 md-mb5 clearfix">
     <h2 class="xs-text-1 xs-mt4 md-mt5">Follow Ups</h2>
     <p class="bold xs-mb1">Tasty Search</p>
+    <div class="xs-col-12"><img class="xs-border-lighter" src="/css/images/tasty/tasty_ship_search_desktop.png"></div>
     <p class="xs-mb1">The Tasty search experience really merits its own case study, but at a very high level:</p>
     <ul class="xs-mb3 xs-text-3 body-leading">
-      <li class="xs-mb1">Did a round of explorations to uncover different directions this could take. The biggest challenge was making it clear that a user could <span class="bold">not</span> search within a filter, or vice versa.</li>
+      <li class="xs-mb1">We did a round of explorations to uncover different directions this could take. The biggest challenge was making it clear that a user could <span class="bold">not</span> search within a filter, or vice versa.</li>
       <li class="xs-mb1">Ran two user testing sessions: uncovered that hiding search behind a magnifying glass icon wasn’t the best solution.</li>
       <li class="xs-mb1">Refined down to one solution to ship and test with</li>
-      <li class="xs-mb1">Decided to scope down and build MVP front-end search (basically searching against a JSON of Tasty videos) before building out a more powerful search backend.We did this to gain more confidence validate the claims that search would have impactful gains, before embarking on more involved tech.
+      <li class="xs-mb1">Decided to scope down and build a lightweight front-end search (basically searching against a JSON of Tasty videos) before building out a more powerful search backend. We did this to gain more confidence and validate the claims that search would have impactful gains, before embarking on more involved tech.
       </li>
     </ul>
 
-    <p class="bold xs-mb1">Other things the team has accomplished</p>
+    <div class="clearfix xs-col-12">
+
+      <div class="col md-col-6 md-pr1">
+        <img class="xs-border-lighter" src="/css/images/tasty/tasty_ship_search_mobile.png">
+      </div>
+
+      <div class="col md-col-6 md-pl1">
+        <img class="xs-border-lighter" src="/css/images/tasty/tasty_ship_search_mobile.gif">
+      </div>
+
+    </div>
+
+    <p class="bold xs-mb1">Other Follow Ups</p>
 
     <ul class="xs-mb3 xs-text-3 body-leading">
       <li class="xs-mb1">Launched a text-only filter bar a/b test</li>
