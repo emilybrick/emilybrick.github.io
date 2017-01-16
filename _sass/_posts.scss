@@ -43,5 +43,19 @@
     }
   }
 
+}
 
+// Back To Top Button
+.back-to-top {
+  position: fixed;
+  padding: 1em;
+  bottom: 3rem;
+  right: 3rem;
+  display: none;
+  border: 3px solid #fff;
+
+  & svg {
+   position: relative;
+   bottom: 1px;
+  }
 }

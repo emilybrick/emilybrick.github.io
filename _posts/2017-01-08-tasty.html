@@ -4,7 +4,7 @@ title: BuzzFeed Tasty
 
 ---
 
-<div class="xs-mx-auto md-mt4 xs-col-12 md-col-8 xs-block clearfix">
+<div class="xs-mx-auto md-mt2 xs-col-12 md-col-8 xs-block clearfix">
   
   <!-- Intro -->
   <h1>BuzzFeed Tasty</h1>
@@ -118,7 +118,7 @@ title: BuzzFeed Tasty
     <p>We revisited the problem we were trying to solve. It was clear that giving our users a curated experience for Tasty content meant two things: focusing on search & discovery.</p>
     <p>Because we weren't rolling out content packages as part of the MVP, we aimed for a more streamlined approach: curated content feeds. The curated feeds would still revolve around specific themes, but wouldn't tie us up in determining how to tightly package and serve those feeds on the Tasty homepage.</p>
     <p>It made sense to tie this idea to search, since both pieces of UI contributed to the discovery experience</p>
-    <img class="xs-col-12 md-col-9 element-inset" src="/css/images/tasty/tasty-search-hifi_2.png" >
+    <img class="xs-col-12 md-col-9 xs-mb3 element-inset" src="/css/images/tasty/tasty-search-hifi_2.png" >
 
     <p class="xs-block bold xs-mb1">Tabling search for the MVP</p>
     <p class="xs-block">At this stage, we decided to scope the project down for the initial launch. It became apparent that implementing Tasty search functionality would push back the launch date for Tasty quite a bit. While we knew launching without search would be a compromise, we’d still be launching a responsive page with inline videos and curated content experiences – which were vast improvements to the existing experience.</p>
@@ -171,29 +171,36 @@ title: BuzzFeed Tasty
 
   <!-- Learning -->
   <div class="xs-border-top-lighter xs-mb4 md-mb5 clearfix">
-    <h2 class="xs-text-1 xs-mt4 md-mt5">Learning</h2>
+    <h2 class="xs-text-1 xs-mt4 md-mt5">Learnings</h2>
     <p>We looked at both quantitative and qualitative data after about 4-5 weeks. We hypothesized that some of the traffic in the early weeks could be due to PR and marketing surrounding launch, and didn't use those early numbers when synthesizing the data.</p>
 
     <p class="xs-mb1">A few high level learnings:</p>
     <ul class="xs-text-3 body-leading">
-      <li class="xs-mb1">We cut down our CSS by almost 2/3!</li>
-      <li class="xs-mb1">Decreased load time of the page</li>
-      <li class="xs-mb1">Looking at a 1:1 relationship with our old articles, new article cards got higher CTR. However, CTR overall was lowered due to inline videos (users watching videos in the feed instead of tapping to an article.</li>
-      <li>Users were looking for a way to search content. Though we anticipated the feature request, hearing directly from users helped prioritize search faster than we anticipated</li>
+      <li class="xs-mb1">Cut down our CSS by almost 2/3</li>
+      <li class="xs-mb1">Cut down on the page load time</li>
+      <li class="xs-mb1">Our new article cards got higher CTR, when looking at a 1:1 relationship with the old page. 
+        <ul><li class="xs-ml1">However, CTR overall was lowered due to inline videos (users watching videos in the feed instead of tapping to an article.</li></ul></li>
+      <li>Users sought out search functionality. 
+        <ul><li class="xs-ml1">Though we anticipated the feature request, hearing directly from users helped prioritize search faster than we anticipated</li></ul></li>
     </ul>
   </div>
 
   <!-- Follow Ups -->
   <div class="xs-border-top-lighter xs-mb4 md-mb5 clearfix">
     <h2 class="xs-text-1 xs-mt4 md-mt5">Follow Ups</h2>
-    <p class="bold xs-mb1">Tasty Search</p>
+    <p class="bold xs-mb3">Tasty Search</p>
     <div class="xs-col-12"><img class="xs-border-lighter" src="/css/images/tasty/tasty_ship_search_desktop.png"></div>
     <p class="xs-mb1">The Tasty search experience really merits its own case study, but at a very high level:</p>
     <ul class="xs-mb3 xs-text-3 body-leading">
-      <li class="xs-mb1">We did a round of explorations to uncover different directions this could take. The biggest challenge was making it clear that a user could <span class="bold">not</span> search within a filter, or vice versa.</li>
-      <li class="xs-mb1">Ran two user testing sessions: uncovered that hiding search behind a magnifying glass icon wasn’t the best solution.</li>
+      <li class="xs-mb1">Did a round of explorations to uncover different directions <ul><li class="xs-ml1">The biggest challenge was making it clear that a user could <span class="bold">not</span> search within a filter, or vice versa.</li></ul></li>
+
+      <li class="xs-mb1">Ran two user testing sessions
+      <ul><li class="xs-ml1">Uncovered that hiding search behind an icon was confusing and less inviting that surfacing it at the forefront</li></ul></li>
+
       <li class="xs-mb1">Refined down to one solution to ship and test with</li>
-      <li class="xs-mb1">Decided to scope down and build a lightweight front-end search (basically searching against a JSON of Tasty videos) before building out a more powerful search backend. We did this to gain more confidence and validate the claims that search would have impactful gains, before embarking on more involved tech.
+
+      <li class="xs-mb1">Decided to scope down and build a lightweight front-end search (basically searching against a JSON of Tasty videos) as an MVP. 
+      <ul><li class="xs-ml1">We did this to gain more confidence and validate the claims that search would have impactful gains, before embarking on more involved tech.</li></ul>
       </li>
     </ul>
 
