@@ -25,7 +25,7 @@ title: BuzzFeed Solid
 
     <p>At the same time, all of these new and different styles in conjunction with our legacy styles meant a lot of bloated CSS. Evolving a feature or fixing a styling bug became difficult, because it was nearly impossible to understand or troubleshoot which styles were getting applied where. Though we continued to chip away at our old CSS, we didn't want that to stop us from evolving the website.</p>
 
-    <p>To tie it all together, we noticed the collaborative efforts between design and engineering was lacking. We often worked in silos from each other, and communicated only via specs or tickets in Jira. We knew that wanted to experiment with a process that brought engineers closer to the product and designers closer to code.</p>
+    <p>We noticed the collaborative efforts between design and engineering were lacking. We often worked in silos from each other, and communicated only via specs or tickets in Jira. We knew that wanted to experiment with a process that brought engineers closer to the product and designers closer to code.</p>
 
     <p>I wouldn’t say we built Solid in order to get designers coding, but having a library and shared language across design and engineering has been invaluable to us.</p>
 
@@ -38,7 +38,7 @@ title: BuzzFeed Solid
     <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">A screenshot of the component library in progress when I first joined the team</p>
 
     <p>There were a couple problems from the start. One, the engineering team was working on this with almost no input from design. How did they know which UI should be componentized, which UI was here to stay? What about things that needed to be modified?</p>
-    <p>Secondly, the library wasn’t exactly living up to its promise, even in the its early days.</p>
+    <p>Second, the library wasn’t exactly living up to its promise, even in the its early days.</p>
 
     <p class="xs-mb3 bold">A component in its purest state was fairly self-contained.</p>
 
@@ -64,19 +64,19 @@ title: BuzzFeed Solid
     </div>
     <p class="xs-col-12 xs-text-5 text-gray xs-mb4 lg-pr6"><span class="italic xs-mr1">The amount of CSS we needed to append onto the original styles to achieve the modified variant styling</span>😭</p>
  
-    <p class="xs-mb0">Having brittle components just wasn't giving us the flexibility we needed. There are many ways we could have solved component modification, some of which we still consider today. Regardless, it was clear we needed to move away from this. The root of the problem was that design and engineering weren’t aligned on the future of the BuzzFeed’s UI. I felt like I was in a unique position, seeing both sides of the coin. Engineering wanted stability, and design wanted flexibility.</p>
+    <p class="xs-mb0">Having brittle components just wasn't giving us the flexibility we needed. There were many ways we could have solved component modification, some of which we still consider today. Regardless, it was clear we needed to move away from this. The root of the problem was that design and engineering weren’t aligned on the future of the BuzzFeed’s UI. I felt like I was in a unique position, seeing both sides of the coin. Engineering wanted stability, and design wanted flexibility.</p>
   </div>
 
   <!-- Exploring -->
   <div class="xs-border-top-lighter clearfix xs-mb4 md-mb5">
     <h2 class="xs-text-1 xs-mt4 md-mt5">Exploring Possibilities</h2>
-    <p>Regardless of the library debate, we still wanted to push designers to get in the code. I came from a small team, where I was responsible for the design & front-end. I was fully behind the benefits of a collaborative cross-discipline environment.</p>
+    <p>Regardless of the library debate, we still wanted designers to get in the code. I came from a small team, where I was responsible for the design & front-end. I was fully behind the benefits of a collaborative cross-discipline environment.</p>
     <p>We started playing around with <a target="_blank" href="http://basscss.com/">BassCSS</a>, a functional CSS styleguide, and found to be a really nice way of spinning up new designs. Not only that, but BassCSS is written in a way that makes it easy and non-intimidating for designers to pick up. Being able to use it in our own prototypes inspired us think differently about how we write and consider CSS.</p>
     <p>We decided to get a small group of designers and engineers to sit together weekly, and begin discussing different ways of tackling our CSS problems.</p>
     <p>The key to success here was choosing the right people to start the conversation. Anyone who expressed interest could join, but we really wanted those key engineers involved in the initial component library in the room.</p>
     <img class="xs-col-12 xs-mb05" src="/css/images/solid/team.png">
     <p class="xs-col-12 italic xs-text-5 text-gray xs-mb4 lg-pr6">The original Solid team</p>
-    <p>The final negotiation revolved around using a functional CSS library over a more systemic BEM-like approach. Functional CSS can be described a few different ways, but it basically revolves around: tightly scoped, single responsibility classes. Functional styles should be immutable, or not easily overwritten.</p>
+    <p>The final negotiation revolved around using a functional CSS library over a more systemic BEM-like approach. Functional CSS can be described a few different ways, but it basically revolves around tightly scoped, single responsibility classes. Functional styles should be immutable, or not easily overwritten.</p>
     <p class="xs-mb0">Aside from playing around in BassCSS, we started reading up on other libraries tackling the same problems, such as <a target="_blank" href="http://tachyons.io/">Tachyons</a>, and <a target="_blank" href="http://rizzo.lonelyplanet.com/styleguide/design-elements/colours">Lonely Planet</a>.</p>
   </div>
 
@@ -111,7 +111,7 @@ title: BuzzFeed Solid
     <p>It was serendipitous in a way; we were able to get our first  “users” to try out the product during Hackweek. We also got a ton of feedback on the first iteration of the product, as well as buy-in from engineers.</p>
     <img class="xs-mb05 xs-border-lighter element-inset" src="/css/images/solid/buzzmaps-hackweek.png" alt="">
     <p class="xs-col-12 xs-text-5 text-gray xs-mb4 lg-pr6 italic">"Buzz Maps", a hackweek project built with Solid's first Beta release</p>
-    <p>We spent the next 4-6 months refining the documentation and styles. The first public project we tested Solid on was Buzzfeed.com/news - where we were able to drastically reduce the amount of CSS and page weight.</p>
+    <p>We spent the next 4-6 months refining the documentation and styles. The first public project we tested the Beta release on was Buzzfeed.com/news. We were able to drastically reduce the amount of CSS and page weight. We also added it onto smaller independent pieces of the CMS.</p>
     <img class="xs-mb05 xs-border-lighter" src="/css/images/solid/release-notes.png" alt="">
     <p class="xs-col-12 xs-text-5 text-gray xs-mb4 lg-pr6 italic">Documenting breaking changes was especially important when starting out with internal use, since we were evolving and iterating at a rapid pace.</p>
   </div>
@@ -122,7 +122,7 @@ title: BuzzFeed Solid
     <img class="xs-border-lighter xs-col-12" src="/css/images/solid/colors.png" >
     <p>A year after launching Solid publicly, we’ve been able to ship a suite of new pages, as well as iterate on them painlessly. Learn more about why we made Solid public <a href="https://medium.com/buzzfeed-design/why-we-made-solid-public-7fed52e7fca4#.6dsh6m3jy">here</a>.</p>
 
-    <p>We implemented Solid on the new homepage, BuzzFeed Tasty, and more recently our Quizzes and Videos page. We’re currently implementing it on our article pages, while we port them over to a responsive layout.</p>
+    <p>We implemented Solid on the new homepage, BuzzFeed Tasty, and a few newer category pages. We’re currently in the process of implementing the styles on article pages while we port them over to a responsive layout.</p>
 
     <img class="xs-border-lighter xs-col-12" src="/css/images/solid/quizzes.png" >
 
@@ -130,7 +130,7 @@ title: BuzzFeed Solid
 
     <ul class="xs-mb3 xs-text-3 body-leading">
       <li class="xs-mb1">Designers and engineers are working together! We have a common language to talk about UI</li>
-      <li class="xs-mb1">Designers are coding (Solid makes intro’ing designers to CSS a lot simpler)</li>
+      <li class="xs-mb1">Designers are coding (Solid makes introducing designers to CSS a lot simpler)</li>
       <li class="xs-mb1">Engineers in turn are embracing their product and design instincts</li>
       <li class="xs-mb1">Pages are responsive & faster</li>
       <li class="xs-mb1">Code is easier to manage</li>
@@ -146,7 +146,7 @@ title: BuzzFeed Solid
 
     <img class="xs-border-lighter" src="/css/images/solid/component-messaging.png" >
 
-    <p>At the end of the day we’re able ship things quicker, communicate smarter, iterate easier, all without adding tons of CSS to our codebase. At the most basic level, Solid is only what it needs to be for each product we make. Though it was built first and foremost for BuzzFeed, it’s open to the public for anyone to play with (check out the link below to try it for yourself!). I’m really excited to see what comes of Solid and the future of design systems across the board.</p>
+    <p>At the end of the day we’re able ship things quicker, communicate smarter, and iterate easier (all without adding tons of CSS to our codebase). At the most basic level, Solid is only what it needs to be for each product we make. Though it was built first and foremost for BuzzFeed, it’s open to the public for anyone to play with (check out the link below to try it for yourself!). I’m really excited to see what comes of Solid and the future of design systems across the board.</p>
 
     <p class="xs-mb0 bold">Role</p>
     <p>Product design & development</p>
