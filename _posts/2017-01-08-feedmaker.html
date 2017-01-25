@@ -56,8 +56,8 @@ title: BuzzFeed FeedMaker
 
     <p class="xs-mb1">The main pieces of functionality that the tool was able to accomplish:</p>
     <ul class="xs-mb3 xs-text-3 body-leading">
-      <li class="xs-mb1">Ability to search all of BF Video content</li>
-      <li class="xs-mb1">Ability to search all of BF Video shows (The Try Guys, Tasty, etc.)</li>
+      <li class="xs-mb1">Ability to search all of BuzzFeed Video content</li>
+      <li class="xs-mb1">Ability to search all of BuzzFeed Video shows (The Try Guys, Tasty, etc.)</li>
       <li class="xs-mb1">Ability to add a new BuzzFeed video show</li>
       <li class="xs-mb1">Ability to delete a show</li>
       <li class="xs-mb1">Ability to reorder content within a show feed, as well as reorder the show feeds themselves (which would change how the shows appear on the Video App's home feed).</li>
@@ -91,12 +91,12 @@ title: BuzzFeed FeedMaker
     <img class="xs-mb05" src="/css/images/feedmaker/original-metadata-modal.png" >
     <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 xs-text-left xs-ml0">Dialogue that appears in VideoDeck before publishing a feed. It requires the curator to add avatars, tags, and other pieces of referential information.</p>
 
-    <p>It wasn't that the metadata modal and what was inside of it couldn't be modeled off of VideoDeck. But reusing existing UI in this case was hurting our cause, not helping it. We pivoted a bit to try something new.</p>
+    <p>It wasn't that the metadata modal and what was inside of it couldn't be modeled off of VideoDeck. But reusing existing UI was hurting our cause, not helping it. We pivoted a bit to try something new.</p>
 
     <p class="bold xs-mb1">Switching Gears to Cut Scope: Tagged Content Feeds</p>
     <p>Still wary of time & engineering constraints, we took a step back. There were two ways we anticipated generating a feed. One, the editor could manually curate and populate the content of a feed by searching/adding posts and videos against the entire BuzzFeed library.</p>
     <p>Two, we could generate feeds based on tags. For example, an editor could create a Thanksgiving Hacks feed by adding a #thanksgivinghacks tag to the page. This option was slightly more automated, but still required editors to tag content from the CMS as they were publishing it. If an editor published a post for the Thanksgiving Hacks feed, they would need to tag the post in the CMS before publishing or go back and retroactively tag the post.</p>
-    <p>The second option won out, as it felt like more a streamlined solution. It didn't involve any manual curation on the feed generation side. At this point, the product manager working closely with the team still felt it best to scope whenever possible, and pushed for the metadata UI to stay in a modal. 
+    <p>The second option won out, as it felt like more a scalable solution. It didn't involve any manual curation on the feed generation side.
     </p>
     <p>With this in mind, I took an exploratory pass at a "tag" feed flow that was of a more bare-bones approach than what we were previously considering. It was basically an omnibox to search all feed tags, and the editor could combine different tags to generate a feed. It was lacking some key aspects that the tool needed, such as metadata and the abilty to have a "primary" feed tag (versus multiple tags of the same hierarchy).</p>
 
@@ -142,7 +142,7 @@ title: BuzzFeed FeedMaker
 
     <p>We took the first pass at using empty states to imply that you could add multiple feed filters, with at least 3 being the requirement to ensure that there would be a variety of filters within a primary feed.</p>
 
-    <p>We fleshed out each state of the flow and built a first pass in a live prototyping environment. We sat with editors to walk through the tool and get their thoughts. They suggested copy tweaks to mirror the verbiage they were already using. We also talked about the meaning of circle avatars versus square avatars. Circle avatars indicated users, not brands. Because all feeds were considered "brands" at an abstract level, we decided to swap the avatar shape to squares.</p>
+    <p>I fleshed out each state of the flow and built a first pass in a live prototyping environment. When we sat down with editors to walk through the tool and get their thoughts, they suggested copy tweaks to mirror the verbiage they were already using. We debated around the meaning of circle avatars versus square avatars. Circle avatars indicated users, not brands. Because all feeds were considered "brands" at an abstract level, we decided to swap the avatar shape to squares.</p>
 
     <p>Sitting and talking with editors also shed light on the lack of hierarchy. It was unclear what to tackle first, and many got confused that the title was somehow indicating a primary tag, and so on.</p>
 
