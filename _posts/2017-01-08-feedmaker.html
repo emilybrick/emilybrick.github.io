@@ -1,0 +1,182 @@
+---
+layout: post
+title: BuzzFeed FeedMaker
+
+---
+
+<div class="xs-mx-auto md-mt2 xs-col-12 md-col-8 xs-block clearfix">
+  
+  <!-- Intro -->
+  <h1>FeedMaker</h1>
+  <p>Around the time that Tasty picked up speed, BuzzFeed's editorial team started experimenting with other types of centralized content, such as Goodful and Nifty. 
+  </p>
+  <p>These brands were taking off on social media, but we didn't have a destination for them on the homepage (similar to a Tasty, before we built BuzzFeed.com/Tasty). Using a page structure and IA similar to Tasty would have been ideal, although we didn't want to build each page as a one-off product. This was time-consuming and hard to keep consistent. We wanted a system or ecosystem of feeds that we could easily spin up when editorial wanted to pitch a new brand. 
+  </p>
+  <p>In order to do that, we needed to create a tool to allow editors to curate and generate feeds, and then publish them to the site. Having a turnkey tool for this would free up engineering time and ease editorial needs faster and more seamlessly. 
+  </p>
+  <p>Some feed pages revolved around categories, such as Goodful or Nifty. But a feed page could also serve as a centralized place for more newsworthy content, such as The 2016 Election, or Carrie Fisher’s death.</p>
+  
+  <div class="element-inset">
+    <img class="xs-block xs-mb05" src="/css/images/feedmaker/sample-feed.png">
+  </div>
+  <p class="element-inset xs-text-5 italic text-gray xs-mb4 xs-text-left">A low fidelity example of what a "feed" is.</p>
+
+
+  <p>A couple feeds of content using the newer stack included the BuzzFeed homepage and BuzzFeed Tasty. We got to work talking to the editorial team, to understand their needs and wishes. There was a range of different use-cases for feeds, but it all  came back to the central idea of building a tool for editors to create, publish, and maintain feed pages on BuzzFeed owned and operated properties.
+  </p>
+
+  <img class="xs-block xs-mb05" src="/css/images/feedmaker/whiteboard.png">
+  <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 xs-text-left xs-ml0">A quick and dirty whiteboarding session to determine the scope of the project.</p>
+
+  <div class="xs-border-top-lighter xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt4 md-mt5">Problems, Strengths, and Goals</h2>
+
+    <p class="xs-mb1 bold">The Problem</p>
+    <p>There was no easy way to quickly spin up and publish a new feed of content to the BuzzFeed site.</p>
+
+    <p class="xs-mb1 bold">What Was Working</p>
+    <p>Although Tasty and the HP were built as custom experiences, we could leverage those page structures as a model for newer feeds. BuzzFeed already had a few tools in place that handled feed curation and generation in other parts of the company (such as our Video App’s feed curation tool).</p>
+
+    <p class="xs-mb1 bold">The Goal</p>
+    <p>To create a turnkey tool that editors could use to generate and publish new feeds to BuzzFeed. The product should be able to generate unique and shareable URLs off of the BuzzFeed domain and maintain all of the amenities that our new stack offered. These amenities included inline video, a responsive layout, and the ability to utilize an algorithm or reverse chronology to display the content.</p>
+
+    <p class="xs-mb1 bold">Scope</p>
+    <p>Once we aligned on the concept of a turnkey tool, we began discussing technical constraints and our timeline. It was clear after talking to stakeholders and product that the scope and timeline would need to be tight.</p>
+    <p>Editors already had a few brands up on social media that they were eager to bring back to the site. At the same time, the news editorial team wanted to utilize the tool for the 2016 election, which was only a few months out. On top of that, we wanted to ship an MVP and learn how editorial was using it before fleshing out a more verbose product.</p>
+    <p>Because the scope was so tight, one of the Product Managers on the project suggested that we try to leverage the feed curation tool that was already being used to curate our Video App.</p>
+  </div>
+
+  <div class="xs-border-top-lighter xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt4 md-mt5">Exploration</h2>
+    <p class="xs-mb1 bold">Understanding the Video App Curation Tool</p>
+    <p>VideoDeck, the tool being used to serve content to the Video App, had been built a year before the app's launch. It was – for the most part – shipped without any design input. I didn’t have much context for the tool itself, so I spent a couple of weeks talking to curators on the Video team to understand how they were using it.</p>
+
+    <div class="element-inset"><img class="xs-block xs-mb05 md-pr3" src="/css/images/feedmaker/videoapp.png"></div>
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 xs-text-left">BuzzFeed's Video App show feed and trending shows.</p>
+
+    <p class="xs-mb1">The main pieces of functionality that the tool was able to accomplish:</p>
+    <ul class="xs-mb3 xs-text-3 body-leading">
+      <li class="xs-mb1">Ability to search all of BF Video content</li>
+      <li class="xs-mb1">Ability to search all of BF Video shows (The Try Guys, Tasty, etc.)</li>
+      <li class="xs-mb1">Ability to add a new BuzzFeed video show</li>
+      <li class="xs-mb1">Ability to delete a show</li>
+      <li class="xs-mb1">Ability to reorder content within a show feed, as well as reorder the show feeds themselves (which would change how the shows appear on the Video App's home feed).</li>
+      <li class="xs-mb1">Ability to add or remove content from within a show feed</li>
+      <li>Ability to add metadata to an individual piece of content or show</li>
+    </ul>
+
+    <img class="xs-border-lighter xs-block xs-mb05" src="/css/images/feedmaker/videodeck.png">
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 xs-text-left xs-ml0">VideoDeck, the CMS for BuzzFeed's native Video App.</p>
+
+    <p>VideoDeck mirrored our needs quite closely, aside from a few extra pieces of functionality (for example, there was no need to reorder feeds, just the content within them).</p>
+    <p>VideoDeck was not handling mixed-media content feeds (hence, "Video App"). That is, the ability to integrate both articles and videos into a feed (and eventually other forms of content, such as polls or Gifs).</p>
+    <p class="bold xs-mb1">Leveraging VideoDeck for FeedMaker</p>
+    <p>Because of the scope, we planned on recycling quite a bit of the front-end, and back-end, and add new functionality where needed. Keeping some parity in the UI design was brought up as part of the MVP objective. Curators were already comfortable with VideoDeck, and onboarding them to a similar (but more powerful) feed generation tool would be less painful than starting from scratch.</p>
+    <p>We took a couple of "scrappy" passes the first flow, using the existing UI for wireframes.</p>
+
+    <img class="xs-block xs-mb05 md-pr3" src="/css/images/feedmaker/videodeck-feedmaker.png">
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 xs-text-left xs-ml0">A first pass we took at creating a wireframe based off of VideoDeck for FeedMaker.</p>
+
+    <p>The hierarchy with this first pass was way off. Search was jammed in the middle, disconnecting the module where you select a feed from the feed itself. I tried a version combining the search with the selection module, utilizing expand/collapse to see the content within a feed.</p>
+
+    <p class="xs-mb1 bold">Taking a step back:</p>
+    <p>It didn't take long to learn that reusing this UI would be a compromise. The goal behind VideoDeck was for a few video curators to manage and maintain many feeds, all within a single application (Video App). The goal of FeedMaker, however, was for any curator or editor to manage and maintain the feeds that they create. It was accomplishing more of a 1:1 relationship between the curator and feed (one curator per one or two feeds).</p>
+
+    <img class="xs-block md-mr3 xs-border-lighter" src="/css/images/feedmaker/feed-flows.png">
+
+    <p>We came to the realization that the needs of VideoDeck were, in fact, different than FeedMaker.</p>
+
+    <p>Why? Because seeing the overall queue of feeds was less important than being able to deep-dive into a single feed and maintain it. It also meant that pieces of the VideoDeck UI, such as the metadata modal, deserved to be more than just an interstitial state between creation and publish.</p>
+
+    <img class="xs-mb05" src="/css/images/feedmaker/original-metadata-modal.png" >
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 xs-text-left xs-ml0">Dialogue that appears in VideoDeck before publishing a feed. It requires the curator to add avatars, tags, and other pieces of referential information.</p>
+
+    <p>It wasn't that the metadata modal and what was inside of it couldn't be modeled off of VideoDeck. But reusing existing UI in this case was hurting our cause, not helping it. We pivoted a bit to try something new.</p>
+
+    <p class="bold xs-mb1">Switching Gears to Cut Scope: Tagged Content Feeds</p>
+    <p>Still wary of time & engineering constraints, we took a step back. There were two ways we anticipated generating a feed. One, the editor could manually curate and populate the content of a feed by searching/adding posts and videos against the entire BuzzFeed library.</p>
+    <p>Two, we could generate feeds based on tags. For example, an editor could create a Thanksgiving Hacks feed by adding a #thanksgivinghacks tag to the page. This option was slightly more automated, but still required editors to tag content from the CMS as they were publishing it. If an editor published a post for the Thanksgiving Hacks feed, they would need to tag the post in the CMS before publishing or go back and retroactively tag the post.</p>
+    <p>The second option won out, as it felt like more a streamlined solution. It didn't involve any manual curation on the feed generation side. At this point, the product manager working closely with the team still felt it best to scope whenever possible, and pushed for the metadata UI to stay in a modal. 
+    </p>
+    <p>With this in mind, I took an exploratory pass at a "tag" feed flow that was of a more bare-bones approach than what we were previously considering. It was basically an omnibox to search all feed tags, and the editor could combine different tags to generate a feed. It was lacking some key aspects that the tool needed, such as metadata and the abilty to have a "primary" feed tag (versus multiple tags of the same hierarchy).</p>
+
+    <img class="xs-mb05" src="/css/images/feedmaker/tag-feed-flow.png" >
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 xs-text-left xs-ml0">Rough exploration of a simple tag-feed generation flow</p>
+
+    <p>Before pushing this further, we decided more functionality was necessary, and that this bare-bones approach wouldn't cut it. The idea of "filter feeds" came up, which had been floated at the beginning of the project. It was clear that we needed to revisit the goals of this tool to learn and reiterate which pieces were most important.</p>
+  </div>
+
+  <div class="xs-border-top-lighter xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt4 md-mt5">Refining</h2>
+    <p class="xs-mb1 bold">Incorporating Filter Feeds (Sub-Categories)</p>
+    <p>The idea to include filtered versions of the main feed came up during this time. Filter feeds are just sections or sub-categories within a main feed. A great example of filter feeds is on Tasty. Within Tasty, the feed is broken up into Tasty Junior, Tasty Cheat Day, Tasty Weeknights, and so on.</p>
+    <p>The idea behind filter feeds was that we could learn more about what content was working and then serve that content as packages on other pages (for example, a "Tasty Cheat Day" package on the homepage). Though Tasty was brought up as the example, the idea was pretty scalable. Quizzes was another use-case, with popular categories like "Trivia Quizzes", "Personality Quizzes", and "Polls" segmenting the main feed.</p>
+    <p>I tried adding this functionality inside the metadata modal – which had become much more than metadata at this point! It began to feel like we were trying to do too much in a space that was intuitively allowing for it.</p>
+
+    <p>I got into a room with the engineer and Junior PM to start whiteboarding out some ideas.</p>
+
+    <div class="element-inset">
+      <img src="/css/images/feedmaker/no-modal-whiteboard.png">
+    </div>
+
+    <p>This first iteration of this direction focused on a fixed column on the left pane to navigate between different feeds, or add a new feed. We explored the narrative an editor would go through to get to a feed. Though it was out of scope, we wanted it to be easy for editors to jump into feeds they'd previously edited or created. We talked about replacing the empty state landing screen with a discovery experience, showing a personalized view of the feeds contextual to the editor.</p>
+
+    <div class="element-inset clearfix">
+      <img class="xs-mb05 xs-block" src="/css/images/feedmaker/create-empty-feed.png">
+    </div>
+
+    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 xs-text-left">MVP of the tool's empty state without a feed selected.</p>
+
+
+    <p class="bold xs-mb1">Primary Feeds and Feed Filters</p>
+    <p>Nailing down terminology and language was tricky. We knew whatever verbiage we landed on needed to be clear and obvious to the editors curating the feeds. Filter feeds, sub-categories, secondary feeds, and sub-feeds all meant the same thing. Based on feedback, we decided to go with the concept of a "Primary Feed Tag" (e.g. Tasty) and "Feed Filters (e.g. Tasty Cheat Day).</p>
+
+    <p>Content to appear inside of a feed filter would need both the primary tag and the specific filter tag, respectively. A Chocolate Pretzel Pie video would need to be tagged both #tasty and #tastycheatday in the CMS to appear in the correct feed filter.</p>
+
+    <div class="clearfix xs-block element-inset">
+      <img class="xs-col-12 xs-mb0" src="/css/images/feedmaker/create-feed-empty.png" alt="">
+      <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 xs-ml0">The first iteration of the feed detail view</p>
+      <img class="xs-col-12 xs-mb0"  src="/css/images/feedmaker/create-feed-filters.png" alt="">
+      <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 xs-ml0">FeedMaker with a primary feed tag and filter feed tags added. "Filter feeds" are another way of saying sub-categories.</p>
+    </div>
+
+    <p>We took the first pass at using empty states to imply that you could add multiple feed filters, with at least 3 being the requirement to ensure that there would be a variety of filters within a primary feed.</p>
+
+    <p>We fleshed out each state of the flow and built a first pass in a live prototyping environment. We sat with editors to walk through the tool and get their thoughts. They suggested copy tweaks to mirror the verbiage they were already using. We also talked about the meaning of circle avatars versus square avatars. Circle avatars indicated users, not brands. Because all feeds were considered "brands" at an abstract level, we decided to swap the avatar shape to squares.</p>
+
+    <p>Sitting and talking with editors also shed light on the lack of hierarchy. It was unclear what to tackle first, and many got confused that the title was somehow indicating a primary tag, and so on.</p>
+
+    <p>We readjusted the layout so that there were two main panels to interact with: the narrow left-most panel for a list of feeds, and the remainder of the viewport on the right for the selected feed details. Instead of neatly laying the UI out in a somewhat-arbitrary grid, we separated each important piece of UI into it's own card to fit into a single-scrolling feed.</p>
+
+    <div class="clearfix xs-block element-inset">
+      <img class="xs-col-12 xs-border-lighter" src="/css/images/feedmaker/final-refine.png" alt="">
+      <img class="xs-col-12 xs-mb0 xs-border-lighter" src="/css/images/feedmaker/final-refine-v2.png" alt="">
+      <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 xs-ml0">Refining a single column view of the feed detail view</p>
+    </div>
+  </div>
+
+  <div class="xs-border-top-lighter xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt4 md-mt5">Learning</h2>
+    <p class="xs-mb1 bold">Changing Direction</p>
+    <p>As we started planning how to execute the first iteration of the tool, we got looped into a larger conversation our Editorial team was having. Though feeds were a primary goal at the beginning of the quarter, spinning up new feeds in a turnkey manner wasn't as immediate of a priority as our current top performing feeds were (Quizzes, Videos, and Tasty). The plan was to iterate on those top-performing feeds using our existing technology, and focus instead on the Homepage. Moreover, that meant the tools that allowed our news editors to curate the top of the homepage manually. This was due in part to the election approaching, but also to our changing editorial needs at the time.</p>
+
+    <p>Though we didn't ship this tool at the end of the project cycle, I learned a lot from the entire experience. We endured the pros and cons of attempting to recycle back-end technology and front-end design. We were able to work directly with the users who would be touching the product, and learned that it would benefit us to have more transparency into the editorial strategy, so that we can better combat these pivots in the future.</p>
+
+    <p class="xs-mb1">If we were to continue work on this product, I'd consider iterating on a few things, including:</p>
+
+    <ul class="xs-mb3 xs-text-3 body-leading">
+      <li class="xs-mb1">Highlighting the hierarchy of the Primary Feed to the Feed Filters</li>
+      <li class="xs-mb1">Integrating preview ability</li>
+      <li class="xs-mb1">Fixing the "Publish/Cancel" CTA's to either the top or bottom of the panel, so that they're always accessible regardless of scroll position</li>
+      <li class="xs-mb1">Introducing the ability to expand & collapse cards in the feed detail view</li>
+      <li class="xs-mb1">Adapting the experience for responsive layouts</li>
+    </ul>
+
+    <p>Though we're not actively building the tool, we are revisiting the concept as a potential way to spin up promoted content feeds in the future (e.g. "Funny Animals, Promoted By Geico"). We're also talking about utilizing a similar concept as a way to generate <a target="_blank" href="https://www.buzzfeed.com/perolike">BuzzFeed show pages</a> on the web, which evolve much more frequently than non-video editorial content.</p>
+    <p class="xs-mb0 bold">Role</p>
+    <p>Product design & development</p>
+    <p class="xs-mb0 bold">Team</p>
+    <p class="xs-mb0">Daphne Grayson (Product Manager), Sam Kirkland (Product Manager), Benjamin Stockwell (Engineer), Filipe Brandão (Engineer), Cap Watkins (VP, Design & Design Manager)</p>
+  </div>
+  
+</div>
