@@ -32,3 +32,33 @@
   top: 4px;
   position: relative;
 }
+
+
+.header-wrapper {
+  max-height: 300px;
+  overflow: hidden;
+
+  img {
+    position: relative;
+    min-width: 1000px;
+    top: -300px;
+    right: 75%;
+    background-position: center center;
+  }
+
+  @include solid-breakpoint("sm") {
+    img {
+      right: 0;
+    }
+  }
+
+  @include solid-breakpoint("lg") {
+    max-height:425px;
+
+    img {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+}
