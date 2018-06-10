@@ -1,0 +1,43 @@
+---
+layout: post
+title: Buzzblocks
+
+---
+<div class="xs-mx-auto md-mt2 xs-col-12 md-col-8 xs-block clearfix">
+  <!-- Intro -->
+  <h1>Buzzblocks</h1>
+  <p>In the summer of 2017, we embarked on a journey to create a shared component library for BuzzFeed’s consumer-facing site. We had been using <a target="_blank" href="{{ site.baseurl }}{% post_url 2017-01-08-solid %}">Solid</a>, the site’s CSS framework, quite heavily and had begun identifying needs for components across the site. </p>
+  <img class="xs-border-lighter rounded" src="/css/images/buzzblocks/buzzblocks-home.png" />
+
+  <div class="clearfix">
+    <h2 class="xs-text-1 xs-mt4 xs-mb1">The Challenges</h2>
+    <p class="italic">Why Did We Need This Thing?</p>
+    <p><span class="bold">We didn’t have a great way to share components across different experiences.</span> BuzzFeed uses a monolithic repository, meaning that all of the services (experiences) across buzzfeed.com are shared within the same repository. This poses a lot of benefits, some of which are stated here. It also posed new challenges we weren’t predicting.<p>
+    <p>Multiple consumer services link together to serve a seamless experience to the end-user. For example, a user would come to a BuzzFeed article through one service, and then hit the homepage, which was an altogether different service.</p>
+    <p>But because we didn’t have a way to share components, we relied on duplicating components across services. This meant that a change to one component had to be updated in every service...which, as you might have guessed, often led to small details falling through the cracks and ultimately out of sync experiences.</p>
+    <p><span class="bold">We were wasting time trying to reinvent the wheel.</span> Because our component system hadn’t really been defined or implemented, we spent a lot of time crafting one-off UI instead of utilizing a system. This led to inconsistency for the end-user experience as well as extra time for the designers and devs to build.
+    </p>
+    <p><span class="bold">The majority of the consumer-facing site was still in the legacy stack, outside of the mono repo.</span> We needed to fully complete the website migration that we started in 2016, when we launched a redesign of the homepage and our article pages. Only our highest trafficked pages were in the new stack; our older pages hadn’t been redesigned or refactored yet. This meant that if you were on the homepage and clicked on an older page, you would see something like this:</p>
+    <img class="xs-border-lighter rounded" src="/css/images/buzzblocks/header-jump.gif" />
+    <p>We didn’t have the resources to quickly build these pages from scratch, since there were no existing components in place.</p>
+  </div>
+
+  <div class="clearfix">
+    <h2 class="xs-text-1 xs-mt4 md-mt5 xs-mb1">The Goals</h2>
+    <p class="italic">Where did we want to be?</p>
+    <p><span class="bold">Build a living gallery to host and document components.</span>
+     A strength of our setup was the ability to easily spin up a service that could serve as a gallery to host these components and act as a source of truth, providing context to teams that don’t directly work on said components. Easily accessible documentation proved to work with Solid as well – making the case for a gallery even more obvious. We brainstormed about the other possibilities, such as a sandbox to work with real components, prototyping frameworks, etc.
+    </p>
+    <p><span class="bold">Aim to serve a sustainable consumer site and allow room for intentional experimentation.</span> A shared component library would allow us to be more efficient and consistent with the products we ship. It gives us an opportunity to write stable code in a highly visible place, rather than multiple one-off’s living in individual services with little-to-no visibility.</p>
+    <p>BuzzFeed was beginning to focus its efforts on bespoke and exploratory brands such as As/Is and Tasty. The need for the classic BuzzFeed brand to become a bit more self-sustaining and stable, from a design perspective, was clear.</p>
+    <p><span class="bold">Complete the website redesign and migration.</span> We wanted to easily port over the majority of our web pages that weren’t in the new stack. Because we didn’t have the resources to hand-code each page, components were a necessary factor.</p>
+  </div>
+
+  <div class="clearfix">
+    <h2 class="xs-text-1 xs-mt4 md-mt5 xs-mb1">Exploring the problem space</h2>
+    <p class="italic">Carving out a process with transparency in mind</p>
+    <p>We knew we couldn't work in a vacuum on this project, since the very nature of is shared. The components we intended to work on and the framework to support them would likely affect many teams.</p>
+    <p>We started Slack channels, shared our progress in Basecamp (the team’s documentation and feedback tool) as well as via email. We made sure to post our updates as the weeks progressed and encourage feedback along the way.</p>
+    <p>Slack ended up being the strongest venue for for transparency, and was a way for people to both ask questions and notify the group when something changed.</p>
+    <div class="element-inset"><img class="xs-border-lighter rounded" src="/css/images/buzzblocks/slack-convo.png" /></div>
+  </div>
