@@ -18,7 +18,8 @@ title: Buzzblocks
     <p><span class="bold">We were wasting time trying to reinvent the wheel.</span> Because our component system hadn’t really been defined or implemented, we spent a lot of time crafting one-off UI instead of utilizing a system. This led to inconsistency for the end-user experience as well as extra time for the designers and devs to build.
     </p>
     <p><span class="bold">The majority of the consumer-facing site was still in the legacy stack, outside of the mono repo.</span> We needed to fully complete the website migration that we started in 2016, when we launched a redesign of the homepage and our article pages. Only our highest trafficked pages were in the new stack; our older pages hadn’t been redesigned or refactored yet. This meant that if you were on the homepage and clicked on an older page, you would see something like this:</p>
-    <img class="xs-border-lighter rounded" src="/css/images/buzzblocks/header-jump.gif" />
+    <img class="xs-border-lighter rounded xs-mb05" src="/css/images/buzzblocks/header-jump.gif" />
+    <p class="xs-col-12 italic xs-text-5 text-gray xs-mb4 lg-pr6">Navigating from the homepage to a page in our older stack, such as BuzzFeed Animals often meant experiencing this jarring header jump.</p>
     <p>We didn’t have the resources to quickly build these pages from scratch, since there were no existing components in place.</p>
   </div>
 
@@ -29,7 +30,7 @@ title: Buzzblocks
      A strength of our setup was the ability to easily spin up a service that could serve as a gallery to host these components and act as a source of truth, providing context to teams that don’t directly work on said components. Easily accessible documentation proved to work with Solid as well – making the case for a gallery even more obvious. We brainstormed about the other possibilities, such as a sandbox to work with real components, prototyping frameworks, etc.
     </p>
     <p><span class="bold">Aim to serve a sustainable consumer site and allow room for intentional experimentation.</span> A shared component library would allow us to be more efficient and consistent with the products we ship. It gives us an opportunity to write stable code in a highly visible place, rather than multiple one-off’s living in individual services with little-to-no visibility.</p>
-    <p>BuzzFeed was beginning to focus its efforts on bespoke and exploratory brands such as As/Is and Tasty. The need for the classic BuzzFeed brand to become a bit more self-sustaining and stable, from a design perspective, was clear.</p>
+    <p>BuzzFeed was beginning to focus its efforts on bespoke and exploratory brands such as <a target="_blank" href="https://www.buzzfeed.com/asis"> As/Is</a> and <a target="_blank" href="https://tasty.co/">Tasty</a>. The need for the classic BuzzFeed brand to become a bit more self-sustaining and stable, from a design perspective, was clear.</p>
     <p><span class="bold">Complete the website redesign and migration.</span> We wanted to easily port over the majority of our web pages that weren’t in the new stack. Because we didn’t have the resources to hand-code each page, components were a necessary factor.</p>
   </div>
 
@@ -40,4 +41,12 @@ title: Buzzblocks
     <p>We started Slack channels, shared our progress in Basecamp (the team’s documentation and feedback tool) as well as via email. We made sure to post our updates as the weeks progressed and encourage feedback along the way.</p>
     <p>Slack ended up being the strongest venue for for transparency, and was a way for people to both ask questions and notify the group when something changed.</p>
     <div class="element-inset"><img class="xs-border-lighter rounded" src="/css/images/buzzblocks/slack-convo.png" /></div>
+  </div>
+
+  <div class="clearfix">
+    <p><span class="bold">Auditing Components by Jobs To Be Done</span>
+    We took an audit of the site’s current components, and ranked them in order by priority. What currently was a high stakes/high-value component that was duplicated across multiple services? Which components were falling out of sync regularly?</p>
+    <p>We looked at opportunities across the site that could benefit from existing components that only existed in a single service; we also looked at shared behavior needs, and which components that were currently in use would probably be phased out in the near-future (either to be replaced by a new component or killed altogether).
+    </p>
+    <img class="xs-border-lighter rounded" src="/css/images/buzzblocks/package-audit.png" />
   </div>
