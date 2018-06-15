@@ -10,7 +10,7 @@ title: Buzzblocks
   <img class="xs-border-lighter rounded" src="/css/images/buzzblocks/buzzblocks-home.png" />
 
   <div class="clearfix">
-    <h2 class="xs-text-1 xs-mt4 xs-mb1">The Challenges</h2>
+    <h2 class="xs-text-1 xs-mt2 xs-mb1">The Challenges</h2>
     <p class="italic">Why Did We Need This Thing?</p>
     <p><span class="bold">We didn’t have a great way to share components across different experiences.</span> BuzzFeed uses a monolithic repository, meaning that all of the services (experiences) across buzzfeed.com are shared within the same repository. This poses a lot of benefits, some of which are stated here. It also posed new challenges we weren’t predicting.<p>
     <p>Multiple consumer services link together to serve a seamless experience to the end-user. For example, a user would come to a BuzzFeed article through one service, and then hit the homepage, which was an altogether different service.</p>
@@ -46,8 +46,29 @@ title: Buzzblocks
   <div class="clearfix">
     <p><span class="bold">Auditing Components by Jobs To Be Done</span>
     We took an audit of the site’s current components, and ranked them in order by priority. What currently was a high stakes/high-value component that was duplicated across multiple services? Which components were falling out of sync regularly?</p>
+    <img src="/css/images/buzzblocks/meeting_notes.png" />
+  </div>
+
+  <div>
     <p>We looked at opportunities across the site that could benefit from existing components that only existed in a single service; we also looked at shared behavior needs, and which components that were currently in use would probably be phased out in the near-future (either to be replaced by a new component or killed altogether).
     </p>
     <img class="xs-border-lighter rounded" src="/css/images/buzzblocks/package-audit.png" />
     <img class="xs-border-lighter rounded" src="/css/images/buzzblocks/package-audit_2.png" />
+  </div>
+
+  <div>
+    <h2 class="xs-text-1 xs-mt4 md-mt5 xs-mb1">Refining</h2>
+    <p class="italic">Putting Guidelines in Place: What is a component?</p>
+    <p>In order to complete the audit, we (very loosely) came up with some guidelines for what constitutes a component; the component must present a current or near-future need to be shared, and the component must be a “tried and true” piece of core UX. That is, not experimental, custom, or considered “legacy”.</p>
+    <p>Once we determined the working definition of a component, we started putting other guidelines in place. We used GitHub issues and Slack to manage these conversations in an open environment; such as naming components and how they should be structured.</p>
+    <p class="text-red bold xs-my4">IMAGE HERE</p>
+  </div>
+
+  <div>
+    <h2 class="xs-text-1 xs-mt4 md-mt5 xs-mb1">Building</h2>
+    <p class="italic">Learning By Doing: Building the First Component </p>
+    <p>After getting a temperature from the team on things like project structure, component CSS/JS, versioning, and more, we felt strongly that we would first learn by doing and show by sharing (documenting).</p>
+    <p>To do so we decided to build a full-blown component, one that was desperately needed at the time across our services, the BuzzFeed header and navigation.</p>
+    <p>For starters, the navigation already needed some UX improvements, and we weren’t in a position to do so without refactoring and putting it in a shared place. Secondly, no team at BuzzFeed technically “owned” the BuzzFeed header, so it fell on our plate without much controversy.</p>
+    <p class="text-red bold xs-my4">IMAGE HERE</p>
   </div>
