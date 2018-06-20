@@ -5,70 +5,156 @@ title: Buzzblocks
 ---
 <div class="xs-mx-auto md-mt2 xs-col-12 md-col-8 xs-block clearfix">
   <!-- Intro -->
-  <h1>Buzzblocks</h1>
-  <p>In the summer of 2017, we embarked on a journey to create a shared component library for BuzzFeed’s consumer-facing site. We had been using <a target="_blank" href="{{ site.baseurl }}{% post_url 2017-01-08-solid %}">Solid</a>, the site’s CSS framework, quite heavily and had begun identifying needs for components across the site. </p>
-  <img class="xs-border-lighter rounded" src="/css/images/buzzblocks/buzzblocks-home.png" />
-
-  <div class="clearfix">
-    <h2 class="xs-text-1 xs-mt2 xs-mb1">The Challenges</h2>
-    <p class="italic">Why Did We Need This Thing?</p>
-    <p><span class="bold">We didn’t have a great way to share components across different experiences.</span> BuzzFeed uses a monolithic repository, meaning that all of the services (experiences) across buzzfeed.com are shared within the same repository. This poses a lot of benefits, some of which are stated here. It also posed new challenges we weren’t predicting.<p>
-    <p>Multiple consumer services link together to serve a seamless experience to the end-user. For example, a user would come to a BuzzFeed article through one service, and then hit the homepage, which was an altogether different service.</p>
-    <p>But because we didn’t have a way to share components, we relied on duplicating components across services. This meant that a change to one component had to be updated in every service...which, as you might have guessed, often led to small details falling through the cracks and ultimately out of sync experiences.</p>
-    <p><span class="bold">We were wasting time trying to reinvent the wheel.</span> Because our component system hadn’t really been defined or implemented, we spent a lot of time crafting one-off UI instead of utilizing a system. This led to inconsistency for the end-user experience as well as extra time for the designers and devs to build.
-    </p>
-    <p><span class="bold">The majority of the consumer-facing site was still in the legacy stack, outside of the mono repo.</span> We needed to fully complete the website migration that we started in 2016, when we launched a redesign of the homepage and our article pages. Only our highest trafficked pages were in the new stack; our older pages hadn’t been redesigned or refactored yet. This meant that if you were on the homepage and clicked on an older page, you would see something like this:</p>
-    <img class="xs-border-lighter rounded xs-mb05" src="/css/images/buzzblocks/header-jump.gif" />
-    <p class="xs-col-12 italic xs-text-5 text-gray xs-mb4 lg-pr6">Navigating from the homepage to a page in our older stack, such as BuzzFeed Animals often meant experiencing this jarring header jump.</p>
-    <p>We didn’t have the resources to quickly build these pages from scratch, since there were no existing components in place.</p>
+  <div class="clearfix xs-mb4 md-mb5">
+    <h1>Building Buzzblocks</h1>
+    <p>As much as I'd love to explain this briefly – the truth is – it’s a heck of a lot to talk about. But I can promise you that this is my best shot. If you’re interested in the extensive case study, please reach out (but be warned – it's lengthy).</p>
+    <img class="xs-border-lighter rounded" src="/css/images/buzzblocks/buzzblocks-home.png" />
   </div>
 
-  <div class="clearfix">
-    <h2 class="xs-text-1 xs-mt4 md-mt5 xs-mb1">The Goals</h2>
-    <p class="italic">Where did we want to be?</p>
-    <p><span class="bold">Build a living gallery to host and document components.</span>
-     A strength of our setup was the ability to easily spin up a service that could serve as a gallery to host these components and act as a source of truth, providing context to teams that don’t directly work on said components. Easily accessible documentation proved to work with Solid as well – making the case for a gallery even more obvious. We brainstormed about the other possibilities, such as a sandbox to work with real components, prototyping frameworks, etc.
-    </p>
-    <p><span class="bold">Aim to serve a sustainable consumer site and allow room for intentional experimentation.</span> A shared component library would allow us to be more efficient and consistent with the products we ship. It gives us an opportunity to write stable code in a highly visible place, rather than multiple one-off’s living in individual services with little-to-no visibility.</p>
-    <p>BuzzFeed was beginning to focus its efforts on bespoke and exploratory brands such as <a target="_blank" href="https://www.buzzfeed.com/asis"> As/Is</a> and <a target="_blank" href="https://tasty.co/">Tasty</a>. The need for the classic BuzzFeed brand to become a bit more self-sustaining and stable, from a design perspective, was clear.</p>
-    <p><span class="bold">Complete the website redesign and migration.</span> We wanted to easily port over the majority of our web pages that weren’t in the new stack. Because we didn’t have the resources to hand-code each page, components were a necessary factor.</p>
+  <div class="clearfix xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt2 xs-mb1">Getting started</h2>
+    <p>We spent the better half of 2017 tackling a problem that had been lurking underneath the surface at BuzzFeed since we introduced the idea of microservices back in 2016: shared components.</p>
+    <p>The project started out like any other ambiguous systems project: with a ton of questions. We documented our pain points, researched how other companies handled similar challenges and wrote up some loose proposals for how to get started.</p>
+    <img class="xs-mb05" src="/css/images/buzzblocks/meeting_notes.png" />
+    <p class="xs-col-12 xs-text-5 italic text-gray">Early notes on categorizing, identifying, and building components</p>
+
   </div>
 
-  <div class="clearfix">
-    <h2 class="xs-text-1 xs-mt4 md-mt5 xs-mb1">Exploring the problem space</h2>
-    <p class="italic">Carving out a process with transparency in mind</p>
-    <p>We knew we couldn't work in a vacuum on this project, since the very nature of is shared. The components we intended to work on and the framework to support them would likely affect many teams.</p>
-    <p>We started Slack channels, shared our progress in Basecamp (the team’s documentation and feedback tool) as well as via email. We made sure to post our updates as the weeks progressed and encourage feedback along the way.</p>
-    <p>Slack ended up being the strongest venue for for transparency, and was a way for people to both ask questions and notify the group when something changed.</p>
-    <div class="element-inset"><img class="xs-border-lighter rounded" src="/css/images/buzzblocks/slack-convo.png" /></div>
+  <div class="clearfix xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt2 xs-mb1">Problems & Goals</h2>
+    <p>At a very high level, there were a few pretty solid reasons to create a shared component library:</p>
+    <ul class="xs-mb3 xs-text-3 body-leading">
+      <li class="xs-mb1">We didn’t have a great way to share UX across different experiences</li>
+      <li class="xs-mb1">We were wasting time trying to reinvent the wheel</li>
+      <li class="xs-mb1">The majority of the consumer-facing site was still in the legacy stack, with not enough resources to rebuild every page in the new stack</li>
+    </ul>
+    <div class="element-inset">
+      <img class="xs-border-lighter xs-mb05" src="/css/images/buzzblocks/header-jump.gif" />
+      <p class="xs-ml0 xs-col-12 xs-text-5 italic text-gray">Only our highest trafficked pages were in the new stack; our older pages were still considered legacy. Navigating from the homepage to an older page, such as BuzzFeed Animals, often meant experiencing this jarring header jump.</p>
+    </div>
+    <p>Though we knew the future was uncertain, we tried to set goals in place that were attainable yet open to change:</p>
+    <ul class="xs-mb3 xs-text-3 body-leading">
+      <li class="xs-mb1">Build a living gallery to host and document components</li>
+      <li class="xs-mb1">Aim to serve a sustainable consumer site and allow room for <a href="https://medium.com/@danielmall/distinct-design-systems-3c1ec8e69e5b#---194-362" target="_blank">intentional experimentation.</a></li>
+      <li class="xs-mb1">Complete the website redesign and technical migration</li>
+    </ul>
   </div>
 
-  <div class="clearfix">
-    <p><span class="bold">Auditing Components by Jobs To Be Done</span>
-    We took an audit of the site’s current components, and ranked them in order by priority. What currently was a high stakes/high-value component that was duplicated across multiple services? Which components were falling out of sync regularly?</p>
-    <img src="/css/images/buzzblocks/meeting_notes.png" />
+  <div class="clearfix xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt2-xs-mb1">Setting up for a transparent process</h2>
+    <p>Due to the nature of the project, we wanted to be as transparent as possible. We started a Slack channel with weekly pinned updates, roping in engineers from other teams into PR’s and Issues, and posted our findings on Basecamp as well. Having so many avenues open for feedback and collaboration was essential to us since ultimately the success of the library was dependent on the folks who were to adopt it in their day-to-day work.</p>
+    <div class="element-inset"><img class="xs-border-lighter xs-mb05 xs-col-12 md-col-10" src="/css/images/buzzblocks/slack-convo.png" /></div><p class="xs-col-12 xs-text-5 italic text-gray">  Pinning weekly Slack updates was the easiest way to be transparent early on</p>
+
+    <p>We (very loosely) came up with some guidelines for what constitutes a component; the component must present a current or near-future need to be shared the component must be a “tried and true” piece of core UX. That is, not experimental, temporary, custom, or considered “legacy”.</p>
+    <p>Once we determined the first working definition of a component, we started putting other guidelines in place. We used GitHub issues and Slack to manage these conversations in an open environment; such as naming components and how they should be structured.</p>
+    <img class="xs-mb05" src="/css/images/buzzblocks/naming-is-hard.png" />
+    <p class="xs-col-12 xs-text-5 italic text-gray">As it turns out, naming is hard.</p>
+
   </div>
 
-  <div>
-    <p>We looked at opportunities across the site that could benefit from existing components that only existed in a single service; we also looked at shared behavior needs, and which components that were currently in use would probably be phased out in the near-future (either to be replaced by a new component or killed altogether).
-    </p>
-    <img class="xs-border-lighter rounded" src="/css/images/buzzblocks/package-audit.png" />
-    <img class="xs-border-lighter rounded" src="/css/images/buzzblocks/package-audit_2.png" />
+  <div class="clearfix xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt2-xs-mb1">Building the first component: a trial and error approach</h2>
+    <p>After we came up with loose guidelines (or a working definition, if you will) for what a component should be, we decided to learn by doing and build a “guinea pig” component in the library. The BuzzFeed header was already top of mind as it was difficult to keep in sync across the site. When someone made a change to the header, they needed to update it in every single service. This meant a lot of unintentional inconsistencies slipped through the cracks.</p>
+    <img src="/css/images/buzzblocks/header-component.png" alt=""></img>
+    <p>At the same time, the header had accrued design debt over the years but didn’t fall on any specific product teams’ plate. It made sense for us to tackle those issues with the technical refactor.</p>
+    <img class="xs-mb05" src="/css/images/buzzblocks/header-component-iteration.png" alt=""></img>
+    <p class="xs-text-5 italic text-gray">Moving the header into a shared component library meant tackling two birds with one stone: cleaning up the header IA while refactoring the code</p>
+    <p>Working with a “guinea pig” component to suss out difficulties proved fruitful very fast. For example, we initially wrote a combination of BEM (component-specific) styling along with <a href="{{ site.baseurl }}{% post_url 2017-01-08-solid %}" target="_blank">Solid</a> (atomic styling) to style each component variation. We learned very soon after that it was very, very confusing to read and even more confusing to edit.</p>
+    <img src="/css/images/buzzblocks/bem-vs-solid.png" alt="">
+    <p>BEM FTW in this scenario. Atomic styling made sense outside of components, but we wanted isolated styling and decided to utilize Solid’s variables inside scoped BEM classes instead.</p>
+    <p>With the help of a few volunteers, we wrote our first draft of contributing and developing documentation based on how we built and shipped the shared header.</p>
+    <img class="xs-col-12" src="/css/images/buzzblocks/contributing-docs-v1.png" alt="">
+    <p>We also worked quickly to get the first iteration of the component gallery up and running. We put the work in Basecamp and held discussions over Slack & GitHub for feedback and progress.</p>
+  </div>
+  <div class="clearfix xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt2-xs-mb1">Learning & Refining</h2>
+    <p>We documented some hiccups we ran into along the way when building the header, such as the benefit of breaking up templates, when to fork vs. modify, and (as mentioned above) the value of sticking with BEM conventions</p>
+    <p>We also talked to engineers who were beginning to ex
+      periment with the library to get their feedback. A few initial improvements that came out of that feedback:</p>
+    <ul class="xs-mb3 xs-text-3 body-leading">
+      <li class="xs-mb1">Automated NPM publishing</li>
+      <li class="xs-mb1">The ability to publish test versions without pushing to master</li>
+      <li class="xs-mb1">The ability to run buzzblocks components locally within a service </li>
+      <li class="xs-mb1">Documenting common workflows, such as integrating a Buzzblocks into your service, and adding a Buzzblocks component (instructions tailored for designers and developers)</li>
+      <li class="xs-mb1">Design and gallery improvements included dedicating a page to each component, configuration tables and example configurations, and links to see each component variation in isolation.</li>
+    </ul>
+    <img class="xs-mb4" src="/css/images/buzzblocks/gallery-v2-examples.png" alt="">
+    <img class="rounded xs-border-lighter" src="/css/images/buzzblocks/config-toggle-breaking.gif" alt="">
   </div>
 
-  <div>
-    <h2 class="xs-text-1 xs-mt4 md-mt5 xs-mb1">Refining</h2>
-    <p class="italic">Putting Guidelines in Place: What is a component?</p>
-    <p>In order to complete the audit, we (very loosely) came up with some guidelines for what constitutes a component; the component must present a current or near-future need to be shared, and the component must be a “tried and true” piece of core UX. That is, not experimental, custom, or considered “legacy”.</p>
-    <p>Once we determined the working definition of a component, we started putting other guidelines in place. We used GitHub issues and Slack to manage these conversations in an open environment; such as naming components and how they should be structured.</p>
-    <p class="text-red bold xs-my4">IMAGE HERE</p>
+  <div class="clearfix xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt2-xs-mb1">Addressing new challenges</h2>
+    <p>While we began implementing a lot of these improvements, we noticed a trend happening. While we made it quite easy for people to contribute new components to the library, we didn’t make it easy to know <span class="bold">when and if they should add new components to the library.</span></p>
+    <p>We also noticed that components added were not well-defined in the gallery and were often missing the proper context for use. We hadn’t enforced any rules or guidelines around documenting components. We wrongfully assumed our (well-intentioned!) engineers would be lead by our not-so-obvious examples.</p>
+    <p>To put it briefly, the low barrier to contribute to Buzzblocks led to inevitable bugs and overseen discrepancies in production.</p>
+    <img src="/css/images/buzzblocks/buzzblocks-bugblocks.png" alt="">
+    <h2 class="xs-text-1 xs-mt2-xs-mb1">Getting to the bottom of it</h2>
+    <p>We spent a lot of time discussing the issues to get to the root of the problem and ultimately decided to (at least initially) take more responsibility for the individual components themselves, rather than just maintaining the library and framework.</p>
+    <p>Taking more responsibility for the components themselves would allow us to learn more about why these issues were occurring, and how we could avoid them in the future. It would also give us an opportunity to set a better precedent so that folks contributing to the gallery in the future had strong examples and best practices to lean on.</p>
+    <p class="bold">Fast forward a couple weeks of investigation, refactoring, and discussion, we uncovered a few common themes to back-up the challenges we were facing...</p>
+    <p><span class="bold">False positives:</span> Components weren’t always representative in the gallery’s sandbox and prototyping environment. This was sometimes a result of “hidden” styling that existed only in a consumer service, and not in buzzblocks. False positives happened a lot when “migrating” components to buzzblocks from a service. Moving things from one place to another meant things easily got left behind (accidentally!).</p>
+
+    <div class="clearfix xs-mb05 ml-pl2">
+      <div class="col xs-col-12 md-col-6 sans-type md-pr2 md-pl3 ">
+        <p>Migration Expectation</p>
+        <img class="xs-col-12" src="/css/images/buzzblocks/migration-expectation.gif" alt="">
+      </div>
+      <div class="col xs-col-12 md-col-6 md-pl1 md-pr3 sans-type">
+        <p>Migration Reality</p>
+        <img class="xs-col-12" src="/css/images/buzzblocks/migration-reality.gif" alt="">
+      </div>
+    </div>
+
+    <p><span class="bold">Unknown Unknowns:</span> With the multiplication of services and pages, it was hard to know where a specific component lived. It became difficult to run regression tests for all the different configurations of a component across multiple services.</p>
+    <p>For example, a straightforward update to our story component turned out to have broken the entire feed on the BuzzFeed Shopping page, due to hidden service-specific dependencies. Who’da thunk it.</p>
+    <p><span class="bold">Encapsulation</span> Styling bugs resulted from the gallery having one large (ahem, shared) compiled CSS file of all component-specific styling. Styling would cascade down from one file to another, giving a false impression of what was affecting what.<br/> The compiled Buzzblocks gallery CSS file didn’t match up any specific service’s compiled  CSS file, creating a disparity between the two services. This was also the case for our Javascript.</p>
+    <img class="xs-mb05 element-inset" src="/css/images/buzzblocks/css-is.gif" alt="">
+    <p class="xs-text-5 italic text-gray">An actual visualization of Cascading Stylesheets</p>
   </div>
 
-  <div>
-    <h2 class="xs-text-1 xs-mt4 md-mt5 xs-mb1">Building</h2>
-    <p class="italic">Learning By Doing: Building the First Component </p>
-    <p>After getting a temperature from the team on things like project structure, component CSS/JS, versioning, and more, we felt strongly that we would first learn by doing and show by sharing (documenting).</p>
-    <p>To do so we decided to build a full-blown component, one that was desperately needed at the time across our services, the BuzzFeed header and navigation.</p>
-    <p>For starters, the navigation already needed some UX improvements, and we weren’t in a position to do so without refactoring and putting it in a shared place. Secondly, no team at BuzzFeed technically “owned” the BuzzFeed header, so it fell on our plate without much controversy.</p>
-    <p class="text-red bold xs-my4">IMAGE HERE</p>
+  <div class="clearfix xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt2-xs-mb1">Building it again, and then again</h2>
+    <p>The most straightforward and effective way we could mitigate these risk factors were to build isolated components.</p>
+    <p><span class="italic">What does that mean?</span> We decided that we were no longer going to share SCSS or JS across multiple components unless they share enough likeness.</p>
+    <p><span class="italic">Why?</span> We took this route because self-contained and self-reliant components (from both a stylistic and engineering standpoint) are more predictable, stable, and easy to test.</p>
+    <p>This also meant that we would stop using components inside of other components. The framework didn’t allow for composability in the ways that we needed to feel comfortable importing partials.</p>
+    <img src="/css/images/buzzblocks/lack-of-encapsulation.png" alt="">
   </div>
+
+  <div class="clearfix xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt2-xs-mb1">Learnings</h2>
+    <p>Ideally, we wanted to build a system that could support composability and encapsulation. However, the reality of the situation was that, due to lack of encapsulation options with our frontend stack, isolated components were the safest bet. This resolution was disappointing but allowed us to move forward and create a valuable system for our existing framework.</p>
+    <p><span class="bold xs-block">A house is only as strong as its foundation</span>(IDK, it felt right in the moment. I’ll work on my idioms). We bent our frontend framework so far it broke. It wasn’t meant to host components the way that we were previously integrating them. The components weren’t encapsulated by nature, but we could isolate them to the best of our ability to make them more manageable and less risk-prone.</p>
+    <p><span class="bold xs-block">Know when to take ownership</span>Taking on the components themselves built up confidence and helped to inform documentation we felt confident about sharing. Following through and making sure the documentation still made sense in practice was key.</p>
+    <p><span class="bold xs-block">It’s never finished</span>There are still quite a few things that aren’t “there” yet. We’re not confident saying this is the best library that it could be. What we are aligned on is the things we need to do to make it better.</p>
+  </div>
+
+  <div class="clearfix xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt2-xs-mb1">So...what <span class="italic">is</span> a component for Buzzblocks?</h2>
+    <p>After trying, and trying again, and again...we rehashed our component "definition" to reflect our learnings and practices better.</p>
+    <ul class="xs-mb3 xs-text-3 body-leading">
+      <li class="xs-mb1"><span class="bold">Isolated;</span> the component must be self-contained</li>
+      <li class="xs-mb1"><span class="bold">Context-agnostic;</span> the component must live independent of a particular location</li>
+      <li class="xs-mb1"><span class="bold">Logical;</span> there is a clear reasoning for this component to live in a shared library and its name & description is self-explanatory</li>
+    </ul>
+    <p>We reworked our documentation, this time, with loads more confidence then before. We also added a "checklist" to sanity check whether or not a component makes sense to live within the buzzblocks library.</p>
+    <img class="xs-mb05 element-inset xs-col-12 md-col-8" src="/css/images/buzzblocks/building-buzzblocks.png" alt="">
+    <p class="xs-text-5 italic text-gray">An engineer on the team made an easy-to-follow checklist for contributing components</p>
+    <p>After we felt confident and comfortable with the state of things, we (once again) encouraged contributions from the rest of the engineering team. Ultimately, Buzzblocks became the responsibility of the feature teams at BuzzFeed who implemented them. We continued to have a working group of Buzzblocks "maintainers" that was available for questions or framework improvements.</p>
+    <p>At the end of the day, Buzzblocks components made up a significant chunk of our primary consumption experience:</p>
+    <div class="xs-col-12 xs-mb3 md-mb4">
+      <video class="xs-fit" src="/css/images/buzzblocks/buzzblocks-with-and-wo.mp4" muted loop autoplay playsinline >
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+    </div>
+    <p>Aside from the front-end framework limitations, we identified several opportunities for improvements in the future. For starters, per component versioning would solve a lot of pain points when introducing changes to the library. Additionally, several both engineers and designers voiced a need for context around a component's usage (that is, which services it lives in and the version it was last updated). Regarding design best-practices, we barely scratched the surface of what a component library can do to influence a product's ecosystem.</p>
+    <p>Although the project was tightly scoped, I am genuinely impressed by the engineering and design folks who embraced this library and new workflow with so much enthusiasm and understanding.</p>
+  </div>
+
+
+
+
+
+
+
+</div>
