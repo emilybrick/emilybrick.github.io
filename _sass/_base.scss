@@ -9,4 +9,10 @@ body {
   margin: 0 auto;
 }
 
+html {
+  opacity: 0;
+}
 
+html.wf-active {
+  opacity: 1;
+}
