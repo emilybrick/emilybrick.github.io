@@ -19,12 +19,12 @@
 
 
 @keyframes wave-animation {
-    0%,10% {
+    0%,10%,20% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
 
-    5% {
+    5%,15% {
         -webkit-transform: rotate(20deg);
         transform: rotate(20deg)
     }
