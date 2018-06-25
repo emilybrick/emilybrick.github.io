@@ -8,7 +8,13 @@ title: Buzzblocks
   <div class="clearfix xs-mb4 md-mb5">
     <h1>Building Buzzblocks</h1>
     <p>Buzzblocks is a way to share different components and behaviors across the BuzzFeed website. Before Buzzblocks, the tech team was only using its pattern library to help build cohesive experiences. There were no tools in place to share components. When the same user need presented itself in multiple places, it was easy to duplicate code, but doing so presented its own set of problems. We decided to spend the better half of 2017 tackling that problem, which had been lurking underneath the surface since we introduced the idea of microservices in 2016.</p>
-    <img class="xs-border-lighter rounded" src="/css/images/buzzblocks/buzzblocks-home.png" />
+    <img class="xs-border-lighter rounded"  />
+
+    <div class="clearfix">
+      <div class="col xs-hide md-inline-block md-col-9"><img class="xs-border-lighter" src="/css/images/buzzblocks/buzzblocks-home.png"></div>
+      <div class="col xs-col-12 sm-col-9 md-col-3 md-pl3"><img class="xs-border-lighter" src="/css/images/buzzblocks/mobile-hp.gif"></div>
+    </div>
+
   </div>
 
   <div class="clearfix xs-mb4 md-mb5">
@@ -27,8 +33,8 @@ title: Buzzblocks
       <li class="xs-mb1">We were wasting time trying to reinvent the wheel. With no components, we spent a lot of time crafting one-off UI. This led to inconsistency for the end-user experience as well as wasted time as devs and designers rebuilt similar UI and functionality from scratch every time.</li>
       <li class="xs-mb1">The majority of the consumer-facing site was still in our legacy codebase, with not enough people or resourches to rebuild every page in the new stack</li>
     </ul>
+    <img class="xs-border-lighter xs-mb05" src="/css/images/buzzblocks/header-jump.gif" />
     <div class="element-inset">
-      <img class="xs-border-lighter xs-mb05" src="/css/images/buzzblocks/header-jump.gif" />
       <p class="xs-ml0 xs-col-12 xs-text-5 italic text-gray">Only our highest trafficked pages were in the new stack; our older pages were still considered legacy. Navigating from the homepage to an older page, such as BuzzFeed Animals, often meant experiencing this jarring jump between pages.</p>
     </div>
     <p>Though we knew the future was uncertain, we set goals in place that were attainable yet flexible:</p>
@@ -41,7 +47,7 @@ title: Buzzblocks
   </div>
 
   <div class="clearfix xs-mb4 md-mb5">
-    <h2 class="xs-text-1 xs-mt2-xs-mb1">Setting up for a transparent process</h2>
+    <h2 class="xs-text-1 xs-mt2-xs-mb1">Setting up a transparent process</h2>
     <p>Due to the nature of the project, we wanted to be as transparent as possible. We started a Slack channel with weekly pinned updates, roped in engineers from other teams into PR’s and Issues, and posted our progress on Basecamp. Having avenues for feedback and collaboration was essential since ultimately the success of the library depended on our teams adopting it in their day-to-day work.
     </p>
     <div class="element-inset"><img class="xs-border-lighter xs-mb05 xs-col-12 md-col-10" src="/css/images/buzzblocks/slack-convo.png" /></div><p class="xs-col-12 xs-text-5 italic text-gray">  Pinning weekly Slack updates was the easiest way to be transparent early on</p>
@@ -87,14 +93,15 @@ title: Buzzblocks
       <li class="xs-mb1">Design and gallery improvements included dedicating a page to each component, configuration tables and example configurations, and links to see each component variation in isolation.</li>
     </ul>
     <img class="xs-mb4" src="/css/images/buzzblocks/gallery-v2-examples.png" alt="">
-    <img class="rounded xs-border-lighter" src="/css/images/buzzblocks/config-toggle-breaking.gif" alt="">
+    <img class="rounded xs-border-lighter" src="/css/images/buzzblocks/newsletter.gif" alt="">
   </div>
 
   <div class="clearfix xs-mb4 md-mb5">
     <h2 class="xs-text-1 xs-mt2-xs-mb1">Addressing new challenges</h2>
     <p>While we began implementing a lot of these improvements, we noticed a trend happening. While we made it quite easy for people to contribute new components to the library, we didn’t make it easy to know when and if they should add new components to the library.</span></p>
-    <p>We also noticed that components added were not well-defined in the gallery and were often missing the proper context for use. We hadn’t enforced any rules or guidelines around documenting components. We wrongfully assumed our (well-intentioned) engineers would be led by our not-so-obvious examples.</p>
-    <p class="bold">The low barrier to contribute to Buzzblocks led to inevitable bugs and discrepancies in production.</p>
+    <p>We also noticed that components added were not well-defined in the gallery and were often missing the proper context for use. We hadn’t enforced any rules or guidelines around documenting components. We wrongfully assumed our (well-intentioned) engineers would be led by our not-so-obvious examples.<span class="bold"> The low barrier to contribute to Buzzblocks led to inevitable bugs and discrepancies in production.</span></p>
+    <img class="element-inset md-col-7" src="/css/images/buzzblocks/component-missing-documentation.jpg" alt="">
+    <p class="xs-text-5 italic text-gray xs-mb4">A component missing clear documentation and context.</p>
     <img src="/css/images/buzzblocks/buzzblocks-bugblocks.png" alt="">
     <h2 class="xs-text-1 xs-mt2-xs-mb1">Getting to the bottom of it</h2>
     <p>We spent a lot of time discussing the issues to get to the root of the problem and ultimately decided to (at least initially) take more responsibility for the individual components themselves, rather than just maintaining the library and framework.</p>
@@ -136,6 +143,10 @@ title: Buzzblocks
 
   <div class="clearfix xs-mb4 md-mb5">
     <h2 class="xs-text-1 xs-mt2-xs-mb1">So...what <span class="italic">is</span> a component for Buzzblocks?</h2>
+    <div class="clearfix">
+      <img src="/css/images/buzzblocks/news-package.png" alt="" class="col xs-col-12 md-col-6 md-pr2">
+      <img src="/css/images/buzzblocks/news-package-props.png" alt="" class="col xs-col-12 md-col-6 md-pl1">
+    </div>
     <p>After trying, and trying again, we reworked our component definition to reflect the learnings and best practices. A component in Buzzblocks should be:</p>
     <ul class="xs-mb3 xs-text-3 body-leading">
       <li class="xs-mb1"><span class="bold">Isolated;</span> the component must be self-contained in terms of styling and behavior</li>
@@ -147,11 +158,16 @@ title: Buzzblocks
     <p class="xs-text-5 italic text-gray">An engineer on the team made an easy-to-follow checklist for contributing components. </p>
     <p>At the end of the day, Buzzblocks components made up a significant chunk of our primary consumption experience:</p>
     <div class="xs-col-12 xs-mb3 md-mb4">
-      <video class="xs-fit" src="/css/images/buzzblocks/buzzblocks-with-and-wo.mp4" muted loop autoplay playsinline >
-      </video>
+      <img src="/css/images/buzzblocks/buzzblocks-with-and-wo.gif">
     </div>
     <p>I’m also extremely proud of the team for the huge collaborative effort to move <span class="bold">all</span> of BuzzFeed’s legacy pages into the new stack, using primarily Buzzblocks components. This includes pages that had long been considered “design debt”, such as our author pages, older category pages, and our search page.</p>
     <p>I can say with confidence that this would have been a much more stressful and lengthy undertaking if it hadn’t been for Buzzblocks.</p>
+    <img class="xs-border-lighter" src="/css/images/buzzblocks/buzzfeed-books.png" alt="">
+    <div class="clearfix">
+      <img class="col xs-border-lighter xs-col-12 md-col-9 md-mb05" src="/css/images/buzzblocks/buzzfeed-search.png" alt="">
+      <div class="col md-pl3 xs-col-12 md-col-3 xs-mb05"><img class="xs-border-lighter xs-mb05" src="/css/images/buzzblocks/buzzfeed-search-mobile.png" alt=""></div>
+      <p class="xs-text-5 italic text-gray">Using Buzzblocks meant we could offer a responsive experience to pages that previously didn't exist on mobile, such as our search page.</p>
+    </div>
     <p>As new brands with different needs continued to branch out of BuzzFeed, Buzzblocks became a strong blueprint for how we tackle libraries across the board. I’m curious to see a world where those unique component libraries have a unifying factor, which right now is the architecture and structure of the library.</p>
   </div>
   <div class="clearfix xs-mb4 md-mb5">
