@@ -12,7 +12,7 @@ $(window).scroll(function() {
 // Animate the scroll to top
 $('.back-to-top').click(function(event) {
   event.preventDefault();
-  
+
   $('html, body').animate({scrollTop: 0}, 300);
 });
 
@@ -26,7 +26,7 @@ $(function(){
 });
 
 
-//////////////// Squiggle //////////////// 
+//////////////// Squiggle ////////////////
 var _paper = paper;
 var Path = _paper.Path;
 var Point = _paper.Point;
@@ -52,3 +52,9 @@ path.onFrame = function (e) {
     }
 };
 paper.view.draw();
+
+// Disable hover for touch devices
+document.addEventListener('touchstart', function addtouchclass(e){ // first time user touches the screen
+    document.documentElement.classList.add('is-touch') // add "can-touch" class to document root using classList API
+    document.removeEventListener('touchstart', addtouchclass, false) // de-register touchstart event
+}, false)

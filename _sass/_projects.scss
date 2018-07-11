@@ -22,7 +22,14 @@
     h2, a, p {
       display: none;
     }
+  }
+}
 
+.is-touch {
+  .project-card--wip &:hover {
+    .soon {
+      display: none;
+    }
   }
 }
 
