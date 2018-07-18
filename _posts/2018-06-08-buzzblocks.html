@@ -7,19 +7,11 @@ title: Buzzblocks
   <!-- Intro -->
   <div class="clearfix xs-mb4 md-mb5">
     <h1>Building Buzzblocks</h1>
-    <p>Buzzblocks is a way to share different components and behaviors across the BuzzFeed website. Before Buzzblocks, the tech team was only using its pattern library to help build cohesive experiences. There were no tools in place to share components. When the same user need presented itself in multiple places, it was easy to duplicate code, but doing so presented its own set of problems. We decided to spend the better half of 2017 tackling that problem, which had been lurking underneath the surface since we introduced the idea of microservices in 2016.</p>
+    <p>Buzzblocks is a way to share different components and behaviors across the BuzzFeed website. Before Buzzblocks, the team focused on the consumer webapp (buzzfeed.com) was only  <a target="_blank" href="{{ site.baseurl }}{% post_url 2017-01-08-solid %}">using BuzzFeed's pattern library</a> to build cohesive experiences. There were no tools in place to share components. When the same user need presented itself in multiple places, it was easy to duplicate code, but doing so presented its own set of problems. We decided to spend the better half of 2017 tackling that problem, which had been lurking underneath the surface since we introduced the idea of microservices in 2016.</p>
     <div class="clearfix">
       <div class="col xs-hide md-inline-block md-col-9"><img class="xs-border-lighter" src="/css/images/buzzblocks/buzzblocks-home.png"></div>
       <div class="col xs-col-12 sm-col-9 md-col-3 md-pl3"><img class="xs-border-lighter" src="/css/images/buzzblocks/mobile-hp.gif"></div>
     </div>
-
-  </div>
-
-  <div class="clearfix xs-mb4 md-mb5">
-    <h2 class="xs-text-1 xs-mt2 xs-mb1">Getting started</h2>
-    <p>The project started out like any other ambiguous systems project: with a ton of questions. We documented our pain points, researched how other companies handled similar challenges and wrote up some loose proposals for how to get started.</p>
-    <img class="xs-mb05" src="/css/images/buzzblocks/meeting_notes.png" />
-    <p class="xs-col-12 xs-text-5 italic text-gray">Early notes on categorizing, identifying, and building components</p>
 
   </div>
 
@@ -29,7 +21,7 @@ title: Buzzblocks
     <ul class="xs-mb3 xs-text-3 body-leading">
       <li class="xs-mb1">We didn’t have a great way to share UX across different services</li>
       <li class="xs-mb1">We were wasting time trying to reinvent the wheel. With no components, we spent a lot of time crafting one-off UI. This led to inconsistency for the end-user experience as well as wasted time as devs and designers rebuilt similar UI and functionality from scratch every time.</li>
-      <li class="xs-mb1">The majority of the consumer-facing site was still in our legacy codebase, with not enough people or resourches to rebuild every page in the new stack</li>
+      <li class="xs-mb1">The majority of the consumer-facing site was still in our legacy codebase, with not enough people or resources to rebuild every page in the new stack</li>
     </ul>
     <img class="xs-border-lighter xs-mb05" src="/css/images/buzzblocks/header-jump.gif" />
     <div class="element-inset">
@@ -45,25 +37,29 @@ title: Buzzblocks
   </div>
 
   <div class="clearfix xs-mb4 md-mb5">
-    <h2 class="xs-text-1 xs-mt2-xs-mb1">Setting up a transparent process</h2>
-    <p>Due to the nature of the project, we wanted to be as transparent as possible. We started a Slack channel with weekly pinned updates, roped in engineers from other teams into PR’s and Issues, and posted our progress on Basecamp. Having avenues for feedback and collaboration was essential since ultimately the success of the library depended on our teams adopting it in their day-to-day work.
-    </p>
-    <div class="element-inset"><img class="xs-border-lighter xs-mb05 xs-col-12 md-col-10" src="/css/images/buzzblocks/slack-convo.png" /></div><p class="xs-col-12 xs-text-5 italic text-gray">  Pinning weekly Slack updates was the easiest way to be transparent early on</p>
-
-    <p>We came up with some loose guidelines for what constitutes a component: the component must represent a current or near-future need to be shared and the component must be a “tried and true” piece of our core experience. That is, not experimental, temporary, custom, or considered “legacy”. Once we determined the first working definition of a component, we started putting other guidelines in place. We used GitHub Issues and Slack to manage those conversations in an open environment. </p>
-    <img class="xs-mb05" src="/css/images/buzzblocks/naming-is-hard.png" />
-    <p class="xs-col-12 xs-text-5 italic text-gray">As it turns out, naming is hard.</p>
-    <p>Working through the product and design implications for the component library was an essential part of this project, but for brevity’s sake, I’ll save that for another case study. The team had a good understanding of which components would move into the system initially, and the specific props each component needed. We were able to identify a few pieces of “legacy” UX that we could remove in place of newer components, and also work through components that were still on the table. We used Basecamp, Slack, and in-person critiques for these discussions.</p>
-    <p>We intentionally centered our focus around the development workflows and the front-end framework when beginning this project. We felt we’d set ourselves up for success and stability by honing in on the developer experience from the start.</p>
+    <h2 class="xs-text-1 xs-mt2 xs-mb1">Getting started</h2>
+    <p>The project started out like any other ambiguous systems project: with a ton of questions. We documented our pain points, researched how other companies handled similar challenges and wrote up some loose proposals for how to get started.</p>
+    <img class="xs-mb05" src="/css/images/buzzblocks/meeting_notes.png" />
+    <p class="xs-col-12 xs-text-5 italic text-gray">Early notes on categorizing, identifying, and building components</p>
+    <p>Working through the product and design implications for the component library was an essential part of this project, but for the sake of brevity, I’ll save that for another case study. The design and engineering team already had a consensus around which components to move into the system; in most cases, we were even able to identify props. We also addressed pieces of “legacy” UX that we could remove in place of newer components, and worked through components still on the table. We used Basecamp, Slack, and in-person critiques for these discussions.</p>
     <img class="xs-mb05 xs-mt3" src="/css/images/buzzblocks/contentpackage-component-audit.png" />
-    <p class="xs-col-12 xs-text-5 italic text-gray">We identified and documented potential component use-cases to determine if they were worth moving into the system.</p>
-    <p>A few things we kept in mind to ensure a useful system:</p>
+    <p class="xs-col-12 md-col-8 xs-text-5 italic text-gray">Components like the story package were well-defined from a product and design perspective and ready to move into the system immediately</p>
+    <p>A few things we kept in mind:</p>
     <ul class="xs-mb3 xs-text-3 body-leading">
       <li class="xs-mb1">Build to enable design flexibility, but have discussions and collaborate when you’re not sure if a component should fork or be modified</li>
       <li class="xs-mb1">Build agnostic of location or context</li>
       <li class="xs-mb1">Make code easy to work with; don’t make it overly complex (this is important and also can happen a result of the first bullet)</li>
     </ul>
+    <p class="bold xs-mb05">The Developer Experience</p>
+    <p>It was necessary to focus on the developer experience at this stage of the project. The team had a long-term vision of making opinionated improvements, at scale, across the consumer website. This included addressing accessibility issues, implementing typographic choices, and even introducing the ability to prototype with dynamic components.</p>
+    <p>All of these ideas seemed unattainable because we didn't have our core components in a stable place. Implementing a shared system would be the first step, and it was necessary to design a sustainable and easy workflow to maintain that system.</p>
+  </div>
 
+  <div class="clearfix xs-mb4 md-mb5">
+    <h2 class="xs-text-1 xs-mt2-xs-mb1">Setting up a transparent process</h2>
+    <p>Due to the nature of the project, we wanted to be as transparent as possible. We started a Slack channel with weekly pinned updates, roped in engineers from other teams into PR’s and Issues, and posted our progress on Basecamp. Having avenues for feedback and collaboration was essential since ultimately the success of the library depended on our teams adopting it in their day-to-day work.
+    </p>
+    <div class="element-inset"><img class="xs-border-lighter xs-mb05 xs-col-12 md-col-10" src="/css/images/buzzblocks/slack-convo.png" /></div><p class="xs-col-12 xs-text-5 italic text-gray">  Pinning weekly Slack updates was the easiest way to be transparent early on</p>
   </div>
 
   <div class="clearfix xs-mb4 md-mb5">
@@ -77,7 +73,7 @@ title: Buzzblocks
     <img src="/css/images/buzzblocks/bem-vs-solid.png" alt="">
     <p>BEM for the win in this scenario. Atomic styling made sense outside of components, but we wanted isolated styling and decided to utilize Solid’s variables inside scoped BEM classes instead. With the help of a few volunteers, we wrote our first draft of contributing and developing documentation based on how we built and shipped the shared header.</p>
     <img class="xs-col-12" src="/css/images/buzzblocks/contributing-docs-v1.png" alt="">
-    <p>We also worked quickly to get the first iteration of the component gallery up and running. We put the work in Basecamp and held discussions over Slack & GitHub for feedback and progress.</p>
+    <p>We also worked quickly to get the first iteration of the component gallery up and running. We put the work in Basecamp and held discussions over Slack and GitHub.</p>
   </div>
   <div class="clearfix xs-mb4 md-mb5">
     <h2 class="xs-text-1 xs-mt2-xs-mb1">Learning & Refining</h2>
