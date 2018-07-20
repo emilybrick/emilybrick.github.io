@@ -7,9 +7,9 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: $sans-type;
     margin-bottom: $space-3;
-    
+
     @include solid-breakpoint("lg") {
-     margin: 0 6rem $space-3 6rem;
+     margin: 0 9rem $space-3 9rem;
     }
   }
 
@@ -19,19 +19,19 @@
     margin-bottom: $space-3;
 
     @include solid-breakpoint("lg") {
-      margin: 0 6rem $space-3 6rem;
+      margin: 0 9rem $space-3 9rem;
     }
   }
 
   li {
 
     @include solid-breakpoint("lg") {
-      margin: 0 6rem;
+      margin: 0 9rem;
     }
   }
 
 
-  img { 
+  img {
     border-radius: $border-radius;
     margin: 0 0 $space-3;
   }
@@ -39,7 +39,7 @@
   .element-inset {
 
     @include solid-breakpoint("lg") {
-      margin: 0 6rem;
+      margin: 0 9rem;
     }
   }
 

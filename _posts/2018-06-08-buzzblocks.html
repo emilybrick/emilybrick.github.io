@@ -3,7 +3,7 @@ layout: post
 title: Buzzblocks
 
 ---
-<div class="xs-mx-auto md-mt2 xs-col-12 md-col-8 xs-block clearfix">
+<div class="xs-mx-auto md-mt2 xs-col-12 md-col-9 xs-block clearfix">
   <!-- Intro -->
   <div class="clearfix xs-mb4 md-mb5">
     <h1>Building Buzzblocks</h1>
@@ -87,14 +87,14 @@ title: Buzzblocks
       <li class="xs-mb1">Design and gallery improvements included dedicating a page to each component, configuration tables and example configurations, and links to see each component variation in isolation.</li>
     </ul>
     <img class="xs-mb4" src="/css/images/buzzblocks/gallery-v2-examples.png" alt="">
-    <img class="rounded xs-border-lighter" src="/css/images/buzzblocks/newsletter.gif" alt="">
+    <img class="rounded xs-border-lighter md-col-8 element-inset" src="/css/images/buzzblocks/newsletter.gif" alt="">
   </div>
 
   <div class="clearfix xs-mb4 md-mb5">
     <h2 class="xs-text-1 xs-mt2-xs-mb1">Addressing new challenges</h2>
     <p>While we began implementing a lot of these improvements, we noticed a trend happening. While we made it quite easy for people to contribute new components to the library, we didn’t make it easy to know when and if they should add new components to the library.</span></p>
     <p>We also noticed that components added were not well-defined in the gallery and were often missing the proper context for use. We hadn’t enforced any rules or guidelines around documenting components. We wrongfully assumed our (well-intentioned) engineers would be led by our not-so-obvious examples.<span class="bold"> The low barrier to contribute to Buzzblocks led to inevitable bugs and discrepancies in production.</span></p>
-    <img class="element-inset md-col-7" src="/css/images/buzzblocks/component-missing-documentation.jpg" alt="">
+    <img class="element-inset md-col-6" src="/css/images/buzzblocks/component-missing-documentation.jpg" alt="">
     <p class="xs-text-5 italic text-gray xs-mb4">A component missing clear documentation and context.</p>
     <img src="/css/images/buzzblocks/buzzblocks-bugblocks.png" alt="">
     <h2 class="xs-text-1 xs-mt2-xs-mb1">Getting to the bottom of it</h2>
@@ -105,11 +105,11 @@ title: Buzzblocks
 
     <div class="clearfix xs-mb05 ml-pl2">
       <div class="col xs-col-12 md-col-6 sans-type md-pr2 md-pl3 ">
-        <p>Migration Expectation</p>
+        <p class="md-mx0 xs-text-center">Migration Expectation</p>
         <img class="xs-col-12" src="/css/images/buzzblocks/migration-expectation.gif" alt="">
       </div>
       <div class="col xs-col-12 md-col-6 md-pl1 md-pr3 sans-type">
-        <p>Migration Reality</p>
+        <p class="md-mx0 xs-text-center">Migration Reality</p>
         <img class="xs-col-12" src="/css/images/buzzblocks/migration-reality.gif" alt="">
       </div>
     </div>
@@ -124,7 +124,7 @@ title: Buzzblocks
   <div class="clearfix xs-mb4 md-mb5">
     <h2 class="xs-text-1 xs-mt2-xs-mb1">Building it again, and then again</h2>
     <p>The most straightforward and effective way we could mitigate these risk factors were to build isolated components. We decided that we were no longer going to share SCSS or JS across multiple components unless they share enough likeness. We took this route because self-contained and self-reliant components (from both a stylistic and engineering standpoint) are more predictable, stable, and easy to test. This also meant that we would stop using components inside of other components. The framework didn’t allow for composability in the ways that we needed to feel comfortable importing partials.</p>
-    <img src="/css/images/buzzblocks/lack-of-encapsulation.png" alt="">
+    <img class="element-inset md-col-8" src="/css/images/buzzblocks/lack-of-encapsulation.png" alt="">
   </div>
 
   <div class="clearfix xs-mb4 md-mb5">

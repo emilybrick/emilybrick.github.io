@@ -4,8 +4,8 @@ title: BuzzFeed Solid
 
 ---
 
-<div class="xs-mx-auto md-mt2 xs-col-12 md-col-8 xs-block clearfix">
-  
+<div class="xs-mx-auto md-mt2 xs-col-12 md-col-9 xs-block clearfix">
+
   <!-- Intro -->
   <h1>Solid</h1>
   <p>About 3 months after I joined BuzzFeed, a small team of engineers and designers began building what would become a unified CSS styleguide for the team’s web products. Solid is a lightweight framework and design system, written with <a target="_blank" href="https://css-tricks.com/building-shipping-functional-css/">functional CSS</a>. You can check out the latest release <a target="_blank" href="http://solid.buzzfeed.com/">here</a>.</p>
@@ -14,7 +14,7 @@ title: BuzzFeed Solid
     <div class="col xs-col-12 md-col-9 md-pr2"><img class="xs-border-lighter" src="/css/images/solid/solid-intro-desktop.png"></div>
     <div class="col xs-col-12 sm-col-9 md-col-3 md-pl1"><img class="xs-border-lighter" src="/css/images/solid/solid-intro-mobile.png"></div>
   </div>
-  
+
 
   <!-- Why We Did It/Defining-->
   <div class="clearfix xs-mb4 md-mb5">
@@ -33,7 +33,7 @@ title: BuzzFeed Solid
     <p>This lack of communication became clear when the engineering team introduced a component library they had been building for the past few months. The library was built off of the current, existing website modules.  Each module on the site was broken off into its own template with its own styles. The intentions were good. The engineers wanted a library to reference and to reduce the number of styles for the same UI. “No more code bloat”, they reassured me.</p>
 
     <div class="element-inset">
-      <img class="xs-mb05 xs-border-lighter" src="/css/images/solid/old-component-library.png">
+      <img class="xs-mb05 xs-border-lighter md-col-7" src="/css/images/solid/old-component-library.png">
     </div>
     <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">A screenshot of the component library in progress when I first joined the team</p>
 
@@ -55,7 +55,7 @@ title: BuzzFeed Solid
     <p>Yes, a component in its purest state was fairly self-contained. But as soon as it was modified or altered in any way the CSS became a mess of nested layers and dependent styles. While the standard style of the story block component held up, many variations of this story block appeared over the course of a few months on different pages of BuzzFeed, and we didn't account for what would happen to the CSS when we introduced new variants.</p>
 
     <div class="xs-col-12">
-      <img class="xs-mb05 element-inset" src="/css/images/solid/story-component-variations.png">
+      <img class="xs-mb05 element-inset md-col-8" src="/css/images/solid/story-component-variations.png">
     </div>
     <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">Variations of the original storyblock that were introduced after the original component was built.</p>
 
@@ -63,7 +63,7 @@ title: BuzzFeed Solid
       <img class="xs-mb05" src="/css/images/solid/storyblock-code-variants.png">
     </div>
     <p class="xs-col-12 xs-text-5 text-gray xs-mb4 lg-pr6"><span class="italic xs-mr1">The amount of CSS we needed to append onto the original styles to achieve the modified variant styling</span>😭</p>
- 
+
     <p class="xs-mb0">Having brittle components just wasn't giving us the flexibility we needed. There were many ways we could have solved component modification, some of which we still consider today. Regardless, it was clear we needed to move away from this. The root of the problem was that design and engineering weren’t aligned on the future of the BuzzFeed’s UI. I felt like I was in a unique position, seeing both sides of the coin. Engineering wanted stability, and design wanted flexibility.</p>
   </div>
 
@@ -74,7 +74,7 @@ title: BuzzFeed Solid
     <p>We started playing around with <a target="_blank" href="http://basscss.com/">BassCSS</a>, a functional CSS styleguide, and found to be a really nice way of spinning up new designs. Not only that, but BassCSS is written in a way that makes it easy and non-intimidating for designers to pick up. Being able to use it in our own prototypes inspired us think differently about how we write and consider CSS.</p>
     <p>We decided to get a small group of designers and engineers to sit together weekly and begin discussing different ways of tackling our CSS problems.</p>
     <p>The key to success here was choosing the right people to start the conversation. Anyone who expressed interest could join, but we really wanted those key engineers involved in the initial component library in the room.</p>
-    <img class="xs-col-12 xs-mb05" src="/css/images/solid/team.png">
+    <img class="md-col-8 element-inset xs-mb05" src="/css/images/solid/team.png">
     <p class="xs-col-12 italic xs-text-5 text-gray xs-mb4 lg-pr6">The original Solid team</p>
     <p>The final negotiation revolved around using a functional CSS library over a more systemic BEM-like approach. Functional CSS can be described a few different ways, but it basically revolves around tightly scoped, single responsibility classes. Functional styles should be immutable, or not easily overwritten.</p>
     <p class="xs-mb0">Aside from playing around in BassCSS, we started reading up on other libraries tackling the same problems, such as <a target="_blank" href="http://tachyons.io/">Tachyons</a>, and <a target="_blank" href="http://rizzo.lonelyplanet.com/styleguide/design-elements/colours">Lonely Planet</a>.</p>
@@ -86,8 +86,8 @@ title: BuzzFeed Solid
     <p>We wanted the ability to create some consistency where it made sense, but also to easily make new things or rethink old ideas. This was especially important for the BuzzFeed product and to our constantly-evolving editorial strategies.</p>
     <p>Functional CSS was a low-barrier way to create tightly scoped, fundamental styles that wouldn’t interfere with the existing components.</p>
 
-    <img class="xs-mb05 xs-border-lighter" src="/css/images/solid/single-responsibility-classes.png" alt="">
-    <p class="xs-col-12 xs-text-5 italic text-gray xs-mb4 lg-pr6">An example of Solid's single responsibility classes in the documentation</p>
+    <img class="xs-mb05 xs-border-lighter element-inset md-col-8" src="/css/images/solid/single-responsibility-classes.png" alt="">
+    <p class="xs-text-5 text-gray xs-mb4 italic">An example of Solid's single responsibility classes in the documentation</p>
 
     <p>Broken down, we were looking to create a flexible style guide for BuzzFeed that would allow for a scalable and iterative design approach in a more efficient and less risky way than we previously were.</p>
 
@@ -115,19 +115,19 @@ title: BuzzFeed Solid
     <img class="xs-mb05 xs-border-lighter element-inset" src="/css/images/solid/buzzmaps-hackweek.png" alt="">
     <p class="xs-col-12 xs-text-5 text-gray xs-mb4 lg-pr6 italic">"Buzz Maps", a hackweek project built with Solid's first Beta release</p>
     <p>We spent the next 4-6 months refining the documentation and styles. The first public project we tested the Beta release on was Buzzfeed.com/news. We were able to drastically reduce the amount of CSS and page weight. We also added it onto smaller independent pieces of the CMS.</p>
-    <img class="xs-mb05 xs-border-lighter" src="/css/images/solid/release-notes.png" alt="">
-    <p class="xs-col-12 xs-text-5 text-gray xs-mb4 lg-pr6 italic">Documenting breaking changes was especially important when starting out with internal use, since we were evolving and iterating at a rapid pace.</p>
+    <img class="xs-mb05 xs-border-lighter element-inset md-col-8" src="/css/images/solid/release-notes.png" alt="">
+    <p class="xs-text-5 text-gray xs-mb4 italic">Documenting breaking changes was especially important when starting out with internal use, since we were evolving and iterating at a rapid pace.</p>
   </div>
 
   <!-- Shipping/Learning -->
   <div class="xs-border-top-lighter clearfix xs-mb4 md-mb5">
     <h2 class="xs-text-1 xs-mt4 md-mt5">Shipping and Learning</h2>
-    <img class="xs-border-lighter xs-col-12" src="/css/images/solid/colors.png" >
+    <img class="xs-mb05 xs-border-lighter element-inset md-col-8" src="/css/images/solid/colors.png" >
     <p>A year after launching Solid publicly, we’ve been able to ship a suite of new pages, as well as iterate on them painlessly. Learn more about why we made Solid public <a href="https://medium.com/buzzfeed-design/why-we-made-solid-public-7fed52e7fca4#.6dsh6m3jy">here</a>.</p>
 
     <p>We implemented Solid on the new homepage, BuzzFeed Tasty, and a few newer category pages. We’re currently in the process of implementing the styles on article pages while we port them over to a responsive layout.</p>
 
-    <img class="xs-border-lighter xs-col-12" src="/css/images/solid/quizzes.png" >
+    <img class="xs-mb05 xs-border-lighter element-inset md-col-8" src="/css/images/solid/quizzes.png" >
 
     <p class="xs-mb1 bold">Some wins we’ve seen in the past year:</p>
 
@@ -147,8 +147,8 @@ title: BuzzFeed Solid
       <li>Revisiting some technical decisions we've made, such as when to add !importants, and which styles merit more than one responsibility, if any.</li>
     </ul>
 
-    <img class="xs-border-lighter xs-mb05" src="/css/images/solid/component-messaging.png" >
-    <p class="xs-col-12 xs-text-5 text-gray xs-mb4 lg-pr6 italic">An example of one of Solid's lightweight components in the documentation. The components, unlike the utility classes, use a BEM class structure.</p>
+    <img class="xs-mb05 xs-border-lighter element-inset md-col-8" src="/css/images/solid/component-messaging.png" >
+    <p class="xs-text-5 text-gray xs-mb4 italic">An example of one of Solid's lightweight components in the documentation. The components, unlike the utility classes, use a BEM class structure.</p>
 
     <p>At the end of the day we’re able ship things quicker, communicate smarter, and iterate easier (all without adding tons of CSS to our codebase). At the most basic level, Solid is only what it needs to be for each product we make. Though it was built first and foremost for BuzzFeed, it’s open to the public for anyone to play with (check out the link below to try it for yourself!). I’m really excited to see what comes of Solid and the future of design systems across the board.</p>
 
