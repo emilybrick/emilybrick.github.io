@@ -18,5 +18,7 @@
   "bugs": {
     "url": "https://github.com/emilybrick/bf-solid-kit/issues"
   },
-  "homepage": "https://github.com/emilybrick/bf-solid-kit#readme"
+  "homepage": "https://github.com/emilybrick/bf-solid-kit#readme",
+  "main": "index.js",
+  "keywords": []
 }
