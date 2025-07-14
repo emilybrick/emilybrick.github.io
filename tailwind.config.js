@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'sans': ['Open Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        'serif': ['Noto Serif', 'ui-serif', 'Georgia', 'serif'],
+        'serif': ['Lora', 'ui-serif', 'Georgia', 'serif'],
       },
     },
   },

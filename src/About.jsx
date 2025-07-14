@@ -25,13 +25,13 @@ function About() {
         </Link>
       </nav>
       
-      <main className="w-screen flex flex-col items-center justify-center min-h-screen px-6 bg-white">
+      <main className="w-screen flex flex-col items-center justify-center min-h-screen px-6 bg-white mt-24 md:mt-0">
         <div className="max-w-2xl mx-auto text-center">
           <h1 className="font-semibold mb-8 font-serif text-gray-800"><span className="text-5xl">About</span></h1>
 
           <div className="text-left space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              I’ve spent the past 10 years working on design systems as a means to deliver quality at scale. I’m especially interested in developer tools, but I believe design systems are essential to any strong user experience.
+              I’ve spent the past 10 years working on design systems as a means to deliver quality at scale. I’m particularly interested in developer tools, but I believe design systems are essential to any strong user experience.
             </p>
             
             <p>
@@ -48,12 +48,12 @@ function About() {
                 href="https://primer.style" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="!underline"
               >
                 design system
               </a>.
             </p>
-            <p> I recently joined <a href="https://lattice.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Lattice HR</a>, working on their Core UI team. In a past life, I helped build the <a href="https://github.com/buzzfeed/solid">design system for BuzzFeed</a>.</p>
+            <p> I recently joined <a href="https://lattice.com" target="_blank" rel="noopener noreferrer" className="!underline">Lattice HR</a> to work on their Core UI team. In a past life, I helped build the <a href="https://github.com/buzzfeed/solid"  target="_blank" rel="noopener noreferrer" className="!underline">design system for BuzzFeed</a>.</p>
           </div>
         </div>
       </main>

@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
-/* Explicitly ensure Noto Serif loads */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/* Explicitly ensure Lora loads */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
-/* Force font-serif to use Noto Serif */
+/* Force font-serif to use Lora */
 .font-serif {
-  font-family: 'Noto Serif', ui-serif, Georgia, serif !important;
+  font-family: 'Lora', ui-serif, Georgia, serif !important;
 }
 
 :root {
@@ -13,8 +13,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #37302F;
+  background-color: #EED7C5;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,11 +24,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #4b83a5;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #0d1920;
 }
 
 body {
@@ -38,11 +38,16 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 500;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #B36A5E;
 }
 
 button {
@@ -56,7 +61,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #192e3b;
 }
 button:focus,
 button:focus-visible {
@@ -69,7 +74,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #192e3b;
   }
   button {
     background-color: #f9f9f9;
