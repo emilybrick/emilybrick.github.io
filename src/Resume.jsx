@@ -6,19 +6,19 @@ function Resume() {
       <nav className="bg-white fixed p-6 z-10 flex space-x-4 w-full">
         <Link 
           to="/" 
-          className="text-gray-600 hover:text-blue-600 transition-colors text-lg font-medium"
+          className="text-gray-600 hover:text-blue-600 transition-colors text-md font-medium"
         >
           Home
         </Link>
         <Link 
           to="/about" 
-          className="text-gray-600 hover:text-blue-600 transition-colors text-lg font-medium"
+          className="text-gray-600 hover:text-blue-600 transition-colors text-md font-medium"
         >
           About
         </Link>
         <Link 
           to="/resume" 
-          className="text-gray-600 hover:text-blue-600 transition-colors text-lg font-medium"
+          className="text-gray-600 hover:text-blue-600 transition-colors text-md font-medium"
         >
           Resume
         </Link>

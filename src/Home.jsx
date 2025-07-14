@@ -19,19 +19,19 @@ function Home() {
       <nav className="bg-white fixed p-6 z-10 flex space-x-4 w-full">
         <Link 
           to="/" 
-          className="text-gray-600 hover:text-blue-600 transition-colors text-lg font-medium"
+          className="text-gray-600 hover:text-blue-600 transition-colors text-md font-medium"
         >
           Home
         </Link>
         <Link 
           to="/about" 
-          className="text-gray-600 hover:text-blue-600 transition-colors text-lg font-medium"
+          className="text-gray-600 hover:text-blue-600 transition-colors text-md font-medium"
         >
           About
         </Link>
         <Link 
           to="/resume" 
-          className="text-gray-600 hover:text-blue-600 transition-colors text-lg font-medium"
+          className="text-gray-600 hover:text-blue-600 transition-colors text-md font-medium"
         >
           Resume
         </Link>
@@ -39,12 +39,12 @@ function Home() {
       
       <main className="w-screen flex flex-col items-center justify-center min-h-screen px-6 bg-white">
         <div className="max-w-lg mx-auto text-center">
-          <h1 className="text-6xl font-bold mb-6 font-serif text-gray-800">Hello!</h1>
+          <h1 className="text-6xl font-semibold mb-6 font-serif text-gray-800">Hello!</h1>
           <p className="text-lg leading-relaxed mb-8 text-gray-700">
             I'm Emily, a design systems and software designer based out of Philadelphia. I love systems small and large and work on the internet for a living.
           </p>
         </div>
-        <nav className="flex space-x-6 text-lg">
+        <nav className="flex space-x-6 text-md">
           <div className="flex items-center space-x-2">
             <a
               href="mailto:brick.emily@gmail.com"

@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Proza Libre', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        'serif': ['Lora', 'ui-serif', 'Georgia', 'serif'],
+        'sans': ['Open Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        'serif': ['Noto Serif', 'ui-serif', 'Georgia', 'serif'],
       },
     },
   },
