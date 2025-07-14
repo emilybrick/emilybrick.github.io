@@ -1,0 +1,26 @@
+/* Custom animations and effects that complement Tailwind CSS */
+
+/* Custom logo hover effects with glowing shadows */
+.logo-vite:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo-react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Slow spin animation for React logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo-react {
+    animation: logo-spin infinite 20s linear;
+  }
+}
