@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; URL='/'" />
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
     <script>
-      // This keeps the current path and lets your app handle it
-      window.location.replace('/?' + window.location.pathname);
+      // Store the current path and redirect to the main app
+      // This allows React Router to handle the routing client-side
+      const path = window.location.pathname;
+      const search = window.location.search;
+      const hash = window.location.hash;
+      
+      // Redirect to the root with the path as a parameter
+      // Your React app can then parse this and navigate to the correct route
+      window.location.replace('/' + '?redirect=' + encodeURIComponent(path + search + hash));
     </script>
   </head>
   <body>
