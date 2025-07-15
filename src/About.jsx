@@ -4,7 +4,7 @@ function About() {
   return (
     <>
       {/* Fixed navigation links in top left */}
-      <nav className="bg-white fixed p-6 z-10 flex space-x-4 w-full">
+      <nav className="fixed p-6 z-10 flex space-x-4 w-full">
         <Link 
           to="/" 
           className="text-gray-600 hover:text-blue-600 transition-colors text-md font-medium"
@@ -25,7 +25,7 @@ function About() {
         </Link>
       </nav>
       
-      <main className="w-screen flex flex-col items-center justify-center min-h-screen px-6 bg-white mt-24 md:mt-0">
+      <main className="w-screen flex flex-col items-center justify-center min-h-screen px-6 mt-24 md:mt-0">
         <div className="max-w-2xl mx-auto text-center">
           <h1 className="font-semibold mb-8 font-serif text-gray-800"><span className="text-5xl">About</span></h1>
 

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 function Resume() {
   return (
     <>
-      <nav className="bg-white fixed p-6 z-10 flex space-x-4 w-full">
+      <nav className="fixed p-6 z-10 flex space-x-4 w-full">
         <Link 
           to="/" 
           className="text-gray-600 hover:text-blue-600 transition-colors text-md font-medium"
@@ -24,7 +24,7 @@ function Resume() {
         </Link>
       </nav>
       
-      <main className="w-screen w-full flex flex-col items-center justify-center min-h-screen px-6 bg-white">
+      <main className="w-screen w-full flex flex-col items-center justify-center min-h-screen px-6">
         <div className="max-w-4xl w-full mx-auto py-12 mt-24">
           
           {/* Experience Section */}

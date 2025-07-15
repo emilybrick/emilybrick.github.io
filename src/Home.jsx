@@ -16,7 +16,7 @@ function Home() {
   return (
     <>
       {/* Fixed navigation links in top left */}
-      <nav className="bg-white fixed p-6 z-10 flex space-x-4 w-full">
+      <nav className="fixed p-6 z-10 flex space-x-4 w-full">
         <Link 
           to="/" 
           className="text-gray-600 hover:text-blue-600 transition-colors text-md font-medium"
@@ -37,7 +37,7 @@ function Home() {
         </Link>
       </nav>
       
-      <main className="w-screen flex flex-col items-center justify-center min-h-screen px-6 bg-white">
+      <main className="w-screen flex flex-col items-center justify-center min-h-screen px-6">
         <div className="max-w-lg mx-auto text-center">
           <h1 className="text-6xl font-semibold mb-6 font-serif text-gray-800">Hello!</h1>
           <p className="text-lg leading-relaxed mb-8 text-gray-700">

@@ -14,12 +14,16 @@
 
   color-scheme: light dark;
   color: #37302F;
-  background-color: #EED7C5;
+  background-color: #fbf9f7;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #fbf9f7;
 }
 
 a {
@@ -47,7 +51,7 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #B36A5E;
+  color: #ac5181;
 }
 
 button {
