@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Open Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        'serif': ['Lora', 'ui-serif', 'Georgia', 'serif'],
+        'sans': ['Jovie', 'ui-sans-serif', 'system-ui', 'sans-serif'], 
+        'serif': ['Jovie', 'ui-serif', 'Georgia', 'serif'], 
       },
     },
   },

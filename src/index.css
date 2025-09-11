@@ -1,20 +1,37 @@
 @import "tailwindcss";
 
-/* Explicitly ensure Lora loads */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/* Add Jovie font-face */
+@font-face {
+  font-family: 'Jovie';
+  src: url('/src/assets/fonts/Jovie.woff2') format('woff2'),
+       url('/src/assets/fonts/Jovie.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-/* Force font-serif to use Lora */
-.font-serif {
-  font-family: 'Lora', ui-serif, Georgia, serif !important;
+/* Add Jovie Bold font-face */
+@font-face {
+  font-family: 'Jovie';
+  src: url('/src/assets/fonts/Jovie-Bold.woff2') format('woff2'),
+       url('/src/assets/fonts/Jovie-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Add Jovie Bold Italic font-face */
+@font-face {
+  font-family: 'Jovie';
+  src: url('/src/assets/fonts/Jovie-BoldItalic.woff2') format('woff2'),
+       url('/src/assets/fonts/Jovie-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
 }
 
 :root {
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: #37302F;
-  background-color: #fbf9f7;
+  color: #4C4B4B;
+  background-color: #F5E9DB;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,12 +40,12 @@
 }
 
 body {
-  background-color: #fbf9f7;
+  background-color: #F5E9DB;
 }
 
 a {
   font-weight: 500;
-  color: #4b83a5;
+  color: #42693B;
   text-decoration: inherit;
 }
 a:hover {
@@ -41,17 +58,20 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  font-family: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
-  font-weight: 500;
+  font-family: 'Jovie', serif;
+  font-weight: normal;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-family: 'Jovie', serif;
+  font-size: 4em;
   line-height: 1.1;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Jovie', serif;
   color: #ac5181;
+  font-weight: bold;
 }
 
 button {
@@ -83,4 +103,22 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.font-semibold {
+  font-weight: bold;
+  color: #42693B
+}
+
+.text-highlight {
+  color: #D8AF9B;
+}
+
+.bg-color {
+  background-color: #F5E9DB;
+}
+
+.text-link {
+  color: #4949AD;
+  font-weight: bold;
 }
