@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import Home from './Home.jsx'
-import About from './About.jsx'
+import Work from './Work.jsx'
 import Resume from './Resume.jsx'
 import './App.css'
 
@@ -29,7 +29,7 @@ function App() {
       <RedirectHandler />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>
     </Router>

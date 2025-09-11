@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Home.jsx'
-import About from './About.jsx'
+import Work from './Work.jsx'
 import './App.css'
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
       </Routes>
     </Router>
   )
