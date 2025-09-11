@@ -3,8 +3,8 @@
 /* Add Jovie font-face */
 @font-face {
   font-family: 'Jovie';
-  src: url('./public/assets/fonts/Jovie.woff2') format('woff2'),
-       url('./public/assets/fonts/Jovie.woff') format('woff');
+  src: url('./assets/fonts/Jovie.woff2') format('woff2'),
+       url('./assets/fonts/Jovie.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -12,8 +12,8 @@
 /* Add Jovie Bold font-face */
 @font-face {
   font-family: 'Jovie';
-  src: url('./public/assets/fonts/Jovie-Bold.woff2') format('woff2'),
-       url('./public/assets/fonts/Jovie-Bold.woff') format('woff');
+  src: url('./assets/fonts/Jovie-Bold.woff2') format('woff2'),
+       url('./assets/fonts/Jovie-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -21,8 +21,8 @@
 /* Add Jovie Bold Italic font-face */
 @font-face {
   font-family: 'Jovie';
-  src: url('./public/assets/fonts/Jovie-BoldItalic.woff2') format('woff2'),
-       url('./public/assets/fonts/Jovie-BoldItalic.woff') format('woff');
+  src: url('./assets/fonts/Jovie-BoldItalic.woff2') format('woff2'),
+       url('./assets/fonts/Jovie-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
 }
