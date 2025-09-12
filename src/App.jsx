@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import Home from './Home.jsx'
 import Work from './Work.jsx'
 import Resume from './Resume.jsx'
+
 import './App.css'
 
 function RedirectHandler() {
