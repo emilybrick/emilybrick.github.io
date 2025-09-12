@@ -35,7 +35,7 @@ function Work() {
           </div>
           <div className="text-left space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              I've focused on design systems for the better part of the last decade as a means to deliver quality at scale. I believe design systems are essential to any strong user experience.
+              I've focused on design systems for last decade as a means to deliver quality at scale. I believe design systems are essential to any strong user experience.
             </p>
             
             <p>
@@ -58,10 +58,29 @@ function Work() {
               </a>.
               In a past life, I helped build the <a href="https://www.buzzfeed.com/static-assets/solid-docs/index.html"  target="_blank" rel="noopener noreferrer" className="!underline">design system for BuzzFeed</a>.
             </p>
-            <p className="mt-8 font-bold-italic text-gray-600">I'll be posting work soon, stay tuned  🎶</p>
+            <p className="mt-8 font-bold-italic text-gray-600">Posting work soon, stay tuned  🎶</p>
         
           </div>
         </div>
+
+        {/* <nav className="p-2 flex flex-col items-center justify-center">
+        <Link 
+          className="font-semibold"
+        >
+          Blog post 1
+        </Link>
+        <Link 
+          className="font-semibold"
+        >
+           Blog post 2
+        </Link>
+        <Link 
+          className="font-semibold"
+        >
+           Blog post 3
+        </Link>
+      </nav> */}
+
       </main>
     </>
   )

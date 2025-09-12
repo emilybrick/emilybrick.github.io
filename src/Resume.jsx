@@ -39,7 +39,7 @@ function Resume() {
             <div className="space-y-8">
 
               {/* Lattice - Sr Staff Product Designer */}
-              <div className=" pb-4 pt-4 border-b border-rose-200">
+              <div className=" pb-4 pt-4 border-b border-gray-300">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                   <div className="md:w-1/3 text-left md:text-right">
                     <span className="text-gray-500">June 2025 – Present</span>
@@ -116,7 +116,7 @@ function Resume() {
                 </div>
 
               {/* GitHub - Systems Designer */}
-              <div className="pb-4 border-b border-rose-200">
+              <div className="pb-4 border-b border-gray-300">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                   <div className="md:w-1/3 text-left md:text-right">
                     <span className="text-gray-500">September 2018 – December 2019</span>
@@ -133,7 +133,7 @@ function Resume() {
               </div>
 
               {/* Trello - Product Designer */}
-              <div className="pb-4 border-b border-rose-200">
+              <div className="pb-4 border-b border-gray-300">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                   <div className="md:w-1/3 text-left md:text-right">
                     <span className="text-gray-500">April 2018 – September 2018</span>
@@ -150,7 +150,7 @@ function Resume() {
               </div>
 
               {/* BuzzFeed - Senior Product Designer */}
-              <div className="pb-4 border-b border-rose-200">
+              <div className="pb-4 border-b border-gray-300">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                   <div className="md:w-1/3 text-left md:text-right">
                     <span className="text-gray-500">July 2015 – March 2018</span>
@@ -180,7 +180,7 @@ function Resume() {
               </div>
 
               {/* Shapeways */}
-              <div className="pb-4 border-b border-rose-200">
+              <div className="pb-4 border-b border-gray-300">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                   <div className="md:w-1/3 text-left md:text-right">
                     <span className="text-gray-500">January 2014 – December 2014</span>
@@ -210,7 +210,7 @@ function Resume() {
               </div>
 
               {/* Birchbox */}
-              <div className="pb-4 border-b border-rose-200">
+              <div className="pb-4 border-b border-gray-300">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                   <div className="md:w-1/3 text-left md:text-right">
                     <span className="text-gray-500">May 2013 – July 2013</span>
@@ -227,7 +227,7 @@ function Resume() {
               </div>
 
               {/* Solve Media */}
-              <div className="pb-4 border-b border-rose-200">
+              <div className="pb-4 border-b border-gray-300">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                   <div className="md:w-1/3 text-left md:text-right">
                     <span className="text-gray-500">June 2012 – May 2013</span>
