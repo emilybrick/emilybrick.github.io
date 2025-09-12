@@ -35,7 +35,7 @@ function Work() {
           </div>
           <div className="text-left space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-              I’ve spent the past 10 years working on design systems as a means to deliver quality at scale. I’m particularly interested in developer tools, but I believe design systems are essential to any strong user experience.
+              I've focused on design systems for the better part of the last decade as a means to deliver quality at scale. I believe design systems are essential to any strong user experience.
             </p>
             
             <p>
@@ -44,7 +44,7 @@ function Work() {
                 href="https://github.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="text-blue-600 !underline"
               >
                 GitHub
               </a>, where my work focused on creating consistent patterns, bridging design and engineering, and most recently, leading the documentation experience for GitHub’s                {' '}
@@ -56,8 +56,9 @@ function Work() {
               >
                 design system
               </a>.
-              In a past life, I helped build the <a href="https://github.com/buzzfeed/solid"  target="_blank" rel="noopener noreferrer" className="!underline">design system for BuzzFeed</a>.
+              In a past life, I helped build the <a href="https://www.buzzfeed.com/static-assets/solid-docs/index.html"  target="_blank" rel="noopener noreferrer" className="!underline">design system for BuzzFeed</a>.
             </p>
+            <p className="mt-8 font-bold-italic text-gray-600">I'll be posting work soon, stay tuned  🎶</p>
         
           </div>
         </div>

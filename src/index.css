@@ -122,3 +122,9 @@ button:focus-visible {
   color: #4949AD;
   font-weight: bold;
 }
+
+.font-bold-italic {
+  font-family: 'Jovie';
+  font-weight: bold;
+  font-style: italic;
+}
