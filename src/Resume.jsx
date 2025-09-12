@@ -143,7 +143,7 @@ function Resume() {
                     <p className="text-gray-500 mb-2">
                       <a href="https://www.trello.com/" target="_blank" rel="noopener noreferrer" className="hover:underline text-link">
                         Trello
-                      </a> | New York, NY
+                      </a> | Remote
                     </p>
                   </div>
                 </div>
