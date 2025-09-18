@@ -24,8 +24,8 @@ function Resume() {
         </Link>
       </nav>
       
-      <main className="w-screen w-full flex flex-col items-center justify-center min-h-screen px-6">
-        <div className="max-w-4xl w-full mx-auto py-10 mt-16 md:mt-36">
+      <main className="w-screen w-full flex flex-col items-center min-h-screen py-24 px-6">
+        <div className="max-w-4xl w-full mx-auto">
           
           {/* Experience Section */}
           <section className="mb-12">

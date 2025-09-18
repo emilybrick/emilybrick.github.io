@@ -70,7 +70,7 @@ h1 {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Jovie', serif;
-  color: #ac5181;
+  color: #4C4B4B;
   font-weight: bold;
 }
 
@@ -103,6 +103,12 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.font-normal {
+  font-family: 'Jovie', serif;
+  font-style: normal; 
+  color: #4C4B4B;
 }
 
 .font-semibold {
