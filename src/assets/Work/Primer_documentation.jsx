@@ -37,9 +37,9 @@ function PrimerDocumentation() {
         <p className='mb-6 text-subtitle'>Rethinking GitHub's design system documentation from the ground up</p>
       </div>
       <div className='text-left max-w-4xl'>
-        <a href="/public/images/documentation_product_hp.png" target="_blank" rel="noopener noreferrer">
+        <a href="/src/assets/images/documentation_product_hp.png" target="_blank" rel="noopener noreferrer">
           <img
-            src="/public/images/documentation_product_hp.png"
+            src="/src/assets/images/documentation_product_hp.png"
             width={800}
             alt="Primer Documentation"
             className="w-full h-auto mb-4"
@@ -85,33 +85,33 @@ function PrimerDocumentation() {
       <Link to={"https://primer.style"} className="!underline">Check out the Primer documentation site</Link>
     </div>
     <div className='max-w-4xl mt-6'>
-      <a href="/public/images/documentation_full_lightmode.png" target="_blank" rel="noopener noreferrer">
+      <a href="/src/assets/images/documentation_full_lightmode.png" target="_blank" rel="noopener noreferrer">
         <img
-          src="/public/images/documentation_full_lightmode.png"
+          src="/src/assets/images/documentation_full_lightmode.png"
           width={800}
           alt="Primer Documentation"
           className="w-full h-auto mb-4"
         />
       </a>
-      <a href="/public/images/documentation_component_page.png" target="_blank" rel="noopener noreferrer">
+      <a href="/src/assets/images/documentation_component_page.png" target="_blank" rel="noopener noreferrer">
         <img
-          src="/public/images/documentation_component_page.png"
+          src="/src/assets/images/documentation_component_page.png"
           width={800}
           alt="Primer Documentation"
           className="w-full h-auto mb-4"
         />
       </a>
-      <a href="/public/images/documentation_component_page_2.png" target="_blank" rel="noopener noreferrer">
+      <a href="/src/assets/images/documentation_component_page_2.png" target="_blank" rel="noopener noreferrer">
         <img
-          src="/public/images/documentation_component_page_2.png"
+          src="/src/assets/images/documentation_component_page_2.png"
           width={800}
           alt="Primer Documentation"
           className="w-full h-auto mb-4"
         />
       </a>
-      <a href="/public/images/documentation_octicon.png" target="_blank" rel="noopener noreferrer">
+      <a href="/src/assets/images/documentation_octicon.png" target="_blank" rel="noopener noreferrer">
         <img
-          src="/public/images/documentation_octicon.png"
+          src="/src/assets/images/documentation_octicon.png"
           width={800}
           alt="Primer Documentation"
           className="w-full h-auto mb-4"
