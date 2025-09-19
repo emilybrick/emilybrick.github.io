@@ -1,5 +1,10 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import documentationImage from '@/assets/images/documentation_full_lightmode.png';
+import documentationComponentPage2 from '@/assets/images/documentation_component_page_2.png';
+import documentationComponentPage from '@/assets/images/documentation_component_page.png';
+import documentationOcticon from '@/assets/images/documentation_octicon.png';
+import documentationProductHP from '@/assets/images/documentation_product_hp.png';
 
 function PrimerDocumentation() {
   const [count, setCount] = useState(0);
@@ -37,9 +42,9 @@ function PrimerDocumentation() {
         <p className='mb-6 text-subtitle'>Rethinking GitHub's design system documentation from the ground up</p>
       </div>
       <div className='text-left max-w-4xl'>
-        <a href="/src/assets/images/documentation_product_hp.png" target="_blank" rel="noopener noreferrer">
+      <a href={documentationProductHP} target="_blank" rel="noopener noreferrer">
           <img
-            src="/src/assets/images/documentation_product_hp.png"
+            src={documentationProductHP}
             width={800}
             alt="Primer Documentation"
             className="w-full h-auto mb-4"
@@ -85,33 +90,33 @@ function PrimerDocumentation() {
       <Link to={"https://primer.style"} className="!underline">Check out the Primer documentation site</Link>
     </div>
     <div className='max-w-4xl mt-6'>
-      <a href="/src/assets/images/documentation_full_lightmode.png" target="_blank" rel="noopener noreferrer">
+      <a href={documentationImage} target="_blank" rel="noopener noreferrer">
         <img
-          src="/src/assets/images/documentation_full_lightmode.png"
+          src={documentationImage}
           width={800}
           alt="Primer Documentation"
           className="w-full h-auto mb-4"
         />
       </a>
-      <a href="/src/assets/images/documentation_component_page.png" target="_blank" rel="noopener noreferrer">
+      <a href={documentationComponentPage} target="_blank" rel="noopener noreferrer">
         <img
-          src="/src/assets/images/documentation_component_page.png"
+          src={documentationComponentPage}
           width={800}
           alt="Primer Documentation"
           className="w-full h-auto mb-4"
         />
       </a>
-      <a href="/src/assets/images/documentation_component_page_2.png" target="_blank" rel="noopener noreferrer">
+      <a href={documentationComponentPage2} target="_blank" rel="noopener noreferrer">
         <img
-          src="/src/assets/images/documentation_component_page_2.png"
+          src={documentationComponentPage2}
           width={800}
           alt="Primer Documentation"
           className="w-full h-auto mb-4"
         />
       </a>
-      <a href="/src/assets/images/documentation_octicon.png" target="_blank" rel="noopener noreferrer">
+      <a href={documentationOcticon} target="_blank" rel="noopener noreferrer">
         <img
-          src="/src/assets/images/documentation_octicon.png"
+          src={documentationOcticon}
           width={800}
           alt="Primer Documentation"
           className="w-full h-auto mb-4"
