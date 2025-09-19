@@ -53,7 +53,7 @@ function Home() {
           I'm Emily, a design systems and software designer based out of Philadelphia. I love systems small and large and work on the internet for a living.
         </p>
         </div>
-        <nav className="flex space-x-6 text-md">
+        <nav className="flex space-x-4 md:space-x-6 text-md">
           <div className="flex items-center space-x-2">
             <a
               href="mailto:brick.emily@gmail.com"
