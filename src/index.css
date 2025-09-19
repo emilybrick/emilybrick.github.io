@@ -134,3 +134,8 @@ button:focus-visible {
   font-weight: bold;
   font-style: italic;
 }
+
+.text-title {
+  font-size: 2.5em;
+  line-height: normal;
+}

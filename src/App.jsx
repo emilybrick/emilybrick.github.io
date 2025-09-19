@@ -4,6 +4,7 @@ import Home from './Home.jsx'
 import Work from './Work.jsx'
 import Resume from './Resume.jsx'
 import PrimerDocumentation from './assets/Work/Primer_documentation.jsx'
+import SelectPanel from './assets/Work/Select_panel.jsx'
 
 import './App.css'
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/work" element={<Work />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/work/primer-documentation" element={<PrimerDocumentation />} />
+        <Route path="/work/select-panel" element={<SelectPanel />} />
       </Routes>
     </Router>
   )

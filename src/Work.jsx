@@ -66,7 +66,7 @@ function Work() {
             <span>GitHub's Design System Documentation</span>
             <span className='font-normal'>2024–2025</span>
           </Link>
-          <Link to="/work/primer-documentation" className="flex flex-col items-center">
+          <Link to="/work/select-panel" className="flex flex-col items-center">
             SelectPanel: One SelectPanel to Rule Them All
             <span className='font-normal'>2025</span>
           </Link>

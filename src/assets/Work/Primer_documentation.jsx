@@ -29,14 +29,14 @@ function PrimerDocumentation() {
       </Link>
     </nav>
     <main className='w-screen flex flex-col items-center py-24 px-6'>
-      <div className='text-left sm:min-w-xl md:min-w-2xl'>
+      <div className='text-left sm:w-xl md:w-2xl'>
         <Link to="/work" className="text-sm">
-        <span className='text-lg mt-1'>←</span> Back to All Work
+        <span className='text-lg mt-6'>←</span> Back to All Work
         </Link>
-        <h1 className='mt-4 mb-1'><span className='text-left text-4xl font-bold-italic'>Primer Documentation</span></h1>
-        <p className='mb-4'>Rethinking GitHub's design system documentation from the ground up.</p>
+        <h1 className='mt-4 mb-1 text-title'>Primer Documentation</h1>
+        <p className='mb-6 text-subtitle'>Rethinking GitHub's design system documentation from the ground up</p>
       </div>
-      <div className='text-left max-w-3xl'>
+      <div className='text-left max-w-4xl'>
         <a href="/public/images/documentation_product_hp.png" target="_blank" rel="noopener noreferrer">
           <img
             src="/public/images/documentation_product_hp.png"
@@ -65,10 +65,10 @@ function PrimerDocumentation() {
       <div className='space-y-4 mb-4'>
         <h2>The problem</h2>
         <p>
-          Even though the new unified documentation site was a huge step forward, we were still constrained by Gatsby, which was hard to maintain, slow to scale, and full of dependency issues. Gatsby became a bottleneck that slowed down the growth and scale of the documentation necessary.
+          Though the new unified documentation site was a huge step forward, we were still constrained by Gatsby, which was hard to maintain, slow to scale, and full of dependency issues. Gatsby became a bottleneck that slowed down the growth and scale of the documentation necessary.
         </p>
         <p>
-          We want to replatform the documentation site and give it a bit of a facelift that we didn’t have the bandwidth or resources to in the prior ship.
+          We set out to replatform the documentation site to improve the contribution experience and give it a bit of a facelift that we didn’t have the bandwidth or resources to in prior years.
         </p>
       </div>
       <div className='space-y-4 mb-4'>
@@ -84,7 +84,7 @@ function PrimerDocumentation() {
       </div>
       <Link to={"https://primer.style"} className="!underline">Check out the Primer documentation site</Link>
     </div>
-    <div className='max-w-3xl mt-6'>
+    <div className='max-w-4xl mt-6'>
       <a href="/public/images/documentation_full_lightmode.png" target="_blank" rel="noopener noreferrer">
         <img
           src="/public/images/documentation_full_lightmode.png"
