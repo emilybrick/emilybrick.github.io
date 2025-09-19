@@ -1,10 +1,34 @@
 import { Link } from 'react-router-dom'
+import { useState, useEffect} from 'react'
 
 function Work() {
+  const [copied, setCopied] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
+  
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText('brick.emily@gmail.com')
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000) // Reset after 2 seconds
+    } catch (err) {
+      console.error('Failed to copy email:', err)
+    }
+  }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
-      {/* Fixed navigation links in top left */}
-      <nav className="fixed p-6 z-10 flex space-x-4 w-full bg-color">
+      <nav className={`fixed p-6 z-10 flex space-x-4 w-full bg-color ${
+        hasScrolled ? 'shadow-sm' : ''
+      }`}>
         <Link 
           to="/" 
           className="font-semibold"
@@ -70,7 +94,7 @@ function Work() {
             SelectPanel: One SelectPanel to Rule Them All
             <span className='font-normal'>2025</span>
           </Link>
-          <Link to="/work/primer-documentation" className="flex flex-col items-center">
+          <Link to="/work/primer-documentation" className="flex flex-col items-center cursor-default pointer-events-none !text-gray-600" onClick={(event) => event.preventDefault()}>
             Spark Marketplace Exploration: R&D
             <span className='font-normal'>2025</span>
           </Link>

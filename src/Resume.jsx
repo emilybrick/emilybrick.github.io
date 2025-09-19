@@ -1,9 +1,24 @@
 import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
 function Resume() {
+
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
-      <nav className="fixed p-6 z-10 flex space-x-4 w-full bg-color">
+      <nav className={`fixed p-6 z-10 flex space-x-4 w-full bg-color ${
+        hasScrolled ? 'shadow-sm' : ''
+      }`}>
         <Link 
           to="/" 
           className="font-semibold"

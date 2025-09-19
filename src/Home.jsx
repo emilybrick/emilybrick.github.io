@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
 
 function Home() {
-  const [copied, setCopied] = useState(false)
+  const [copied, setCopied] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
   
   const copyEmail = async () => {
     try {
@@ -13,10 +14,21 @@ function Home() {
       console.error('Failed to copy email:', err)
     }
   }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
-      {/* Fixed navigation links in top left */}
-      <nav className="fixed p-6 z-10 flex space-x-4 w-full">
+      <nav className={`fixed p-6 z-10 flex space-x-4 w-full bg-color ${
+        hasScrolled ? 'shadow-sm' : ''
+      }`}>
         <Link 
           to="/" 
           className="font-semibold"
