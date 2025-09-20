@@ -98,7 +98,7 @@ function Work() {
             Spark Marketplace Exploration: R&D
             <span className='font-normal'>2025</span>
           </Link>
-          <Link to="/work/primer-documentation" className="flex flex-col items-center">
+          <Link to="/work/global-navigation" className="flex flex-col items-center">
             Shaping GitHub’s Global Navigation
             <span className='font-normal'>2021-2022</span>
           </Link>

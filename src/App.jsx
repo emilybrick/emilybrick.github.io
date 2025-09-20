@@ -5,6 +5,7 @@ import Work from './Work.jsx'
 import Resume from './Resume.jsx'
 import PrimerDocumentation from './assets/Work/Primer_documentation.jsx'
 import SelectPanel from './assets/Work/Select_panel.jsx'
+import GlobalNavigation from './assets/Work/Global_navigation.jsx'
 
 import './App.css'
 
@@ -36,6 +37,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/work/primer-documentation" element={<PrimerDocumentation />} />
         <Route path="/work/select-panel" element={<SelectPanel />} />
+        <Route path="/work/global-navigation" element={<GlobalNavigation />} />
       </Routes>
     </Router>
   )
