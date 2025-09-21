@@ -26,7 +26,7 @@ function Home() {
 
   return (
     <>
-      <nav className={`fixed p-6 z-10 flex space-x-4 w-full bg-color ${
+      <nav className={`fixed p-6 z-10 flex space-x-4 w-full bg-color top-0 ${
         hasScrolled ? 'shadow-sm' : ''
       }`}>
         <Link 

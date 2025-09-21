@@ -13,7 +13,7 @@ function PrimerDocumentation() {
 
     <div>
       {/* Fixed navigation links in top left */}
-      <nav className="fixed p-6 z-10 flex space-x-4 w-full bg-color">
+      <nav className="fixed p-6 z-10 flex space-x-4 w-full bg-color top-0">
       <Link 
         to="/" 
         className="font-semibold"
