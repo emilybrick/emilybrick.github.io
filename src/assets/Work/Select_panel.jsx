@@ -38,7 +38,7 @@ function SelectPanel() {
         <span className='text-lg mt-6'>←</span> Back to All Work
         </Link>
         <h1 className='mt-4 mb-1 text-title'>SelectPanel</h1>
-        <p className='mb-6 text-subtitle'>SelectPanels are one of GitHub's highest touch components. They allow users to quickly navigate and select one or multiple items from a list.</p>
+        <p className='mb-6 text-subtitle'>Reworking a core GitHub component to align user needs with product consistency</p>
       </div>
       <div className='max-w-4xl'>
         <a href={SPAnatomyImage} target="_blank" rel="noopener noreferrer">
