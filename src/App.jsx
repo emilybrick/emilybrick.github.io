@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
+import ScrollToTop from './ScrollToTop';
 import Home from './Home.jsx'
 import Work from './Work.jsx'
 import Resume from './Resume.jsx'
@@ -31,6 +32,7 @@ function RedirectHandler() {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <RedirectHandler />
       <Routes>
         <Route path="/" element={<Home />} />
