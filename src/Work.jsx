@@ -102,7 +102,7 @@ function Work() {
             Shaping GitHub’s Global Navigation
             <span className='font-normal'>2021-2022</span>
           </Link>
-          <Link to="/work/primer-documentation" className="flex flex-col items-center">
+          <Link to="/work/command-palette" className="flex flex-col items-center">
             Introducing a Command Palette to GitHub
             <span className='font-normal'>2022</span>
           </Link>

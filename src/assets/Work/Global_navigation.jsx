@@ -43,7 +43,7 @@ function GlobalNavigation() {
         <span className='text-lg mt-6'>←</span> Back to All Work
         </Link>
         <h1 className='mt-4 mb-1 text-title'>GitHub's Global Navigation</h1>
-        <p className='mb-6 text-subtitle'>Explorations to launch a new vision for navigation for GitHub</p>
+        <p className='mb-6 text-subtitle'>Exploring a scalable vision for GitHub's navigation</p>
       </div>
       <div className='max-w-4xl'>
         <a href={navVision} target="_blank" rel="noopener noreferrer">
@@ -59,7 +59,7 @@ function GlobalNavigation() {
         <div className='space-y-4 mb-4'>
           <p>I took on the role in early 2019 of iterating on the GitHub Global Nav as part of a larger overhaul to rethink GitHub’s platform. Our goal was to consider GitHub an operating system that works together.</p>
           <p>The initial explorations involved rethinking GitHub’s double stacked tab navigation on popular products such as Pull Requests and Issues, and including a side navigation for easy access to high priority items. We wanted to create a “compact” version of the navigation that allowed users to focus on the task at hand, while still having an easy way to navigate around the product. This was a multi-prong approach, which worked in concert with the Github Command Palette.</p>
-          <p>We worked through and tested several iterations before I left on maternity leave in 2020. The GitHub navigation went through rigorous amounts of iterations and several designers through the years, but I’m proud to say what eventually shipped took some of the core elements and ideas of our explorations. My role involved early exploration, iteration, and user testing to validate concepts. When I returned from maternity leave, I began managing the designer who took on one of the earlier betas that shipped to customers in late 2021.</p>
+          <p>We worked through and tested several iterations before I went on maternity leave in 2020. The GitHub navigation went through rigorous amounts of iterations and several designers through the years, but I’m proud to say what eventually shipped took some of the core elements and ideas of our explorations. My role involved early exploration, iteration, and user testing to validate concepts. When I returned from maternity leave, I began managing the designer who took on one of the earlier betas that shipped to customers in late 2021.</p>
         </div>
       </div>
       <div className='max-w-4xl'>

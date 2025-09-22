@@ -6,6 +6,7 @@ import Resume from './Resume.jsx'
 import PrimerDocumentation from './assets/Work/Primer_documentation.jsx'
 import SelectPanel from './assets/Work/Select_panel.jsx'
 import GlobalNavigation from './assets/Work/Global_navigation.jsx'
+import CommandPalette from './assets/Work/Command_palette.jsx'
 
 import './App.css'
 
@@ -38,6 +39,7 @@ function App() {
         <Route path="/work/primer-documentation" element={<PrimerDocumentation />} />
         <Route path="/work/select-panel" element={<SelectPanel />} />
         <Route path="/work/global-navigation" element={<GlobalNavigation />} />
+        <Route path="/work/command-palette" element={<CommandPalette />} />
       </Routes>
     </Router>
   )
