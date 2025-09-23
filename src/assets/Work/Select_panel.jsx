@@ -53,13 +53,13 @@ function SelectPanel() {
       <div className='text-left max-w-2xl'>
         <div className='space-y-4 mb-4'>
           <h2>Background</h2>
-          <p>The team embarked on a journey in 2024 to explore a new SelectPanel component with the intention of making it easier to use and more visually balanced. We decided to create a new variation of the component, rather than modifying the original component directly. This was to ensure the team could user test the new variation of the component in production without committing to it, and a way to keep the risk assessment low. It also left room for the component to diverge more from the original, potentially becoming an entirely separate component.</p>
-          <p>The newer variation – SelectPanel v2 – offered cleaner padding, better typographic balance, and offered responsive solutions that the original component did not. More importantly, the newer component also offered one key difference: it included explicit Save and Cancel buttons at the bottom of the dialog, whereas the original variant saved the user’s options on close (without the user needing to explicitly save and cancel).</p>
-          <p> After a few months, several teams began using the “V2” version of the component, while the rest of GitHub stayed with the original component.</p>
+            <p>In 2024, our team set out to improve our SelectPanel component, with the goal of making it easier to use, accessible, and more visually balanced. Instead of changing the original, we created a new variation so we could test it in production without fully committing—and to keep the risk low. This also gave us room to explore bigger changes, even if it meant the new version might eventually become its own separate component.</p>
+            <p>The newer variation – SelectPanel v2 – offered cleaner padding, better typographic balance, and offered responsive solutions that the original component did not. More importantly, the newer component also offered one key difference: it included explicit Save and Cancel buttons at the bottom of the dialog, whereas the original variant saved the user’s options on close (without the user needing to explicitly save and cancel). We felt it was more intuitive and a more accessible pattern overall.</p>
+            <p>After a few months, some teams adopted V2, while the rest of GitHub continued using the original.</p>
         </div>
         <div className='space-y-4 mb-4'>
           <h2>The problem</h2>
-          <p>We ended up with divergent components achieving the same thing. Some teams were using the V2 version in their UI, other products had already been using the original component, with no real need to migrate to the new version. </p>
+          <p>We ended up with divergent components achieving the same thing. Some teams were using the V2 version in their UI, other products had already been using the original component, with no real need to migrate to the new version. User feedback was mixed, so without pressure to change, many teams opted to stick with the original.</p>
         </div>
         <div className='space-y-4 mb-4'>
           <h2>Why not just migrate all products to use the new SelectPanel V2?</h2>
