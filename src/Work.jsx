@@ -71,7 +71,7 @@ function Work() {
                 className="text-blue-600 !underline"
               >
                 GitHub
-              </a>, my work focused on creating consistent patterns, bridging design and engineering, and most recently, leading the documentation experience for GitHub’s                {' '}
+              </a>, my work focused on creating a consistent design language for core workflows, and most recently, leading the documentation experience for GitHub’s                {' '}
               <a 
                 href="https://primer.style" 
                 target="_blank" 
