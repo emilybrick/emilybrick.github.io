@@ -314,7 +314,7 @@ function Resume() {
             <div className="pb-6">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                 <div className="md:w-1/3 text-left md:text-right">
-                  <span className="text-gray-500">September 2008 – May 2012</span>
+                  <span className="text-gray-500"></span>
                 </div>
                 <div className="md:w-2/3 md:pl-12">
                   <h3 className="font-semibold text-md text-gray-500 font-serif">Bachelor of Fine Arts in Graphic Design</h3>
