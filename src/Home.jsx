@@ -121,15 +121,6 @@ function Home() {
             GitHub
           </a>
           <a
-            href="https://instagram.com/emilyhiller_"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-semibold"
-            aria-label="Instagram"
-          >
-            Instagram
-          </a>
-          <a
             href="https://linkedin.com/in/emilybrick"
             target="_blank"
             rel="noopener noreferrer"
