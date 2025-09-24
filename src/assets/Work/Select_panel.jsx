@@ -37,7 +37,7 @@ function SelectPanel() {
         <Link to="/work" className="text-sm">
         <span className='text-lg mt-6'>←</span> Back to All Work
         </Link>
-        <h1 className='mt-4 mb-1 text-title'>SelectPanel</h1>
+        <h1 className='mt-4 mb-1 text-title leading-tight'>Select Panel</h1>
         <p className='mb-6 text-subtitle'>Reworking a core GitHub component to align user needs with product consistency</p>
       </div>
       <div className='max-w-4xl'>

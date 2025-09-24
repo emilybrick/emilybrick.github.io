@@ -94,7 +94,7 @@ function Work() {
             <span className='font-normal'>2024–2025</span>
           </Link>
           <Link to="/work/select-panel" className="flex flex-col items-center">
-            SelectPanel: One SelectPanel to Rule Them All
+            Reworking the Primer Select Panel Component
             <span className='font-normal'>2025</span>
           </Link>
           <Link to="/work/primer-documentation" className="flex flex-col items-center cursor-default pointer-events-none !text-gray-600" onClick={(event) => event.preventDefault()}>
