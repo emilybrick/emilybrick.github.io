@@ -71,7 +71,7 @@ function Work() {
                 className="text-blue-600 !underline"
               >
                 GitHub
-              </a>, my work focused on creating a consistent design language for core workflows, and most recently, leading the documentation experience for                {' '}
+              </a>, my work focused on creating a consistent design language for core workflows and AI products across GitHub. I recently lead the documentation experience for                {' '}
               <a 
                 href="https://primer.style" 
                 target="_blank" 
@@ -80,7 +80,7 @@ function Work() {
               >
                 Primer
               </a>.
-              In a past life, I helped build the <a href="https://www.buzzfeed.com/static-assets/solid-docs/index.html"  target="_blank" rel="noopener noreferrer" className="!underline">design system for BuzzFeed</a>.  I enjoy the intersection of design and engineering and love to tinker with code.
+              In a past life, I helped build the <a href="https://www.buzzfeed.com/static-assets/solid-docs/index.html"  target="_blank" rel="noopener noreferrer" className="!underline">open source design system for BuzzFeed</a>.  I enjoy the intersection of design and engineering and love to tinker with code.
             </p>
             <div>
             <p className='mt-8 text-left text-sm'><span className='font-bold'>Note:</span> The list below demonstrates a selection of project overviews, not full case studies. To learn more about a specific project, please reach out!</p>
