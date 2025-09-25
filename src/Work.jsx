@@ -98,7 +98,7 @@ function Work() {
             <span className='font-normal'>2025</span>
           </Link>
           <Link to="/work/primer-documentation" className="flex flex-col items-center cursor-default pointer-events-none !text-gray-600" onClick={(event) => event.preventDefault()}>
-            Spark Marketplace Exploration: R&D
+            Spark AI Marketplace Exploration: R&D
             <span className='font-normal'>2025</span>
           </Link>
           <Link to="/work/global-navigation" className="flex flex-col items-center">
