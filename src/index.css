@@ -139,3 +139,8 @@ button:focus-visible {
   font-size: 2.5em;
   line-height: normal;
 }
+
+.text-header {
+  font-size: 3.5em;
+  line-height: normal;
+}

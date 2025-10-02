@@ -64,7 +64,7 @@ function Work() {
             </clipPath>
             </defs>
             </svg>
-            <h1 className="font-semibold mt-2 mb-8 font-serif text-gray-800"><span className="text-5xl">Work</span></h1>
+            <h1 className="font-semibold mt-2 mb-6 font-serif text-gray-800"><span className="text-5xl">Work</span></h1>
           </div>
           <div className="text-left space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
