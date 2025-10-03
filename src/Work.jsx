@@ -79,7 +79,7 @@ function Work() {
                 className="text-blue-600 !underline"
               >
                 GitHub
-              </a>, my work focused on creating a consistent ecosystem for core workflows and AI products across. I recently led the documentation experience for                {' '}
+              </a>, my work focused on creating a consistent ecosystem for core workflows and AI products. I recently led the documentation experience for                {' '}
               <a 
                 href="https://primer.style" 
                 target="_blank" 
