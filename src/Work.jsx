@@ -66,11 +66,10 @@ function Work() {
             </svg>
             <h1 className="font-semibold mt-2 mb-6 font-serif text-gray-800"><span className="text-5xl">Work</span></h1>
           </div>
-          <div className="text-left space-y-6 text-lg leading-relaxed text-gray-700">
+          <div className="space-y-4 text-lg leading-relaxed text-gray-700">
             <p>
-              I've worked on design systems throughout my career as a way to deliver quality at scale, and I believe they’re fundamental to any strong user experience.
+              I've worked on design systems throughout my career as a way to deliver quality at scale, and I believe they’re fundamental to a good user experience.
             </p>
-            
             <p>
               At {' '}
               <a 
@@ -80,7 +79,7 @@ function Work() {
                 className="text-blue-600 !underline"
               >
                 GitHub
-              </a>, my work focused on creating a consistent design language for core workflows and AI products across GitHub. I recently lead the documentation experience for                {' '}
+              </a>, my work focused on creating a consistent ecosystem for core workflows and AI products across. I recently led the documentation experience for                {' '}
               <a 
                 href="https://primer.style" 
                 target="_blank" 
@@ -89,10 +88,10 @@ function Work() {
               >
                 Primer
               </a>.
-              In a past life, I helped build the <a href="https://www.buzzfeed.com/static-assets/solid-docs/index.html"  target="_blank" rel="noopener noreferrer" className="!underline">open source design system for BuzzFeed</a>.  I enjoy the intersection of design and engineering and love to tinker with code.
+              In a past life, I led the <a href="https://www.buzzfeed.com/static-assets/solid-docs/index.html"  target="_blank" rel="noopener noreferrer" className="!underline">open source design system for BuzzFeed</a>.
             </p>
             <div>
-            <p className='mt-8 text-left text-sm'><span className='font-bold'>Note:</span> The list below demonstrates a selection of project overviews, not full case studies. To learn more about a specific project, please reach out!</p>
+            <p className='mt-8 text-sm'><span className='font-bold'>*Note:</span> These are project overviews, not full case studies. To learn more, please reach out!</p>
           </div>
           </div>
         </div>
