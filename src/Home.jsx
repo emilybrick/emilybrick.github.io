@@ -62,7 +62,7 @@ function Home() {
           </h1>
         </div>
         <p className="text-lg leading-relaxed mb-10 text-gray-700">
-          I'm Emily, a design systems and product designer based out of Philadelphia. I love systems small and large and work on the internet for a living.
+          I'm Emily, a design systems and product designer based somewhere between Philadelphia and New York City. I love systems small and large and work on the internet for a living.
         </p>
         </div>
         <nav className="flex space-x-4 md:space-x-6 text-md">
